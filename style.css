@@ -82,7 +82,7 @@ ul li a:hover {
 
 
 .hero-section{
-  background: url(/assets/Hero-Section.jpg);
+  background: url(./assets/Hero-Section.jpg);
   display: flex;
   justify-content: center;
   align-items:center ;
