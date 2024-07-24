@@ -1,0 +1,131 @@
+aside {
+  margin: 0;
+  background-color: #ECF7FF;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+aside .txt-part {
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.txt-part span {
+  color: #3BBBB7;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.txt-part h3 {
+  color: #38abf3;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.txt-part p {
+  color: #666;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.card-slider {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 50px;
+  margin-right: 50px;
+  width: calc(100% - 100px); /* Adjusted for margins */
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card-slider img:hover {
+  background-color: #3BBBB7;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-icons {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.media-icons a {
+  height: 35px;
+  width: 35px;
+  background: #3BBBB7;
+  color: #fff;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  border: 2px solid #38abf3;
+  transition: all 0.3s ease;
+}
+
+.content1 .media-icons a:hover {
+  border-color: #38abf3;
+  color: #38abf3;
+  background: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .card-slider {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .card-slider {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .card-slider {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .txt-part {
+    padding-top: 50px;
+  }
+
+  .card-slider {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px); /* Adjusted for margins */
+  }
+}
