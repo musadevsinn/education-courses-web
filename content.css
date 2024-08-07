@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the toggle button */
+.toggle-button {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the unordered list */
+.item-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-list li {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+input{ 
+  display: none;
+}
+
+/* Show the toggle button and hide the list for screens smaller than 768px */
+@media (max-width: 768px) {
+  .item-list {
+      display: none;
+  }
+  input{
+    display: none;
+  }
+
+  .toggle-button {
+      display: block;
+  }
+
+  .toggle-checkbox:checked + .toggle-button + .item-list {
+      display: block;
+  }
+}
