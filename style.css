@@ -6,7 +6,6 @@
   }
   .checkbtn {
     display: none;
-    
     color: white;
     font-size: 10px;
     cursor: pointer;
@@ -1411,570 +1410,580 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
      }
  
   
-  @media (max-width: 1024px)  {
-    nav {
-      padding: 10px 15px;
-      height: auto;
-    }
-  
-    nav img {
-      height: 12vh;
-      width: 30vh;
-      margin-bottom: 10px;
-    }
-  
-    nav ul {
-      flex: 1;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    nav ul li {
-      padding: 5px 0;
-    }
-  
-    nav ul li a {
-      font-size: 15px;
-      padding: 3px;
-    }
-  
-    nav .btn {
-      display: none;
-     
-    }
-    .hero-section{
-        height: 200vh;
-    }
-    .heading {
-        padding: 40px 0;
+     @media (max-width: 1024px) {
+      nav {
+          padding: 10px 15px;
+          height: auto;
       }
-    
+  
+      nav img {
+          height: auto;
+          width: 20vh;
+          margin-bottom: 10px;
+      }
+  
+      nav ul {
+          flex: 1;
+          justify-content: center;
+          gap: 20px;
+      }
+  
+      nav ul li {
+          padding: 5px 0;
+      }
+  
+      nav ul li a {
+          font-size: 15px;
+          padding: 3px;
+      }
+  
+      nav .btn {
+          display: none;
+      }
+  
+      .hero-section {
+          height: auto; /* Changed from fixed height to auto */
+          padding: 20px; /* Adjust padding if needed */
+      }
+  
+      .heading {
+          padding: 120px 0;
+      }
+  
       .heading h1 {
-        font-size: 2em;
+          font-size: 2em;
       }
-    
+  
       .heading h2 {
-        font-size: 3.5em;
+          font-size: 3.5em;
       }
-    
+  
       .contact {
-        font-size: 1em;
-        padding: 8px 16px;
+          font-size: 1em;
+          padding: 8px 16px;
       }
-      .choose-option{
-        height: 180vh;
+  
+      .choose-option {
+          height: auto; /* Changed from fixed height to auto */
+          padding: 20px; /* Adjust padding if needed */
       }
+  
       .support-card {
-        width: 180px; /* Reduce the width to fit four cards in one row */
-    }
-    .video-section {
-        padding: 20px;
-        padding-top: 100px;
+          width: 180px;
       }
-    
+  
+      .video-section {
+          padding: 20px;
+          padding-top: 100px;
+      }
+  
       .responsive-video {
-        width: 400px;
-        height:400px ;
-       
+          width: 400px;
+          height: 400px;
       }
-    
+  
       .Courses {
-        padding-left: 10px;
+          padding-left: 10px;
       }
-    
+  
       .containers hr {
-        width: 30px;
+          width: 30px;
       }
-    
+  
       .containers h3 {
-        margin-left: 5px; 
-        font-size: 14px;
+          margin-left: 5px;
+          font-size: 14px;
       }
-    
+  
       .vvork h1 {
-        font-size: 30px;
+          font-size: 30px;
       }
-    
+  
       .pa {
-        font-size: 13px;
+          font-size: 13px;
       }
-    
+  
       .check-circle li {
-        font-size: 14px;
+          font-size: 14px;
       }
-    
+  
       .call-option {
-        width: 200px;
-        padding: 11px 22px;
-        font-size: 14px;
+          width: 200px;
+          padding: 11px 22px;
+          font-size: 14px;
       }
+  
       .roys {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 15px;
-        padding: 0 30px;
-    }
-
-    .single-service {
-        min-height: 300px;
-        padding: 20px 20px 20px 15px;
-    }
-
-    .service-content {
-        top: 140px;
-        padding: 8px;
-    }
-
-    .service-content a {
-        font-size: 16px;
-    }
-
-    .section-title {
-        padding: 15px 50px;
-        margin-bottom: 40px;
-    }
-
-    .section-title h3 {
-        font-size: 35px;
-    }
-
-    .section-title span, .section-title p {
-        font-size: 14px;
-    }
-    .Achievement{
-        height: 150vh;
-        margin-top: 600px;
-    }
-    .achieve-text {
-         padding: 0 330px; 
-        justify-content: center;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+          padding: 0 30px;
       }
-    
+  
+      .single-service {
+          min-height: 300px;
+          padding: 20px 20px 20px 15px;
+      }
+  
+      .service-content {
+          top: 140px;
+          padding: 8px;
+      }
+  
+      .service-content a {
+          font-size: 16px;
+      }
+  
+      .section-title {
+          padding: 15px 50px;
+          margin-bottom: 40px;
+      }
+  
+      .section-title h3 {
+          font-size: 35px;
+      }
+  
+      .section-title span, .section-title p {
+          font-size: 14px;
+      }
+  
+      .Achievement {
+          height: auto; /* Changed from fixed height to auto */
+          margin-top: 20px; /* Adjust margin-top as needed */
+      }
+  
+      .achieve-text {
+          padding: 0 330px;
+          justify-content: center;
+      }
+  
       .achieve-cards {
-        flex-wrap: wrap;
-        padding-left: 0;
-        justify-content: center;
+          flex-wrap: wrap;
+          padding-left: 0;
+          justify-content: center;
       }
-    
+  
       .achieve-card {
-        height: 180px;
-        width: 220px;
-        margin: 10px;
-        padding: 15px 30px;
+          height: 180px;
+          width: 220px;
+          margin: 10px;
+          padding: 15px 30px;
       }
-    
+  
       .achieve-card i {
-        font-size: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 55px;
+          font-size: 24px;
+          width: 60px;
+          height: 60px;
+          line-height: 55px;
       }
-    
+  
       .achieve-card h5 {
-        font-size: 32px;
-        padding-top: 10px;
+          font-size: 32px;
+          padding-top: 10px;
       }
-    
+  
       .achieve-card p {
-        font-size: 14px;
+          font-size: 14px;
       }
-      .section-title{
-        margin-bottom: -20px;
-      }
+  
       .modules {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0px;
-        padding: 0 50px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Adjusted from 4 columns to 2 */
+          gap: 0px;
+          padding: 0 30px; /* Adjusted padding */
       }
-    
+  
       .module {
-        height: 100px;
-        width: 150px;
-        margin: 0;
-        padding: 5px;
+          height: 100px;
+          width: 150px;
+          margin: 0;
+          padding: 5px;
       }
-    
+  
       .module i {
-        font-size: 28px;
+          font-size: 28px;
       }
-    
+  
       .module span {
-        font-size: 13px;
+          font-size: 13px;
       }
-    
+  
       .container1 {
-        /* flex-direction: column; */
-        height: auto;
-        padding: 20px;
+          height: auto; /* Adjusted height for responsive */
+          padding: 20px;
       }
-    
+  
       .text-container {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 20px;
       }
-    
+  
       .text-container h4 {
-        font-size: 24px;
+          font-size: 24px;
       }
-    
+  
       .text-container h5 {
-        font-size: 14px;
+          font-size: 14px;
       }
-    
+  
       .text-container p {
-        font-size: 13px;
-        line-height: 24px;
+          font-size: 13px;
+          line-height: 24px;
       }
-    
+  
       .text-container ul li {
-        font-size: 14px;
-        padding-left: 10px;
+          font-size: 14px;
+          padding-left: 10px;
       }
-    
+  
       .image-container {
-        width: 100%;
-        margin: 0;
+          width: 100%;
+          margin: 0;
       }
-    
+  
       .image-container img {
-        width: 100%;
-        height: auto;
-        margin: 0;
+          width: 100%;
+          height: auto;
+          margin: 0;
       }
+  
       footer {
-        padding: 50px 20px;
+          padding: 50px 20px;
+          height: auto; /* Adjust height */
       }
-    
+  
       .txt-content h2 {
-        font-size: 30px;
+          font-size: 30px;
       }
-    
+  
       .txt-content p {
-        font-size: 14px;
-        margin-bottom: 30px;
+          font-size: 14px;
+          margin-bottom: 30px;
       }
-    
+  
       .container4 {
-        width: 100%;
-        padding-bottom: 10px;
-        margin: 0 auto;
+          width: 100%;
+          padding-bottom: 10px;
+          margin: 0 auto;
       }
-    
+  
       .slide-cards {
-        width: 100%;
-        gap: 15px;
-        animation: slide-card-responsive 15s infinite;
+          width: 100%;
+          gap: 15px;
+          animation: slide-card-responsive 15s infinite;
       }
-    
+  
       @keyframes slide-card-responsive {
-        0%, 10% { transform: translateX(0); }
-        20%, 30% { transform: translateX(-25%); }
-        40%, 50% { transform: translateX(-50%); }
-        60%, 70% { transform: translateX(-75%); }
-        80%, 90% { transform: translateX(-100%); }
-        100% { transform: translateX(0); }
+          0%, 10% { transform: translateX(0); }
+          20%, 30% { transform: translateX(-25%); }
+          40%, 50% { transform: translateX(-50%); }
+          60%, 70% { transform: translateX(-75%); }
+          80%, 90% { transform: translateX(-100%); }
+          100% { transform: translateX(0); }
       }
-    
+  
       .slide-card {
-        height: auto;
-        width: 351px;
-        padding: 20px;
-        flex-shrink: 0;
+          height: auto;
+          width: 351px;
+          padding: 20px;
+          flex-shrink: 0;
       }
-    
+  
       .slide-card .header ul li {
-        font-size: 18px;
+          font-size: 18px;
       }
-    
+  
       .slide-card p {
-        font-size: 14px;
-        line-height: 20px;
+          font-size: 14px;
+          line-height: 20px;
       }
-    
+  
       .image-client {
-        margin-top: 20px;
+          margin-top: 20px;
       }
-    
+  
       .image-client img {
-        width: 60px;
-        height: 60px;
+          width: 60px;
+          height: 60px;
       }
-    
+  
       .client-title h5 {
-        font-size: 18px;
+          font-size: 18px;
       }
-    
+  
       .client-title span {
-        font-size: 13px;
+          font-size: 13px;
       }
-      footer{
-        height: 170vh;
+  
+      footer {
+          height: auto; /* Adjusted height */
       }
+  
       aside {
-        height: auto; /* Adjust height for responsive */
-        padding: 50px 20px;
-        
+          height: auto; /* Adjust height for responsive */
+          padding: 50px 20px;
       }
-    
+  
       .txt-part h3 {
-        font-size: 30px;
+          font-size: 30px;
       }
-    
+  
       .txt-part p {
-        font-size: 14px;
-        margin-bottom: 30px;
+          font-size: 14px;
+          margin-bottom: 30px;
       }
-    
+  
       .container5 {
-        width: 92%;
-        padding-bottom: 10px;
-        margin: 0 auto;
+          width: 92%;
+          padding-bottom: 10px;
+          margin: 0 auto;
       }
-    
+  
       .slides-cards {
-        display: flex;
-  gap: 30px;
-  width: calc(25% * 4); 
-  animation: slide-card 15s infinite;
+          display: flex;
+          gap: 30px;
+          width: calc(25% * 4);
+          animation: slide-card 15s infinite;
       }
-    
+  
       .slides-card {
-        height: 300px; /* Adjust height for smaller screens */
-        width: 22%; /* Adjust width for smaller screens */
-        padding: 0px;
-        flex-shrink: 0;
+          height: 300px;
+          width: 22%;
+          padding: 0px;
+          flex-shrink: 0;
       }
-    
+  
       .slides-card .content1 {
-        padding: 15px;
+          padding: 15px;
       }
-    
+  
       .img2 img {
-        height: 150px; /* Adjust image height */
+          height: 150px;
       }
-    
+  
       .details .name {
-        font-size: 16px;
+          font-size: 16px;
       }
-    
+  
       .details .job {
-        font-size: 14px;
+          font-size: 14px;
       }
-    
+  
       .media-icons a {
-        height: 30px;
-        width: 30px;
-        font-size: 12px;
+          height: 30px;
+          width: 30px;
+          font-size: 12px;
       }
-    
+  
       @keyframes slide-card-responsive {
-        0%, 10% { transform: translateX(0); }
-        20%, 30% { transform: translateX(-25%); }
-        40%, 50% { transform: translateX(-50%); }
-        60%, 70% { transform: translateX(-75%); }
-        80%, 90% { transform: translateX(-100%); }
-        100% { transform: translateX(0); }
+          0%, 10% { transform: translateX(0); }
+          20%, 30% { transform: translateX(-25%); }
+          40%, 50% { transform: translateX(-50%); }
+          60%, 70% { transform: translateX(-75%); }
+          80%, 90% { transform: translateX(-100%); }
+          100% { transform: translateX(0); }
       }
+  
       figure {
-       
-        padding-top: 50px;
-        margin-bottom: 100px;
+          padding-top: 50px;
+          margin-bottom: 100px;
       }
-    
+  
       .text-vision {
-        width: 90%;
-        font-size: 14px;
-        margin-left: 80px;
-        margin-bottom: 20px;
+          width: 90%;
+          font-size: 14px;
+          margin-left: 80px;
+          margin-bottom: 20px;
       }
-    
+  
       .text-vision h3 {
-        font-size: 30px;
+          font-size: 30px;
       }
-    
-      .text-vision p,
-      .text-vision .mt3 {
-        font-size: 14px;
-        line-height: 24px;
+  
+      .text-vision p, .text-vision .mt3 {
+          font-size: 14px;
+          line-height: 24px;
       }
-    
+  
       .team-vision {
-        width: 90%;
+          width: 90%;
       }
-    
+  
       .image1 img {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 30px;
+          width: 120px;
+          height: 120px;
+          margin-bottom: 30px;
       }
+  
       .template {
-        height: 140vh;
-        padding: 20px;
-        margin-top: 30rem;
+          height: auto; /* Changed from fixed height to auto */
+          padding: 20px;
+          margin-top: 30rem; /* Adjusted margin-top */
       }
-    
+  
       .appointment {
-        width: 60%;
-        height: auto;
-        padding: 15px;
+          width: 60%;
+          height: auto;
+          padding: 15px;
       }
-    
+  
       .appointment-title {
-        padding-top: 20px;
-        margin-left: 15px;
+          padding-top: 20px;
+          margin-left: 15px;
       }
-    
+  
       .appointment-title h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
+          font-size: 24px;
+          margin-bottom: 15px;
       }
-    
+  
       .appointment-title span {
-        font-size: 24px;
+          font-size: 24px;
       }
-    
+  
       .appointment-title p {
-        font-size: 16px;
-        padding-top: 5px;
+          font-size: 16px;
+          padding-top: 5px;
       }
-    
+  
       .register {
-        width: 150px;
-        margin-top: 20px;
-        margin-left: 15px;
-        font-size: 16px;
-        padding: 10px 20px; 
+          width: 150px;
+          margin-top: 20px;
+          margin-left: 15px;
+          font-size: 16px;
+          padding: 10px 20px;
       }
+  
       summary {
-        padding-top: 60px;
-        padding-left: 40px;
+          padding-top: 60px;
+          padding-left: 40px;
       }
-    
+  
       .text-selection h1 {
-        font-size: 32px;
+          font-size: 32px;
       }
-    
+  
       .text-selection h5 {
-        font-size: 16px;
+          font-size: 16px;
       }
-    
+  
       .questions-container {
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-       margin-left: 20px;
+          grid-template-columns: repeat(2, 1fr);
+          width: 90%;
+          margin-left: 20px;
       }
-    
+  
       .scholarship {
-        width: 100%;
-        height: 60px;
-        padding: 10px 15px;
+          width: 100%;
+          height: auto; /* Adjusted height */
+          padding: 10px 15px;
       }
-    
+  
       .scholarship h4 {
-        font-size: 16px;
-        margin-left: 10px;
+          font-size: 16px;
+          margin-left: 10px;
       }
-    
+  
       .scholarship b {
-        margin-right: 10px;
+          margin-right: 10px;
       }
-    
+  
       .scholarship p {
-        font-size: 24px;
-        right: 15px;
+          font-size: 24px;
+          right: 15px;
       }
-      figcaption{
-        margin-top: 170px;
+  
+      figcaption {
+          margin-top: 170px;
       }
+  
       .certificate h3 {
-        font-size: 32px; /* Adjust font size for smaller screens */
+          font-size: 32px; /* Adjust font size */
       }
-    
+  
       .logos-container {
-        gap: 60px; /* Further reduce gap */
-        padding-top: 20px; /* Further reduce padding */
+          gap: 60px; /* Adjusted gap */
+          padding-top: 20px; /* Adjusted padding */
       }
-    
+  
       .logos {
-        width: 120px; /* Adjust logo size */
-        height: 100px; /* Adjust logo size */
+          width: 120px; /* Adjust logo size */
+          height: 100px; /* Adjust logo size */
       }
-    
+  
       .table img {
-        width: 80px; /* Adjust logo size */
+          width: 80px; /* Adjust logo size */
       }
+  
       .footer-content {
-        padding: 1em; /* Adjust padding for smaller screens */
+          padding: 1em; /* Adjust padding */
       }
-    
+  
       .foot {
-        /* Ensure that items can wrap and adapt to smaller screens without stacking */
-        gap: 15px; /* Adjust gap for smaller screens */
+          gap: 15px; /* Adjust gap */
       }
-    
+  
       .infoot, .foot1, .foot2 {
-        padding: 10px; /* Adjust padding */
+          padding: 10px; /* Adjust padding */
       }
-    
+  
       .infoot img {
-        width: 150px; /* Adjust image size */
+          width: 150px; /* Adjust image size */
       }
-    
+  
       .infoot p {
-        font-size: 16px; /* Adjust font size */
+          font-size: 16px; /* Adjust font size */
       }
-    
+  
       .foot1 h2, .foot2 h3 {
-        font-size: 1.2em; /* Adjust heading size */
+          font-size: 1.2em; /* Adjust heading size */
       }
-    
+  
       .foot1 ul {
-        padding-inline-start: 20px; /* Adjust padding */
+          padding-inline-start: 20px; /* Adjust padding */
       }
-    
+  
       .foot1 ul li a {
-        font-size: 16px; /* Adjust font size */
+          font-size: 16px; /* Adjust font size */
       }
-    .foot2{
-        margin-right: 20px;
-    }
+  
+      .foot2 {
+          margin-right: 20px;
+      }
+  
       .map-container {
-        height: 180px; /* Adjust height */
+          height: 180px; /* Adjust height */
       }
+  
       #scroll-up {
-        right: 130px; /* Adjust positioning */
-        bottom: 30px; /* Adjust positioning */
-        width: 45px; /* Adjust size */
-        height: 45px; /* Adjust size */
-        line-height: 43px; /* Adjust line height */
+          right: 130px; /* Adjust positioning */
+          bottom: 30px; /* Adjust positioning */
+          width: 45px; /* Adjust size */
+          height: 45px; /* Adjust size */
+          line-height: 43px; /* Adjust line height */
       }
-    
+  
       #scroll-up i {
-        font-size: 20px; /* Adjust icon size */
+          font-size: 20px; /* Adjust icon size */
       }
-    }
-  @media (max-width: 1100px) {
-    .support-card {
-        width: 200px; /* Further reduce the width */
-    }
-}
+  }
+  
+
 @media (max-width: 768px) {
     .checkbtn {
         display: block;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #3BBBB7;
-    top: 6px;
-   
-    padding: 4px;
-    
-    z-index: 2;
-    /* right: 20px; */
-    margin-left: 650px; /* Adjust margin-right to right */
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: #3BBBB7;
+        position: absolute;
+        top: 6px;
+      
+        padding: 4px;
+        z-index: 2;
+        left: 600px;
     }
-  
+
     nav ul {
         display: none;
         width: 100%;
@@ -1985,48 +1994,54 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
         background-color: #fff;
         z-index: 101;
     }
-  
+
     nav ul li {
         padding: 15px;
         border-bottom: 1px solid #ddd;
         text-align: center;
     }
-  
+
     nav ul li a {
         display: block;
         padding: 10px;
     }
-   nav img{
-    height: 18vh;
-    width: 50vh;
-   }
-   
+
+    nav img {
+        height: auto;
+        width: 120px; /* Adjust to restore the logo size */
+        max-width: 50vh; /* Ensure it stays within bounds */
+    }
+
     #checkbtn:checked ~ ul {
         display: flex;
     }
+
     .hero-section {
         padding: 20px;
-        height: 180vh;
+        height: auto;
     }
-
+.heading{
+  padding-top: 100px;
+}
     .heading h1 {
         font-size: 20px;
     }
 
     .heading h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .contact {
         font-size: 14px;
         padding: 10px;
-        width: 150px;
+        width: auto;
     }
+
     .choose-option {
         padding: 20px;
-        height: 360vh  
-     }
- 
+        height: auto;
+    }
+
     .choose-option h2 {
         font-size: 30px;
         padding-top: 10px;
@@ -2046,56 +2061,63 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
         width: 45%;
         margin: 10px 5px;
     }
+
     .video-section {
-        flex-direction: column; /* Stack elements vertically */
-        height: 580vh;
+        flex-direction: column;
+        height: auto;
         justify-content: center;
         align-items: center;
     }
-    .responsive-video{
+
+    .responsive-video {
         width: 90%;
-      margin-left: 40px;
-       margin-top: 100px; 
-    }
-    .Courses {
-        padding-left: 0; /* Remove left padding on smaller screens */
-       
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
-   
-    .containers {
-        margin-top: 100px;
+    .Courses {
+        padding-left: 0;
     }
-    .containers h3{
+
+    .containers {
+        margin-top: 20px;
+    }
+
+    .containers h3 {
         font-size: 18px;
     }
+
     .vvork h1 {
-        font-size: 30px; /* Adjust heading font size */
+        font-size: 30px;
     }
 
     .pa, .pa2 {
-        font-size: 14px; /* Adjust paragraph font size */
-        margin: 10px 0; /* Adjust margin for readability */
+        font-size: 14px;
+        margin: 10px 0;
     }
 
     .call-option {
-       
-        width: 28%; /* Full width button on smaller screens */
+        width: 100%;
     }
-    .all-courses{
-        height: 600vh;
+
+    .all-courses {
+        height: auto;
     }
+
     .roys {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         padding: 0 20px;
     }
 
     .section-title {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
-   .section-title span{
-    padding-top: 50px;
-   }
+
+    .section-title span {
+        padding-top: 20px;
+    }
+
     .single-service {
         padding: 20px;
     }
@@ -2104,327 +2126,334 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
         top: 140px;
         padding: 5px;
     }
-    .Achievement{
-      height: 350vh;  
+
+    .Achievement {
+        height: auto;
     }
+
     .achieve-text {
-        padding: 0 20px; /* Adjust padding for smaller screens */
+        padding: 0 20px;
     }
-    
+
     .achieve-cards {
-        justify-content: center; /* Center the cards */
+        justify-content: center;
     }
-    
+
     .achieve-card {
-        width: calc(45% - 20px); /* Two cards per row with margin */
+        width: 90%;
+        max-width: 300px;
+        margin: 10px auto;
     }
+
     .section-title {
         padding: 60px 30px 0;
     }
-    
+
     .section-title p {
+        margin-bottom: 20px;
+    }
+
+    article {
         margin-bottom: 40px;
     }
-    article{
-        margin-bottom: 60px;
-    }
+
     .modules {
         justify-content: center;
         gap: 20px;
     }
-    
+
     .module {
-        width: calc(100% - 20px); /* Four cards per row with margin */
-      
+        width: 90%;
+        margin: 0 auto;
     }
-    
+
     .container1 {
         flex-direction: column;
         align-items: center;
         height: auto;
     }
-    
+
     .text-container, .image-container {
         width: 100%;
         margin: 0;
         padding: 0 20px;
     }
-    
+
     .text-container {
-        margin-top: 30px;
+        margin-top: 20px;
     }
-    
+
     .image-container img {
         width: 100%;
         height: auto;
         margin: 0;
         border-radius: 15px;
     }
-    footer {
-        height: auto; /* Adjust height for responsiveness */
-        padding-top: 40px;
-        padding-bottom: 0px;
-      }
-    
-      .txt-content h2 {
-        font-size: 30px;
-      }
-    
-      .txt-content p {
-        margin-bottom: 40px; /* Adjusted margin-bottom */
-      }
-    
-      .container4 {
+
+    .team-vision {
         width: 100%;
-        padding-bottom: 10px;
-        margin: 0px auto 20px; /* Adjusted margins */
-       
-        
-        
-      }
-    
-      .slide-cards {
-        width: 90%; /* Adjust width for smaller screens */
-        animation: slide-card 15s infinite; /* Keep animation */
-       
-       
-      }
-    
-    
-      .slide-card {
-        width: calc(50% - 40px); /* Full width with margin adjustment */
-        height: 500px;
-       
-      
-      }
-    
-      .image-client {
+        display: flex;
+        flex-direction: row; /* Arrange in a single row */
+        justify-content: space-around; /* Distribute images evenly */
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .image-vision {
+        width: 30%; /* Set width to fit 3 images in a row */
+        margin: 10px 0;
+    }
+
+    .image-vision h4,
+    .image-vision span {
+        font-size: 14px;
+    }
+
+    .image1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .txt-content h2 {
+        font-size: 30px;
+    }
+
+    .txt-content p {
+        margin-bottom: 20px;
+    }
+
+    .container4 {
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0px auto;
+    }
+
+    .slide-cards {
+        width: 90%;
+    }
+
+    .slide-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .image-client {
         margin-top: 20px;
-      }
-    
-      .image-client img {
+    }
+
+    .image-client img {
         width: 60px;
         height: 60px;
-      }
-      .slides-cards {
+    }
+
+    .slides-cards {
         width: 100%;
-        animation: slide 12s infinite; /* Speed up animation on smaller screens */
-      }
-    
-      .slides-card {
-        width: 45%; /* Adjust card width for smaller screens */
-        height: auto; /* Adjust height for responsiveness */
-      }
-    
-      aside {
-        height: auto; /* Adjust height for responsiveness */
-        padding-top: 50px; /* Adjust padding for smaller screens */
-      }
-    
-      .txt-part h3 {
-        font-size: 28px; /* Adjust font size for smaller screens */
-      }
-    
-      .txt-part p {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        margin-bottom: 60px; /* Adjust margin for smaller screens */
-      }
-    
-      .img2 img {
-        height: 200px; /* Adjust image height for smaller screens */
-      }
-    
-      .details .name {
-        font-size: 16px; /* Adjust font size for smaller screens */
-      }
-    
-      .details .job {
-        font-size: 14px; /* Adjust font size for smaller screens */
-      }
-    
-      .media-icons a {
+    }
+
+    .slides-card {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    aside {
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .txt-part h3 {
+        font-size: 28px;
+    }
+
+    .txt-part p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .img2 img {
+        height: 200px;
+    }
+
+    .details .name {
+        font-size: 16px;
+    }
+
+    .details .job {
+        font-size: 14px;
+    }
+
+    .media-icons a {
         height: 30px;
         width: 30px;
-        font-size: 12px; /* Adjust font size for smaller screens */
-      }
-      figure {
-        flex-direction: column; /* Stack sections vertically */
-        padding-top: 60px; /* Reduced padding */
-        margin-bottom: 50px; /* Further reduced margin */
-      }
-    
-      .text-vision {
-        width: 85vw; /* Ensure text-vision takes most of the width */
-        font-size: 14px; /* Smaller font size for smaller screens */
-      }
-    
-      .text-vision h3 {
-        font-size: 24px; /* Further reduced font size */
-      }
-    
-      .text-vision p,
-      .text-vision .mt3 {
-        font-size: 12px; /* Smaller font size */
-        line-height: 20px; /* Adjusted line height */
-      }
-    
-      .team-vision {
-        width: 100%; /* Full width */
-        margin-top: 30px; /* Reduced margin */
-        display: flex;
-        flex-direction: row; 
-        /* align-items: center;  */
-        
-        
-        }
-        
-        .image-vision {
-        width: 100%; /* Full width */
-        margin: 10px 0;
-        
-        }
-        
-        .image-vision h4,
-        .image-vision span {
-        font-size: 14px; /* Smaller font size */
-        }
-        
-        .image1 img {
-        width: 120px; /* Smaller image width */
-        height: 120px; /* Smaller image height */
-        }
-        .template {
-            height: auto; /* Allow height to adjust based on content */
-            padding: 20px; /* Reduced padding for smaller screens */
-            margin-top: 560px;
-          }
-        
-          .appointment {
-            width: 90vw; /* Ensure it uses most of the viewport width */
-            padding: 15px; /* Adjusted padding for smaller screens */
-          }
-        
-          .appointment-title h3 {
-            font-size: 22px; /* Further reduced font size */
-          }
-        
-          .appointment-title span {
-            font-size: 22px; /* Adjusted font size */
-          }
-        
-          .appointment-title p {
-            font-size: 14px; /* Adjusted font size for better readability */
-            line-height: 1.5; /* Adjusted line height */
-          }
-        
-          .register {
-            width: 140px; /* Further adjusted width */
-            font-size: 14px; /* Adjusted font size */
-            padding: 8px 16px; /* Adjusted padding */
-          }
-
-          summary {
-            padding-left: 10px; /* Further reduced padding for small screens */
-            padding-top: 40px; /* Further reduced padding for small screens */
-            height: 320vh;
-          }
-        
-          .text-selection h1 {
-            font-size: 28px; /* Further adjusted font size */
-            margin-left: 20px;
-          }
-        
-          .text-selection h5 {
-            font-size: 14px; /* Further adjusted font size */
-            margin-left: 20px;
-          }
-        
-          .questions-container {
-            grid-template-columns: 1fr; /* Ensure single column layout on small screens */
-            gap: 10px; /* Consistent gap size */
-          }
-        
-          .scholarship {
-            padding: 10px; /* Consistent padding */
-          }
-        
-          .scholarship h4 {
-            font-size: 14px; /* Adjusted font size for smaller screens */
-          }
-        
-          .scholarship p {
-            font-size: 20px; /* Adjusted font size for smaller screens */
-            right: 5px; /* Adjusted right spacing */
-          }
-          figcaption {
-            padding-left: 10px; /* Adjusted padding for smaller screens */
-            padding-right: 10px; /* Adjusted padding for smaller screens */
-            margin-top : 0;
-            margin-bottom: 60px;
-          }
-        
-          .certificate h3 {
-            font-size: 24px; /* Further adjusted font size */
-          }
-        
-          .logos-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two logos per row on smaller screens */
-            gap: 15px; /* Further reduced gap for smaller screens */
-            margin: 0 100px 0 200px;
-          }
-        
-          .logos {
-            width: 100px; /* Further adjusted width */
-            height: 80px; /* Further adjusted height */
-          }
-        
-          .table img {
-            width: 60px; /* Further adjusted width for smaller screens */
-          }
-          .foot {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two logos per row on smaller screens */
-          }
-        
-          .infoot,
-          .foot1,
-          .foot2 {
-            flex: none;
-            width: 100%; /* Ensure full width for each section */
-            padding: 10px; /* Adjust padding for smaller screens */
-          }
-        
-          .infoot img {
-            width: 150px; /* Adjust width for smaller screens */
-          }
-        
-          .foot1 h2,
-          .foot2 h3 {
-            font-size: 1.2em; /* Adjust font size for smaller screens */
-          }
-        
-          .foot1 ul li a {
-            font-size: 16px; /* Adjust font size for smaller screens */
-          }
-          
-          .map-container {
-            margin-top: 1.5em; /* Added margin for spacing */
-            width: 130%;
-          }
-          #scroll-up {
-            right: 35px; /* Adjust position from the right */
-            bottom: 20px; /* Adjust position from the bottom */
-            width: 40px; /* Reduce width */
-            height: 40px; /* Reduce height */
-            line-height: 36px; /* Adjust line-height for the reduced height */
-            font-size: 18px; /* Adjust font size */
-          }
-        
-          #scroll-up i {
-            font-size: 20px; /* Adjust icon size */
-          }
+        font-size: 12px;
     }
+
+    figure {
+        flex-direction: column;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .text-vision {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .text-vision h3 {
+        font-size: 24px;
+    }
+
+    .text-vision p,
+    .text-vision .mt3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .template {
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .appointment {
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .appointment-title h3 {
+        font-size: 22px;
+    }
+
+    .appointment-title span {
+        font-size: 22px;
+    }
+
+    .appointment-title p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .register {
+        width: 100%;
+        max-width: 140px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    summary {
+        padding-left: 10px;
+        padding-top: 20px;
+        height: auto;
+    }
+
+    .text-selection h1 {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    .text-selection h5 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .questions-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .scholarship {
+        padding: 10px;
+    }
+
+    .scholarship h4 {
+        font-size: 14px;
+    }
+
+    .scholarship p {
+        font-size: 12px;
+    }
+
+    figcaption {
+        padding-left: 10px; 
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
+
+    .certificate h3 {
+        font-size: 24px;
+    }
+
+    .logos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 0 auto;
+    }
+
+    .logos {
+        width: 100px;
+        height: 80px;
+    }
+
+    .table img {
+        width: 60px;
+    }
+
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infoot,
+    .foot1,
+    .foot2 {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .infoot img {
+        width: 150px;
+    }
+
+    .foot1 h2,
+    .foot2 h3 {
+        font-size: 1.2em;
+    }
+
+    .foot1 ul li a {
+        font-size: 16px;
+    }
+
+    .map-container {
+        margin-top: 1.5em;
+        width: 100%;
+        max-width: 130%;
+    }
+
+    #scroll-up {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+
+    #scroll-up i {
+        font-size: 20px;
+    }
+}
+
     @media  (max-width:697px){
         .checkbtn {
             font-size: 25px; /* Smaller font size for smaller screens */
@@ -2452,475 +2481,487 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     }
         
     
-    @media (max-width: 640px) {
-        .checkbtn {
-            font-size: 25px; /* Smaller font size for smaller screens */
-            padding: 2px; /* Adjust padding for better fit */
-            margin-left: 550px; /* Adjust margin to fit better on small screens */
-            margin-right: 10px; /* Adjust margin-right for better alignment */
-        }
-    
-        nav ul {
-            top: 10vh; /* Adjust top position for smaller screens */
-        }
-    
-        nav ul li {
-            padding: 12px; /* Adjust padding for smaller screens */
-        }
-    
-        nav ul li a {
-            padding: 8px; /* Adjust padding for smaller screens */
-        }
-        nav img{
-            width: 50vh;
-            height: 20vh;
-        }
-        .hero-section {
-            height: 280vh; /* Adjusted for smaller screens */
-            padding: 20px; /* Reduced padding */
-          }
-          
-          .heading h1 {
-            font-size: 18px; /* Further adjusted for smaller screens */
-          }
-          
-          .heading h2 {
-            font-size: 40px; /* Further adjusted for smaller screens */
-          }
-          
-          .contact {
-            font-size: 12px; /* Further adjusted for smaller screens */
-            padding: 8px 16px; /* Further adjusted for smaller screens */
-          }
-          .choose-option {
-            padding: 10px; /* Reduced padding for smaller screens */
-            height: 600vh;
-        }
-    
-        .choose-option h2 {
-            font-size: 28px; /* Further reduced font size */
-            padding-top: 40px; /* Further adjusted padding */
-            margin-top: 5px; /* Further adjusted margin */
-        }
-    
-        .choose-option p {
-            font-size: 14px; /* Further reduced font size */
-        }
-    
-        .whyChoose-cards {
-            margin-top: 20px; /* Further reduced margin-top */
-            flex-direction: column; /* Stack cards vertically */
-        }
-    
-        .support-card {
-            width: 100%; /* Full width */
-            max-width: none; /* Removed maximum width */
-            margin-bottom: 20px; /* Added margin-bottom */
-        }
-    
-        .support-card:last-child {
-            margin-bottom: 0; /* Remove margin for the last card */
-        }
-        .video-section {
-            padding: 10px; /* Reduced padding */
-        }
-    
-        .responsive-video {
-            height: auto;
-            max-width: 100%; /* Ensure the video fits the screen width */
-        }
-    
-        .Courses {
-            padding-left: 50px; /* Remove left padding */
-        }
-    
-        .containers {
-            flex-direction: column; /* Stack items vertically */
-          
-        }
-    
-        .containers hr {
-            width: 30px; /* Reduced width */
-        }
-    
-        .containers h3 {
-            margin-left: 0; /* Remove left margin */
-        }
-    
-        .vwork h1 {
-            font-size: 28px; /* Further reduced font size */
-        }
-    
-        .pa {
-            font-size: 12px; /* Further reduced font size */
-            margin-top: 10px; /* Reduced margin */
-        }
-    
-        .pa2 {
-            padding-top: 5px; /* Reduced padding */
-            padding-bottom: 10px; /* Reduced padding */
-        }
-    
-        .check-circle li {
-            font-size: 14px; /* Adjusted font size */
-            padding: 0 0 10px 20px; /* Adjusted padding */
-        }
-    
-        .call-option {
-            width: 100%; /* Full width */
-            max-width: 300px; /* Maximum width */
-            font-size: 14px; /* Further reduced font size */
-            padding: 10px; /* Adjusted padding */
-        }
-        .all-courses{
-            height: 870vh;
-        }
-        .roys {
-            grid-template-columns: 1fr; /* Stack items vertically */
-            padding: 0 10px; /* Adjusted padding */
-        }
-    
-        .section-title {
-            padding: 20px 10px; /* Reduced padding */
-            margin-bottom: 30px; /* Reduced margin-bottom */
-        }
-    
-        .section-title h3 {
-            font-size: 28px; /* Reduced font size */
-        }
-    
-        .section-title p {
-            font-size: 14px; /* Reduced font size */
-        }
-    
-        .single-service {
-            min-height: 250px; /* Adjusted height */
-            padding: 20px; /* Reduced padding */
-        }
-    
-        .service-content {
-            padding: 5px; /* Reduced padding */
-            top: 120px; /* Adjusted top position */
-        }
-    
-        .service-content a {
-            font-size: 16px; /* Reduced font size */
-        }
-        .Achievement{
-            height: 500vh
-        }
-        .achieve-text {
-            padding: 0 10px; /* Further reduced padding for very small screens */
-        }
-        .achieve-text h2 {
-            font-size: 20px; /* Further reduced font size */
-        }
-        .achieve-text p {
-            font-size: 12px; /* Further reduced font size */
-        }
-        .achieve-card {
-            width: 80%; /* Ensure cards take full width on small screens */
-            max-width: none; /* Remove maximum width restriction */
-        }
-        .achieve-card i {
-            font-size: 20px; /* Further reduced font size */
-            width: 50px; /* Further reduced width */
-            height: 50px; /* Further reduced height */
-            line-height: 48px; /* Further reduced line height */
-        }
-        .achieve-card h5 {
-            font-size: 20px; /* Further reduced font size */
-        }
-        .achieve-card p {
-            font-size: 14px; /* Further reduced font size */
-        }
-        .section-title {
-            padding: 40px 10px 0; /* Further adjusted padding */
-        }
-        .section-title h3 {
-            font-size: 24px; /* Further reduced font size */
-        }
-        .section-title p {
-            font-size: 12px; /* Further reduced font size */
-            margin-bottom: 20px; /* Further reduced margin */
-        }
-        .modules {
-            gap: 12px; /* Further reduced gap between modules */
-        }
-        .module {
-            width: 100%; /* Full width for small screens */
-            max-width: 160px; /* Further reduced max-width */
-        }
-        .module i {
-            font-size: 24px; /* Further reduced font size */
-        }
-        .module span {
-            font-size: 12px; /* Further reduced font size */
-        }
-        .text-container {
-            padding: 10px; /* Further reduced padding */
-        }
-        .text-container h4 {
-            font-size: 20px; /* Further reduced font size */
-        }
-        .text-container h5 {
-            font-size: 12px; /* Further reduced font size */
-        }
-        .text-container span {
-            width: 60px; /* Further reduced width */
-        }
-        .text-container p {
-            font-size: 10px; /* Further reduced font size */
-            line-height: 20px; /* Further reduced line-height */
-        }
-        .text-container ul li {
-            font-size: 12px; /* Further reduced font size */
-            padding-left: 8px; /* Further reduced padding */
-        }
-        .image-container img {
-            width: 100%; /* Full width for smaller screens */
-            height: auto; /* Maintain aspect ratio */
-        }
-        footer {
-            height: auto;
-            padding: 40px 0;
-          }
-        
-          .txt-content h2 {
-            font-size: 25px;
-          }
-        
-          .container4 {
-            width: 95%;
-          }
-        
-          .slide-cards {
-            flex-direction: column;
-            animation: none;
-          }
-        
-          .slide-card {
-            width: 90%;
-            margin: 0 auto 20px;
-          }
-          aside {
-            height: auto; /* Adjust height for responsiveness */
-            padding-top: 50px; /* Adjust padding for smaller screens */
-          }
-        
-          .txt-part h3 {
-            font-size: 28px; /* Adjust font size for smaller screens */
-          }
-        
-          .txt-part p {
-            font-size: 14px; /* Adjust font size for smaller screens */
-            margin-bottom: 60px; /* Adjust margin for smaller screens */
-          }
-        
-          .img2 img {
-            height: 200px; /* Adjust image height for smaller screens */
-          }
-        
-          .details .name {
-            font-size: 16px; /* Adjust font size for smaller screens */
-          }
-        
-          .details .job {
-            font-size: 14px; /* Adjust font size for smaller screens */
-          }
-        
-          .media-icons a {
-            height: 30px;
-            width: 30px;
-            font-size: 12px; /* Adjust font size for smaller screens */
-          }
-          figure {
-            flex-direction: column;
-            align-items: center;
-            padding-top: 50px;
-            margin-bottom: 100px;
-          }
-        
-          .text-vision {
-            width: 90vw;
-            font-size: 14px;
-            margin-left: 0;
-            padding: 0 10px;
-           
-          }
-        
-          .text-vision h3 {
-            font-size: 30px;
-          }
-        
-          .text-vision p,
-          .text-vision .mt3 {
-            font-size: 14px;
-            line-height: 24px;
-          }
-        
-          .team-vision {
-            width: 90vw;
-            margin-top: 20px;
-          }
-        
-          .image-vision {
-            margin-left: 0;
-          }
-        
-          .image1 img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
-          }
-          .template {
-            height: auto;
-            padding: 20px;
-          }
-        
-          .appointment {
-            width: 90vw;
-            height: auto;
-            padding: 15px;
-          }
-        
-          .appointment-title {
-            padding-top: 15px;
-            margin-left: 0;
-            margin: 0;
-          }
-        
-          .appointment-title h3 {
-            font-size: 24px;
-          }
-        
-          .appointment-title span {
-            font-size: 24px;
-          }
-        
-          .appointment-title p {
-            font-size: 14px;
-            padding-top: 5px;
-            line-height: 1.5;
-          }
-        
-          .register {
-            width: auto;
-            margin-top: 20px;
-            margin-left: 0;
-            text-align: center;
-            padding: 10px 20px;
-          }
-        
-          .register a {
-            font-size: 16px;
-          }
-          summary {
-            padding-top: 50px;
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        
-          .text-selection h1 {
-            font-size: 28px;
-          }
-        
-          .text-selection h5 {
-            font-size: 14px;
-          }
-        
-          .questions-container {
-            grid-template-columns: 1fr;
-            gap: 15px;
-            width: 90%;
-          }
-        
-          .scholarship {
-            padding: 10px 15px;
-          }
-        
-          .scholarship h4 {
-            font-size: 14px;
-          }
-        
-          .scholarship p {
-            font-size: 18px;
-          }
-          figcaption {
-            padding-top: 20px;
-            padding-bottom: 20px;
-          }
-        
-          .certificate h3 {
-            font-size: 24px; /* Further reduce font size */
-          }
-        
-          .logos-container {
-            gap: 15px; /* Further reduce gap */
-            padding-top: 20px; /* Adjust padding */
-          }
-        
-          .logos {
-            width: 80px; /* Further adjust width */
-            height: 60px; /* Further adjust height */
-          }
-        
-          .table img {
-            width: 60px; /* Further adjust image size */
-          }
-          .foot {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          }
-        
-          .infoot,
-          .foot1,
-          .foot2 {
-            padding: 10px 0;
-            flex: none;
-            width: 100%;
-          }
-        
-          .infoot img {
-            width: 150px;
-          }
-        
-          .infoot p {
-            font-size: 16px;
-          }
-        
-          .foot1 h2,
-          .foot2 h3 {
-            font-size: 1.2em;
-          }
-        
-          .foot1 ul {
-            padding-inline-start: 20px;
-          }
-        
-          .foot1 ul li a {
-            font-size: 16px;
-          }
-        
-          .map-container {
-            height: 150px;
-          }
-        
-          .map-container iframe {
-            height: 100%;
-          }
-          #scroll-up {
-            right: 20px; /* Adjust position for smaller screens */
-            bottom: 30px; /* Adjust position for smaller screens */
-            width: 40px; /* Adjust size for smaller screens */
-            height: 40px; /* Adjust size for smaller screens */
-            line-height: 38px; /* Adjust line-height for smaller screens */
-            font-size: 18px; /* Adjust font size for smaller screens */
-          }
-        
-          #scroll-up i {
-            font-size: 22px; /* Adjust icon size for smaller screens */
-          }
-        }
-    
+   @media (max-width: 640px) {
+    .checkbtn {
+      font-size: 25px;
+      padding: 5px;
+      margin: 0 auto;
+      position: fixed;
+      left: auto;
+      right: 10px;
+      top: 10px;
+      z-index: 1000;
+      display: block;
+  }
+
+  nav ul {
+      top: 10vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  nav ul li {
+      padding: 12px;
+  }
+
+  nav ul li a {
+      padding: 8px;
+  }
+
+  nav img {
+      width: 30vw;
+      height: auto;
+  }
+
+  .hero-section {
+      padding: 20px;
+      box-sizing: border-box; /* Include padding in height calculations */
+      height: auto;
+  }
+
+  .heading {
+      padding-top: 100px;
+      margin-top: 0;
+  }
+
+  .heading h1 {
+      font-size: 20px;
+  }
+
+  .heading h2 {
+      font-size: 24px;
+  }
+
+  .contact {
+      font-size: 12px;
+      padding: 8px 16px;
+  }
+
+    .choose-option {
+        padding: 10px;
+        height: auto;
+    }
+
+    .choose-option h2 {
+        font-size: 24px;
+        padding-top: 20px;
+        margin-top: 5px;
+    }
+
+    .choose-option p {
+        font-size: 14px;
+    }
+
+    .whyChoose-cards {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .support-card {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    .support-card:last-child {
+        margin-bottom: 0;
+    }
+
+    .video-section {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .responsive-video {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .Courses {
+        padding-left: 10px;
+    }
+
+    .containers {
+        flex-direction: column;
+    }
+
+    .containers hr {
+        width: 30px;
+    }
+
+    .containers h3 {
+        margin-left: 0;
+    }
+
+    .vwork h1 {
+        font-size: 28px;
+    }
+
+    .pa {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .pa2 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .check-circle li {
+        font-size: 14px;
+        padding: 0 0 10px 20px;
+    }
+
+    .call-option {
+        width: 100%;
+        max-width: 300px;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .all-courses {
+        height: auto;
+    }
+
+    .roys {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        padding: 20px 10px;
+        margin-bottom: 30px;
+    }
+
+    .section-title h3 {
+        font-size: 24px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+    }
+
+    .single-service {
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    .service-content {
+        padding: 5px;
+        top: 120px;
+    }
+
+    .service-content a {
+        font-size: 16px;
+    }
+
+    .Achievement {
+        height: auto;
+    }
+
+    .achieve-text {
+        padding: 0 10px;
+    }
+
+    .achieve-text h2 {
+        font-size: 20px;
+    }
+
+    .achieve-text p {
+        font-size: 12px;
+    }
+
+    .achieve-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .achieve-card i {
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+    }
+
+    .achieve-card h5 {
+        font-size: 20px;
+    }
+
+    .achieve-card p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        padding: 40px 10px 0;
+    }
+
+    .section-title h3 {
+        font-size: 24px;
+    }
+
+    .section-title p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .modules {
+        gap: 12px;
+    }
+
+    .module {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .module i {
+        font-size: 24px;
+    }
+
+    .module span {
+        font-size: 12px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .text-container h4 {
+        font-size: 20px;
+    }
+
+    .text-container h5 {
+        font-size: 12px;
+    }
+
+    .text-container span {
+        width: 60px;
+    }
+
+    .text-container p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .text-container ul li {
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .txt-content h2 {
+        font-size: 25px;
+    }
+
+    .comment {
+        height: auto;
+    }
+
+    .container4 {
+        width: 80%;
+    }
+
+    .slide-cards,
+    .slides-cards {
+        animation: none;
+    }
+
+    .slide-card,
+    .slides-card {
+        width: 90%;
+        height: 350px;
+        margin: 0 auto 20px;
+    }
+
+    .container5 {
+        width: 80%;
+    }
+
+    aside {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .txt-part h3 {
+        font-size: 28px;
+    }
+
+    .txt-part p {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    .img2 img {
+        height: 200px;
+    }
+
+    .details .name {
+        font-size: 16px;
+    }
+
+    .details .job {
+        font-size: 14px;
+    }
+
+    .media-icons a {
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+
+    figure {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .text-vision {
+        width: 90vw;
+        font-size: 14px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .text-vision h3 {
+        font-size: 30px;
+    }
+
+    .text-vision p,
+    .text-vision .mt3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .team-vision {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    .image-vision {
+        margin-left: 0;
+    }
+
+    .image1 img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .template {
+        height: auto;
+        padding: 20px;
+    }
+
+    .appointment {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    .appointment-title {
+        padding-top: 15px;
+        margin-left: 0;
+        margin: 0;
+    }
+
+    .appointment-title h3 {
+        font-size: 24px;
+    }
+
+    .appointment-title span {
+        font-size: 24px;
+    }
+
+    .appointment-title p {
+        font-size: 14px;
+        padding-top: 5px;
+        line-height: 1.5;
+    }
+
+    .register {
+        width: auto;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .register a {
+        font-size: 16px;
+    }
+
+    summary {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text-selection h1 {
+        font-size: 28px;
+    }
+
+    .text-selection h5 {
+        font-size: 14px;
+    }
+
+    .questions-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .scholarship {
+        padding: 10px 15px;
+    }
+
+    .scholarship h4 {
+        font-size: 14px;
+    }
+
+    .scholarship p {
+        font-size: 18px;
+    }
+
+    figcaption {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .certificate h3 {
+        font-size: 24px;
+    }
+
+    .logos-container {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logos-container img {
+        height: 40px;
+        width: auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .certificate h4 {
+        font-size: 14px;
+    }
+
+    .certificate p {
+        font-size: 14px;
+    }
+}
