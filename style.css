@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: inter sans-serif;
+    font-family: inter;
+    overflow-x:none ;
   }
   .checkbtn {
     display: none;
@@ -83,68 +85,70 @@ input{
     background-color: #38abf3;
     color: #fff;
   }
-  .hero-section{
-    background: url(./images.jpeg);
-  display: flex;
-  align-items:center ;
-   width: 100vw; 
-  height: 105vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px;
-  }
-  .hero-section .heading{
-   position: relative;
-    
-   
-    flex-direction: column;
-    z-index: 20;
-    
-  }
-  .heading h1{
-    font-weight: 600;
-    font-size: 25px;
-   color: #fff;
-    text-shadow: 0 0 10px rgb(0,0 , 0);
-   
-  }
-  .heading h2{
-  text-shadow: 0 0 10px rgb(0,0 , 0) ;
-  font-size: 70px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
-  }
-  
-   .contact {
-  cursor: pointer;
-  color: #38abf3;
-  text-align: center;
-  font-size: 16px;
-  padding: 15px;
-  border-radius: 30px;
-  border: 2px solid #38abf3;
-  letter-spacing: 1px;
-  font-weight: 700;
-  transition: .5s;
-  overflow: hidden;
-  width: 180px;
-  }
-  
-  .contact span{
-    align-items: center;
+  .hero-section {
     position: relative;
-    margin: 0;
-    text-align: center;
-  
+    display: flex;
+    align-items: center;
+    width: 100vw;
+   
+    height: 105vh;
+    padding: 50px;
+    overflow: hidden; 
   }
   
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+  }
   
-  .contact:hover{
+  .hero-section .heading {
+    position: relative;
+    z-index: 20; 
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .heading h1, .heading h2 {
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  
+  .heading h1 {
+    font-size: 25px;
+  }
+  
+  .heading h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .contact {
+    cursor: pointer;
+    color: #38abf3;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #38abf3;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.5s;
+    width: 180px;
+    position: relative;
+    z-index: 20;
+  }
+  
+  .contact:hover {
     color: #fff;
     background-color: #38abf3;
   }
+  
   .choose-option{
     align-items: center; 
    display: flex;
@@ -159,7 +163,12 @@ input{
    font-size: 40px;
    padding-top: 100px;
    margin-top: 15px;
+   
   }
+  .hidden {
+    visibility: hidden;
+  }
+  
   .choose-option p{
    width: 70% ;
    margin: 0;
@@ -847,6 +856,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     border-radius: 100%;
     transition: all 0.4s ease;
     padding: 3px;
+    background-color: rgb(228, 230, 231);
   }
   
   .client-title {
@@ -1352,6 +1362,31 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
       .foot1 li {
         margin: 1rem 0;
       }
+      .medias-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+       
+      }
+      
+      .medias-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+        color: #fff;
+      
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+      
+      .media-icons a:hover {
+        border-color: #38abf3;
+        color: #38abf3;
+        background: white;
+      }
       
       .foot1 ul li a {
         font-size: 18px;
@@ -1408,8 +1443,38 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
       cursor: pointer;
       background:#666 ;
      }
- 
-  
+    .whatapp-icon{
+        left: 25px;
+        bottom: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: rgb(45, 183, 66);
+        overflow: hidden;
+        width: 56px;
+        height: 56px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+       box-shadow: 2px 3px 7px black;
+    }
+    .whatapp-icon i{
+        width: 100%;
+        height: 100%;
+        font-size: 35px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      
+      }
+      .whatapp-icon a{
+        text-decoration: none;
+        color: white;
+      }
+      .whatapp-icon i:hover {
+      color: #3BBBB7;
+        cursor: pointer;
+      }
+      
      @media (max-width: 1024px) {
       nav {
           padding: 10px 15px;
@@ -2414,10 +2479,14 @@ nav  ul li a:hover {
     .table img {
         width: 60px;
     }
+    .footer-content{
+      flex-direction: column;
+    }
 
     .foot {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+         display: grid;
+       
+        
     }
 
     .infoot,
@@ -2425,11 +2494,15 @@ nav  ul li a:hover {
     .foot2 {
         flex: none;
         width: 100%;
+        flex-direction: column;
         padding: 10px;
     }
 
     .infoot img {
         width: 150px;
+    }
+    .foot1{
+      flex-direction: column;
     }
 
     .foot1 h2,
@@ -2444,7 +2517,7 @@ nav  ul li a:hover {
     .map-container {
         margin-top: 1.5em;
         width: 100%;
-        max-width: 130%;
+       
     }
 
     #scroll-up {
@@ -2763,45 +2836,44 @@ nav  ul li a:hover {
         width: 100%;
         height: auto;
     }
-   
     footer {
-        height: 80vh;
-        padding: 40px 0;
-    }
+      height: 80vh;
+      padding: 40px 0;
+  }
 
-    .txt-content h2 {
-        font-size: 25px;
-    }
+  .txt-content h2 {
+      font-size: 25px;
+  }
 
-    .comment {
-        height: auto;
-    }
+  .comment {
+      height: auto;
+  }
 
-    .container4 {
-        width: 80%;
-    }
+  .container4 {
+      width: 80%;
+  }
 
-    .slide-cards {
-        width: 90%;
-        gap: 15px;
-        animation: slide-card-responsive 6s infinite;
-    }
+  .slide-cards {
+      width: 90%;
+      gap: 15px;
+      animation: slide-card-responsive 6s infinite;
+  }
 
-    @keyframes slide-card-responsive {
-        0%, 10% { transform: translateX(0); }
-        20%, 30% { transform: translateX(-25%); }
-        40%, 50% { transform: translateX(-50%); }
-        60%, 70% { transform: translateX(-75%); }
-        80%, 90% { transform: translateX(-100%); }
-        100% { transform: translateX(0); }
-    }
+  @keyframes slide-card-responsive {
+      0%, 10% { transform: translateX(0); }
+      20%, 30% { transform: translateX(-25%); }
+      40%, 50% { transform: translateX(-50%); }
+      60%, 70% { transform: translateX(-75%); }
+      80%, 90% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+  }
 
-    .slide-card,
-    .slides-card {
-        width: 90%;
-        height: 350px;
-        margin: 0 auto 20px;
-    }
+  .slide-card,
+  .slides-card {
+      width: 90%;
+      height: 350px;
+      margin: 0 auto 20px;
+  }
 
     .container5 {
         width: 80%;
@@ -2844,6 +2916,7 @@ nav  ul li a:hover {
         align-items: center;
         padding-top: 50px;
         margin-bottom: 100px;
+        height: auto;
     }
 
     .text-vision {
@@ -2881,12 +2954,14 @@ nav  ul li a:hover {
     .template {
         height: auto;
         padding: 20px;
+        margin-top: auto;
     }
 
     .appointment {
         width: 90vw;
         height: auto;
         padding: 15px;
+        
     }
 
     .appointment-title {
@@ -2925,6 +3000,7 @@ nav  ul li a:hover {
         padding-top: 50px;
         padding-left: 10px;
         padding-right: 10px;
+        height: auto;
     }
 
     .text-selection h1 {

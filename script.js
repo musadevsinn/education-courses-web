@@ -1,23 +1,24 @@
-let currentIndex = 0;
-const slides = document.querySelector('.slides');
-const cards = document.querySelectorAll('.card');
-const totalCards = cards.length;
-const visibleCards = 4;
-const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
-
-function slideCards() {
-  currentIndex++;
-  if (currentIndex === totalCards) {
-    currentIndex = 0;
-    slides.style.transition = 'none';
-    slides.style.transform = `translateX(0px)`;
-    setTimeout(() => {
-      slides.style.transition = 'transform 0.5s ease-in-out';
-      slideCards();
-    }, 50);
-  } else {
-    slides.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-  }
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 
-setInterval(slideCards, 2000); // Adjust the interval time as needed
+// Function to add the .in-view class to elements in the viewport
+function addInViewClass() {
+    const animatedElements = document.querySelectorAll('.animated');
+    animatedElements.forEach((element) => {
+        if (isInViewport(element)) {
+            element.classList.add('in-view');
+        }
+    });
+}
+
+// Run the function on scroll and on initial load
+window.addEventListener('scroll', addInViewClass);
+window.addEventListener('load', addInViewClass);
