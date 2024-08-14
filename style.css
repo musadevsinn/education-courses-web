@@ -6,6 +6,15 @@
     font-family: inter;
     overflow-x:none ;
   }
+  .zommin {
+    animation-duration: 0s;
+    animation-delay: 0s;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+  }
+  
   .checkbtn {
     display: none;
     color: white;
@@ -91,7 +100,7 @@ input{
     align-items: center;
     width: 100vw;
    
-    height: 105vh;
+    height: 100vh;
     padding: 50px;
     overflow: hidden; 
   }
@@ -650,6 +659,27 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   .module:focus {
     background-color: #3BBBB7;
   }
+  .wow {
+    visibility: hidden;
+  }
+  
+  .wow.animated {
+    visibility: visible;
+    animation-duration: 1s; /* Adjust this value as needed */
+  }
+  
+  .wow.fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
   .module:focus i {
     color: white;
@@ -907,9 +937,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     box-sizing: border-box;
     border: 3px solid #ffffff3d;
     flex-shrink: 0; 
-   
-   
-  }
+  }  
   aside {
     
     background-color: #ECF7FF;
@@ -1070,20 +1098,25 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
    
   }
   
-  .image-vision h4,
-  .image-vision span {
+  .image-vision h4 {
     font-size: 15px;
     font-weight: bolder;
      margin: 0; 
   
   }
+  .image-vision span {
+    font-size: 15px;
+    font-weight: 500;
+     margin: 0; 
   
+  }
   .image1 {
     display: flex;
     justify-content: center;
   }
   
   .image1 img {
+   margin-top: 20px;
     width: 150px;
     height: 150px;
     border-radius: 60%;
@@ -2287,54 +2320,37 @@ nav  ul li a:hover {
     }
 
     footer {
-        height: auto;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
+      height: 300px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+  }
 
-    .txt-content h2 {
-        font-size: 30px;
-    }
+  .txt-content h2 {
+      font-size: 30px;
+  }
 
-    .txt-content p {
-        margin-bottom: 20px;
-    }
+  .txt-content p {
+      margin-bottom: 20px;
+  }
 
-    .container4 {
-        width: 100%;
-        padding-bottom: 20px;
-        margin: 0px auto;
-    }
+  .container4 {
+      width: 100%;
+      padding-bottom: 20px;
+      margin: 0px auto;
+      overflow-x: hidden; /* Prevent horizontal scroll on the page */
+  }
 
-    .slide-cards {
-        width: 90%;
-    }
+  .slide-cards {
+      display: flex;
+      gap: 25px; /* Maintain some gap between cards */
+      width: calc(351px * 6); /* Adjust width based on the number of cards */
+      animation: slide-card-horizontal 20s linear infinite;
+  }
 
-    .slide-card {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .image-client {
-        margin-top: 20px;
-    }
-
-    .image-client img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .slides-cards {
-        width: 100%;
-    }
-
-    .slides-card {
-        width: 90%;
-        max-width: 300px;
-        height: auto;
-    }
+  .slide-card {
+      width: 351px; /* Keep the card width fixed */
+      height: auto;
+  }
 
     aside {
         height: auto;
@@ -2837,7 +2853,7 @@ nav  ul li a:hover {
         height: auto;
     }
     footer {
-      height: 80vh;
+      height: 600px;
       padding: 40px 0;
   }
 
@@ -2845,36 +2861,32 @@ nav  ul li a:hover {
       font-size: 25px;
   }
 
-  .comment {
-      height: auto;
-  }
-
   .container4 {
-      width: 80%;
+      width: 100%;
+      overflow-x: hidden;
   }
 
   .slide-cards {
-      width: 90%;
+      display: flex;
       gap: 15px;
-      animation: slide-card-responsive 6s infinite;
+      width: calc(300px * 6); /* Adjust based on the number of cards */
+      animation: slide-card-horizontal 20s linear infinite;
   }
 
-  @keyframes slide-card-responsive {
-      0%, 10% { transform: translateX(0); }
-      20%, 30% { transform: translateX(-25%); }
-      40%, 50% { transform: translateX(-50%); }
-      60%, 70% { transform: translateX(-75%); }
-      80%, 90% { transform: translateX(-100%); }
-      100% { transform: translateX(0); }
+  .slide-card {
+      width: 300px; /* Adjust width to fit smaller screens */
+      height: auto;
   }
 
-  .slide-card,
-  .slides-card {
-      width: 90%;
-      height: 350px;
-      margin: 0 auto 20px;
-  }
 
+@keyframes slide-card-horizontal {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
     .container5 {
         width: 80%;
     }
@@ -2910,7 +2922,17 @@ nav  ul li a:hover {
         width: 30px;
         font-size: 12px;
     }
+    .slides-cards {
+      display: flex;
+      gap: 15px;
+      width: calc(300px * 6); /* Adjust based on the number of cards */
+      animation: slide-card-horizontal 20s linear infinite;
+  }
 
+  .slides-card {
+      width: 300px; /* Adjust width to fit smaller screens */
+      height: auto;
+  }
     figure {
         flex-direction: column;
         align-items: center;
@@ -3059,5 +3081,8 @@ nav  ul li a:hover {
 
     .certificate p {
         font-size: 14px;
+    }
+    #scroll-up{
+      bottom: 50px;
     }
 }

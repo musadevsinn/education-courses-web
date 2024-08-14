@@ -1,78 +1,170 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Animation Example</title>
-    <link rel="stylesheet" href="./kkk.css">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Inter, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        nav {
+            background-color: #fff;
+            width: 100%;
+            height: 13vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: fixed;
+            z-index: 100;
+        }
+        
+        nav img {
+            height: 10vh;
+            width: 28vh;
+            margin-bottom: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        nav ul li {
+            padding: 10px;
+            background-color: #fff;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #38abf3;
+            font-weight: bold;
+            transition: 0.5s ease;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        nav ul li a:hover {
+            border-top: 3px solid #38abf3;
+        }
+        
+        nav .btn {
+            margin-right: 30px;
+            cursor: pointer;
+            text-align: center;
+            color: #38abf3;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            border: 2px solid #38abf3;
+            letter-spacing: 1px;
+            transition: 0.8s;
+            font-weight: 700;
+            overflow: hidden;
+        }
+        
+        nav .btn:hover {
+            background-color: #38abf3;
+            color: #fff;
+        }
+
+        #checkbtn {
+            display: none;
+        }
+
+        .checkbtn {
+            display: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #3BBBB7;
+            padding: 10px;
+            position: fixed;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            z-index: 101;
+        }
+
+        @media (max-width: 768px) {
+            .checkbtn {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                position: fixed;
+                top: 13vh;
+                left: 0;
+                background-color: #fff;
+                z-index: 100;
+            }
+
+            nav ul li {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 10px;
+            }
+
+            nav img {
+                height: auto;
+                width: 120px; /* Adjust to restore the logo size */
+                max-width: 50vh; /* Ensure it stays within bounds */
+            }
+
+            #checkbtn:checked ~ ul {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
-  <section class="container">
-    <div class="heading">
-    <h1>
-        TURNING YOUR ONLINE
-    </h1>
-    <h2 style="opacity: 1; transform: translateY(1px) translateZ(0px);">VISION <br>INTO REALITY</h2>
-    <div class="contact" style="opacity: 1; transform: translateY(1px) translateZ(0px);">
-   
-        <span>Contact Us</span>
-      </div> 
-   </div>
-  
-   </section>
-<div class="choose-option">
-    <h2>Why Choose Us</h2>
-    <p>Pakistan's 1st bootcamp where students can transform their dreams into reality in the field of information and technology.</p>
-    <div class="whyChoose-cards">
-        <div class="support-card" id="card1">
-            <div class="headset"><i class="fa-solid fa-headset fa-2xl"></i></div>
-            <h2>24/7 Support</h2>
-            <p>We are just a text away, You<br> can book your appointment<br> whenever you want.</p>
-        </div>
-        <div class="support-card" id="card2">
-            <div class="headset"><i class="fa-solid fa-chalkboard-user" id="icon1"></i></div>
-            <h2>Qualified Staff</h2>
-            <p>We are a group of highly qualified motivated professionals.</p>
-        </div>
-        <div class="support-card" id="card3">
-            <div class="headset"><i class="fa-solid fa-certificate" id="icon2"></i></div>
-            <h2>Successfully Certified</h2>
-            <p>We also provide certifications like Microsoft, AWS, Azure, and Coursera.</p>
-        </div>
-        <div class="support-card" id="card4">
-            <div class="headset"><i class="fa-solid fa-handshake-angle" id="icon3"></i></div>
-            <h2>Job Placement</h2>
-            <p>Many of our students have joined tech companies as senior developers.</p>
-        </div>
+    <div class="zommin">
+        <nav>
+            <input id="checkbtn" type="checkbox">
+            <label for="checkbtn" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>  
+            <img src="./images/logo.png" alt="">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#comments">SUCCESSFUL STORIES</a></li>
+                <li><a href="#outline">COURSE OUTLINE</a></li>
+                <li><a href="#courses">ABOUT US</a></li>
+            </ul>
+            <div class="btn">
+                <span>Contact Us</span>
+            </div>
+        </nav>
     </div>
-</div>
+    
+    <script>
+        // Get elements
+        const checkbtn = document.getElementById('checkbtn');
+        const menu = document.querySelector('nav ul');
 
-<script>
-    // Function to check if an element is in the viewport
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    // Function to add the .in-view class to elements in the viewport
-    function addInViewClass() {
-        const elements = document.querySelectorAll('.choose-option, .support-card');
-        elements.forEach((element) => {
-            if (isInViewport(element)) {
-                element.classList.add('in-view');
+        // Close menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!checkbtn.checked) return; // If menu is not open, do nothing
+            if (!event.target.closest('nav')) {
+                checkbtn.checked = false; // Uncheck the checkbox to close the menu
             }
         });
-    }
-
-    // Run the function on scroll and on initial load
-    window.addEventListener('scroll', addInViewClass);
-    window.addEventListener('load', addInViewClass);
-</script>
-
+    </script>
 </body>
 </html>
