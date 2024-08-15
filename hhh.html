@@ -1,170 +1,36 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Inter, sans-serif;
-            overflow-x: hidden;
-        }
-        
-        nav {
-            background-color: #fff;
-            width: 100%;
-            height: 13vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            position: fixed;
-            z-index: 100;
-        }
-        
-        nav img {
-            height: 10vh;
-            width: 28vh;
-            margin-bottom: 10px;
-        }
-        
-        nav ul {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        nav ul li {
-            padding: 10px;
-            background-color: #fff;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #38abf3;
-            font-weight: bold;
-            transition: 0.5s ease;
-            padding: 5px;
-            cursor: pointer;
-        }
-        
-        nav ul li a:hover {
-            border-top: 3px solid #38abf3;
-        }
-        
-        nav .btn {
-            margin-right: 30px;
-            cursor: pointer;
-            text-align: center;
-            color: #38abf3;
-            font-size: 16px;
-            padding: 12px 24px;
-            border-radius: 10px;
-            border: 2px solid #38abf3;
-            letter-spacing: 1px;
-            transition: 0.8s;
-            font-weight: 700;
-            overflow: hidden;
-        }
-        
-        nav .btn:hover {
-            background-color: #38abf3;
-            color: #fff;
-        }
-
-        #checkbtn {
-            display: none;
-        }
-
-        .checkbtn {
-            display: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            background-color: #3BBBB7;
-            padding: 10px;
-            position: fixed;
-            top: 10px; /* Adjust as needed */
-            left: 10px; /* Adjust as needed */
-            z-index: 101;
-        }
-
-        @media (max-width: 768px) {
-            .checkbtn {
-                display: block;
-            }
-
-            nav ul {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                position: fixed;
-                top: 13vh;
-                left: 0;
-                background-color: #fff;
-                z-index: 100;
-            }
-
-            nav ul li {
-                padding: 15px;
-                border-bottom: 1px solid #ddd;
-                text-align: center;
-            }
-
-            nav ul li a {
-                display: block;
-                padding: 10px;
-            }
-
-            nav img {
-                height: auto;
-                width: 120px; /* Adjust to restore the logo size */
-                max-width: 50vh; /* Ensure it stays within bounds */
-            }
-
-            #checkbtn:checked ~ ul {
-                display: flex;
-            }
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./kkk.css">
 </head>
 <body>
-    <div class="zommin">
-        <nav>
-            <input id="checkbtn" type="checkbox">
-            <label for="checkbtn" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>  
-            <img src="./images/logo.png" alt="">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#comments">SUCCESSFUL STORIES</a></li>
-                <li><a href="#outline">COURSE OUTLINE</a></li>
-                <li><a href="#courses">ABOUT US</a></li>
-            </ul>
-            <div class="btn">
-                <span>Contact Us</span>
-            </div>
-        </nav>
-    </div>
-    
-    <script>
-        // Get elements
-        const checkbtn = document.getElementById('checkbtn');
-        const menu = document.querySelector('nav ul');
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="./client images/fazeel.png" alt="" class="card-img">
+                        </div>
+                    </div>
 
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!checkbtn.checked) return; // If menu is not open, do nothing
-            if (!event.target.closest('nav')) {
-                checkbtn.checked = false; // Uncheck the checkbox to close the menu
-            }
-        });
-    </script>
+                    <div class="card-content">
+                        <h2 class="name">Muhammad Fazeel</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos porro eos exercitationem! Dolorum optio, at ab quaerat consectetur</p>
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+<script type="module">
+    import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.9/+esm'
+    </script>
+    
 </html>
