@@ -1028,7 +1028,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   @keyframes slide {
    
     0%, 10% { transform: translateX(0); }
-    20%, 30% { transform: translateX(-33.3333%); }
    
    
    
