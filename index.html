@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev'sinn Technologies</title>
     <link rel="icon" href="./images/icon.png" type="image/png">
-    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="kkk.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://kit.fontawesome.com/e44db72931.js" crossorigin="anonymous"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  
 </head>
 <body>
   <div class="zommin">
@@ -210,58 +211,54 @@
         </div>
      </section>
      <article>
-        <div class="section-title wow animate__animated animate__zoomIn">
+        <div class="section-title">
             <span>Course Outline</span>
             <h3>Our Modules</h3>
-            <p>Our Course Outline covers more front-end and back-end technologies than any other full-stack<br> coding bootcamp.</p>
+            <p>Our Course Outline covers more front-end and back-end technologies than any other full-stack coding bootcamp.</p>
         </div>
-       
+
         <div class="modules">
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-one wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInLeft">Module One</span>
+            <div class="module" data-module="1">
+                <i class="fa-solid fa-dice-one"></i>
+                <span>Module One</span>
             </div>
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-two wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInLeft">Module Two</span>
+            <div class="module" data-module="2">
+                <i class="fa-solid fa-dice-two"></i>
+                <span>Module Two</span>
             </div>
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-three wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInDown">Module Three</span>
+            <div class="module" data-module="3">
+                <i class="fa-solid fa-dice-three"></i>
+                <span>Module Three</span>
             </div>
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-four wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInDown">Module Four</span>
+            <div class="module" data-module="4">
+                <i class="fa-solid fa-dice-four"></i>
+                <span>Module Four</span>
             </div>
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-five wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInRight">Module Five</span>
+            <div class="module" data-module="5">
+                <i class="fa-solid fa-dice-five"></i>
+                <span>Module Five</span>
             </div>
-            <div class="module" tabindex="0">
-                <i class="fa-solid fa-dice-six wow animate__animated animate__flipInY"></i>
-                <span class="wow animate__animated animate__backInRight">Module Six</span>
+            <div class="module" data-module="6">
+                <i class="fa-solid fa-dice-six"></i>
+                <span>Module Six</span>
             </div>
         </div>
+
         <div class="container1">
-            <div class="text-container ">
-                <h4 class="wow animate__animated animate__zoomIn">First Module</h4>
-                <h5 class="wow animate__animated animate__zoomIn"><span>Front En</span>d Development</h5>
-                <p class="wow animate__animated animate__backInLeft">Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too. By the end, you’ll have the portfolio and interview skills you need to start for your new<br> career.</p>
-                <ul class="wow animate__animated animate__backInLeft">
-                    <li><i class="fa-solid fa-check"></i>Basics , HTML/CSS3 (layout, Typography, Responsive Design)</p></li>
-                    <li><i class="fa-solid fa-check"></i>Workshop (Loading Animation Notification Bars, CSS3 Tabs, Parallax Section, Motion Typography, Power Point like presentation)</p></li>
-                    <li><i class="fa-solid fa-check"></i> HTML5 (Geolocation, Local Storage, Web Storage, Canvas, WebGI)</p></li>
-                    <li><i class="fa-solid fa-check"></i>Bootstrap (Car Sales Website, Daraz, Stylo Shoes, Facebook type )</p></li>
-                    <li><i class="fa-solid fa-check"></i>JavaScript (Dom, Event, Ajax, Templating)</li>
-                    <li><i class="fa-solid fa-check"></i>React/Redux (Quiz App, To-dos App, Twitter App, Facebook Clone)</p></li>
-                    <li><i class="fa-solid fa-check"></i>Angular8 MEAN (Mean To-dos, My Weather, Movie Finder etc.)</p></li>
+            <div class="text-container">
+                <h4 id="module-title">First Module</h4>
+                <h5 id="module-subtitle"><span>Front En</span>d Development</h5>
+                <p id="module-description">Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too. By the end, you’ll have the portfolio and interview skills you need to start for your new career.</p>
+                <ul id="module-list">
+                    <!-- List items will be populated dynamically -->
                 </ul>
             </div>
-            <div class="image-container wow animate__animated animate__fadeInTopRight">
-                <img src="./images/web development.jpg" alt="Front-end Development">
-            </div> 
+            <div class="image-container">
+                <img src="./images/web development.jpg" alt="Front-end Development" id="module-image">
+            </div>
         </div>
-      </article>   
+    </article>
+
       <footer  id="comments">
 
         <div class="comment">
@@ -384,9 +381,15 @@
                             <span>Mobile App Development</span>
                           </div>
                         </div>
+                        
                       </div>
+                     
                       
                     </div></div>
+                    <div class="navbar-buttons">
+                      <button class="nav-left"><i class="fa-solid fa-arrow-left"></i></button>
+                      <button class="nav-right"><i class="fa-solid fa-arrow-right"></i></button>
+                  </div>
                 </figure></div></footer>   
                 <aside>
                     <div class="txt-part wow animate__animated animate__zoomIn">
@@ -526,6 +529,7 @@
                 </figure>   
                 <section class="template">
                     <div class="appointment wow animate__animated animate__backInDown">
+                      
                         <div class="appointment-title">
                             <h3><span>Make</span> An Appointment</h3>
                             <p>Our Bootcamp deals with career counseling and Latest Tool and Technologies Awareness and makes an expert in these technologies. For detailed information confirm your Appointment.</p>
@@ -535,66 +539,71 @@
                         </div>
                     </div>
                 </section> 
-                <summary>
-                    
-                    <div class="selection">
-                        <div class="text-selection wow animate__animated animate__zoomIn">
-                            <h1>FAQ Section</h1>
-                            <h5 class="mt1">All you need to know before applying to our Full Stack Program.</h5>
+                <div class="selection">
+                    <div class="text-selection wow animate__animated animate__zoomIn">
+                        <h1>FAQ Section</h1>
+                        <h5 class="mt1">All you need to know before applying to our Full Stack Program.</h5>
+                    </div>
+                
+                    <div class="questions-container">
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInLeft">
+                                <h4><b>01</b> Are there any scholarships available?</h4>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <p class="answer">Yes, we offer several scholarships for eligible students based on merit and need.</p>
                         </div>
-                        <div class="questions-container ">
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInLeft">
-                                    <h4><b>01</b> Are there any scholarships available?</h4>
-                                    <p>+</p>
-                                </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInRight">
+                                <h4><b>02</b> Are there any Trial Classes?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInRight">
-                                    <h4><b>02</b> Are there any Trial Classes?</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Yes, we offer trial classes so you can experience our teaching methods before enrolling.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInLeft">
+                                <h4><b>03</b> Is it right for a non-technical person?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInLeft">
-                                    <h4><b>03</b> Is it right problem for non technical person?</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Our program is designed to be accessible to individuals from all backgrounds, including non-technical ones.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInRight">
+                                <h4><b>04</b> I'm over 40 years old, should I apply?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInRight">
-                                    <h4><b>04</b> I'm over 40 year old,should I apply?</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Absolutely! We welcome applicants of all ages and believe learning is for everyone.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInLeft">
+                                <h4><b>05</b> Eligibility</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInLeft">
-                                    <h4><b>05</b> Eligibility</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Eligibility criteria vary by program; please check the specific requirements on our website.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInRight">
+                                <h4><b>06</b> Do you offer career support?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInRight">
-                                    <h4><b>06</b> Do you offer career support?</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Yes, we provide extensive career support including resume reviews, mock interviews, and job placement assistance.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInLeft">
+                                <h4><b>07</b> Is it possible to share our job offer(s) with your Vvork?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInLeft">
-                                    <h4><b>07</b> Is it possible to share our job offer(s) with your Vvork?</h4>
-                                    <p>+</p>
-                                </div>
+                            <p class="answer">Yes, employers are welcome to share job offers with us to connect with our talented graduates.</p>
+                        </div>
+                        <div class="question">
+                            <div class="scholarship wow animate__animated animate__backInRight">
+                                <h4><b>08</b> Do you organize recruitment events?</h4>
+                                <span class="toggle-icon">+</span>
                             </div>
-                            <div class="question">
-                                <div class="scholarship wow animate__animated animate__backInRight">
-                                    <h4><b>08</b> Do you organize recruitment event?</h4>
-                                    <p>+</p>
-                                </div>
-                            </div>
-                    
-                       </div>
-                       </summary> 
-                     
+                            <p class="answer">Yes, we regularly organize recruitment events where employers can meet our students.</p>
+                        </div>
+                    </div>
+                </div>
                     <div class="footer-content">
                         <div class="foot">
                           <div class="infoot wow animate__animated animate__backInLeft">
@@ -616,7 +625,22 @@
                               <li><a href="#">Terms & Conditions</a></li>
                               <li><a href="#">Support</a></li>
                             </ul>
+                            <ul class="class-time">
+                              <li>
+                                <b>Monday to Friday</b>
+                                <span>2:00 pm-10:00 pm</span>
+                              </li>
+                              <li>
+                                <b>Saturday</b>
+                                <span>10:00 am-6:00 pm</span>
+                              </li>
+                              <li>
+                                <b>Sunday</b>
+                                <span>10:00 am-6:00 pm</span>
+                              </li>
+                            </ul>
                           </div>
+                          
                           <div class="foot2 wow animate__animated animate__backInRight">
                             <h3>Our Location</h3>
                             <div class="map-container">
@@ -675,5 +699,199 @@
       }
   });
 </script>
-  </html>                    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        let slideIndex = 0;
+        const slidesToShow = 2; // Show two cards per view
+        const totalSlides = $('.slide-card').length;
+        const maxIndex = totalSlides - slidesToShow;
+        const slideWidth = $('.slide-card').outerWidth(true);
+
+        function moveSlides(index) {
+            $('.slide-cards').css('transform', `translateX(${-index * slideWidth}px)`);
+        }
+
+        function autoSlide() {
+            slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
+            moveSlides(slideIndex);
+        }
+
+        let autoSlideInterval = setInterval(autoSlide, 5000); // Auto move every 5 seconds
+
+        $('.nav-left').click(function() {
+            clearInterval(autoSlideInterval); // Stop auto-slide on manual control
+            slideIndex = (slideIndex - 1) < 0 ? maxIndex : slideIndex - 1;
+            moveSlides(slideIndex);
+            autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
+        });
+
+        $('.nav-right').click(function() {
+            clearInterval(autoSlideInterval); // Stop auto-slide on manual control
+            slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
+            moveSlides(slideIndex);
+            autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
+        });
+    });
+    document.querySelectorAll('.scholarship').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = item.parentElement;
+            const icon = item.querySelector('.toggle-icon');
+
+            // Toggle the 'open' class
+            parent.classList.toggle('open');
+
+            // Change the icon based on whether the question is open or not
+            if (parent.classList.contains('open')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
+    });
+</script>
+<script>
+    document.querySelectorAll('.scholarship').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = item.parentElement;
+            const icon = item.querySelector('.toggle-icon');
+
+            // Toggle the 'open' class
+            parent.classList.toggle('open');
+
+            // Change the icon based on whether the question is open or not
+            if (parent.classList.contains('open')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modules = document.querySelectorAll('.module');
+        const title = document.getElementById('module-title');
+        const subtitle = document.getElementById('module-subtitle');
+        const description = document.getElementById('module-description');
+        const list = document.getElementById('module-list');
+        const image = document.getElementById('module-image');
+
+        const moduleContent = {
+            1: {
+                title: 'Module One',
+                subtitle: 'Front End Development',
+                description: 'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too. By the end, you’ll have the portfolio and interview skills you need to start for your new career.',
+                list: [
+                    'Basics , HTML/CSS3 (layout, Typography, Responsive Design)',
+                    'Workshop (Loading Animation Notification Bars, CSS3 Tabs, Parallax Section, Motion Typography, Power Point like presentation)',
+                    'HTML5 (Geolocation, Local Storage, Web Storage, Canvas, WebGI)',
+                    'Bootstrap (Car Sales Website, Daraz, Stylo Shoes, Facebook type )',
+                    'JavaScript (Dom, Event, Ajax, Templating)',
+                    'React/Redux (Quiz App, To-dos App, Twitter App, Facebook Clone)',
+                    'Angular8 MEAN (Mean To-dos, My Weather, Movie Finder etc.)'
+                ],
+                image: './images/web development.jpg'
+            },
+            2: {
+                title: 'Module Two',
+                subtitle: 'Back End Development',
+                description: 'Back-end engineers create and maintain the server, application, and database that powers the front-end of a website. This module will cover server-side languages, databases, and server management.',
+                list: [
+                    'Server-side languages (Node.js, Python, Ruby)',
+                    'Databases (SQL, NoSQL)',
+                    'API Development and Integration',
+                    'Server management and deployment',
+                    'Security practices',
+                    'Performance optimization'
+                ],
+                image: './images/back-end-development.jpg'
+            },
+            3: {
+                title: 'Module Three',
+                subtitle: 'Full Stack Integration',
+                description: 'In this module, you will learn how to integrate both front-end and back-end technologies to build complete, functional web applications.',
+                list: [
+                    'Combining front-end and back-end technologies',
+                    'Building RESTful APIs',
+                    'Authentication and Authorization',
+                    'End-to-end testing',
+                    'Deployment strategies'
+                ],
+                image: './images/full-stack-development.jpg'
+            },
+            4: {
+                title: 'Module Four',
+                subtitle: 'Database Management',
+                description: 'Learn how to design, implement, and manage databases effectively. This module covers various database technologies and best practices.',
+                list: [
+                    'Database design principles',
+                    'SQL databases (MySQL, PostgreSQL)',
+                    'NoSQL databases (MongoDB, Firebase)',
+                    'Database optimization and indexing',
+                    'Backup and recovery strategies'
+                ],
+                image: './images/database-management.jpg'
+            },
+            5: {
+                title: 'Module Five',
+                subtitle: 'DevOps and Deployment',
+                description: 'Understand the principles of DevOps and learn how to deploy applications efficiently. This module includes continuous integration and delivery practices.',
+                list: [
+                    'Introduction to DevOps',
+                    'CI/CD pipelines',
+                    'Containerization (Docker)',
+                    'Orchestration (Kubernetes)',
+                    'Monitoring and logging'
+                ],
+                image: './images/devops-deployment.jpg'
+            },
+            6: {
+                title: 'Module Six',
+                subtitle: 'Advanced Topics',
+                description: 'Explore advanced topics and emerging technologies in the field of web development, including modern frameworks and tools.',
+                list: [
+                    'Progressive Web Apps (PWAs)',
+                    'Serverless architecture',
+                    'GraphQL',
+                    'Machine Learning integration',
+                    'Performance tuning and scaling'
+                ],
+                image: './images/advanced-topics.jpg'
+            }
+        };
+
+        modules.forEach(module => {
+            module.addEventListener('click', () => {
+                const moduleNumber = module.getAttribute('data-module');
+                const content = moduleContent[moduleNumber];
+
+                title.textContent = content.title;
+                subtitle.innerHTML = `<span>${content.subtitle}</span>`;
+                description.innerHTML = content.description;
+                list.innerHTML = content.list.map(item => `<li><i class="fa-solid fa-check"></i>${item}</li>`).join('');
+                image.src = content.image;
+            });
+        });
+    });
+</script>
+<script>
+    document.querySelectorAll('.scholarship').forEach(item => {
+        item.addEventListener('click', event => {
+            const parent = item.parentElement;
+            const icon = item.querySelector('.toggle-icon');
+
+            // Toggle the 'open' class
+            parent.classList.toggle('open');
+
+            // Change the icon based on whether the question is open or not
+            if (parent.classList.contains('open')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
+    });
+</script>
+</body>                 
 </html>

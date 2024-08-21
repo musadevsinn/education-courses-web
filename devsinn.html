@@ -3,771 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev'sinn Technologies</title>
-    <link rel="icon" href="./images/icon.png" type="image/png">
- <link rel="stylesheet" href="./devsinn.css">
-    <script src="https://kit.fontawesome.com/e44db72931.js" crossorigin="anonymous"></script>
+    <title>FAQ Section</title>
+    <style>
+        .text-selection {
+            padding-left: 130px;
+            padding-top: 50px;
+        }
+
+        .text-selection h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #38abf3;
+            margin-bottom: 10px;
+        }
+
+        .text-selection h5 {
+            font-size: 18px;
+            color: #38abf3;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .questions-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .question {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .question h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #38abf3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .question p {
+            font-size: 16px;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            display: none; /* Initially hide the answers */
+            background-color: #f9f9f9;
+        }
+
+        .question .scholarship {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .question .scholarship .toggle-icon {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bolder;
+            color: #3BBBB7;
+            padding-right: 20px;
+            line-height: 1;
+        }
+
+        .question.open p {
+            display: block; /* Show the answer when the question is open */
+        }
+
+        .question.open .toggle-icon {
+            color: #ff0000; /* Change icon color when open */
+            font-size: 28px; /* Change icon size when open */
+        }
+    </style>
 </head>
 <body>
-    <nav>
-      <input id="checkbtn" type="checkbox">
-         <label for="checkbtn" name="checkbtn" class="checkbtn">
-           <i class="fa-solid fa-bars"></i>
-       </label>  
-       <img src="./images/logo.png" alt="">
-       <ul>
-           <li><a href="#">HOME</a></li>
-           <li><a href="#">SUCCESSFUL STORIES</a></li>
-           <li><a href="#">COURSE OUTLINE</a></li>
-           <li><a href="#">ABOUT US</a></li>
-       </ul>
-       <div class="box">
-           <button class="btn">Contact Us</button>
-       </div>
-   </nav>
-    <div class="hero-section">
-    <section class="container">
-    <div class="heading">
-    <h1>
-        TURNING YOUR ONLINE
-    </h1>
-    <h2 style="opacity: 1; transform: translateY(1px) translateZ(0px);">VISION <br>INTO REALITY</h2>
-    <div class="contact" style="opacity: 1; transform: translateY(1px) translateZ(0px);">
-   
-        <span>Contact Us</span>
-      </div> 
-   </div>
-
-   </section>
-</div> 
-<div class="choose-option">
-    <h2>Why Choose Us</h2>
-    <p>Pakistan's 1st bootcamp where students can transform their dreams into reality in the field of information and technology.</p>
-    <div class="whyChoose-cards">
-        <div class="support-card" id="card1">
-            <div class="headset"><i class="fa-solid fa-headset fa-2xl"></i></div>
-            <h2>24/7 Support</h2>
-            <p>We are just a text away, You<br> can book your appointment<br> whenever you want.</p>
+    <div class="selection">
+        <div class="text-selection wow animate__animated animate__zoomIn">
+            <h1>FAQ Section</h1>
+            <h5 class="mt1">All you need to know before applying to our Full Stack Program.</h5>
         </div>
-        <div class="support-card" id="card2">
-            <div class="headset"><i class="fa-solid fa-chalkboard-user" id="icon1"></i></div>
-            <h2>Qualified Staff</h2>
-            <p>We are a group of highly qualified motivated professionals.</p>
-        </div>
-        <div class="support-card" id="card3">
-            <div class="headset"><i class="fa-solid fa-certificate" id="icon2"></i></div>
-            <h2>Successfully Certified</h2>
-            <p>We also provide certifications like Microsoft, AWS, Azure, and Coursera.</p>
-        </div>
-        <div class="support-card" id="card4">
-            <div class="headset"><i class="fa-solid fa-handshake-angle" id="icon3"></i></div>
-            <h2>Job Placement</h2>
-            <p>Many of our students have joined tech companies as senior developers.</p>
-        </div>
-    </div>
-</div>
-<main>
-    <section class="video-section">
-        <div class="video-container">
-            <video controls class="responsive-video" width="500px">
-                <source src="./images/nature.mp4" type="video/mp4">
-        </div>
-        <div>
-            <div class="containers">
-
-                <hr>
-                <h3>About Us</h3>
-
-            </div>
-            <div class="vvork">
-                <h1>Dev'sinn Technologies!</h1>
-            </div>
-            <div class="pa">
-                <p>Dev'sinn Technologies is dedicated to bridging the tech skills gap, and the productivity gap between Developers and Non-Techniacal Professionals.With this in mind,we developed our innovative Courses to compliment Our Student in Software Development.We Strive for teaching our students the most up-to-date programming technologies through effective methods.Our dynamic curriculum has been defined and optimized over the last 10 years by our founding members-a team of seasoned software developers and tech executive.
-
-                  <p class="pa2">Our goal is to not only to produce career-ready Software develope but to train people to work efficiently with Developers.We are dedicated to creating the global standard for IT Traning.</p>
-                  
-            </div>
-            <div class="check-circle">
-                <ul>
-                    <li><i class="fa-regular fa-circle-check"></i>We born for each other.</li>
-                    <li><i class="fa-regular fa-circle-check"></i>Think like an Engineer.</li>
-                    <li><i class="fa-regular fa-circle-check"></i>A Product-Driven bootcamp.</li>
-                </ul>
-            </div>
-            <div class="call-option">
-                <a href="#">Call us for more detail!</a>
-            </div>
-        </div>
-      
-
-
-
-
-    </section>
-
-</main>
-<div class="Achievement">
-    <div class="achieve">
-        <div class="achieve-text">
-            <p>Achievement</p>
-            <h2>Our Achievement</h2>
-            <p class="pa2">These are the achievements that we are proud of !!!</p>
-        </div>
-        <div class="achieve-cards">
-            <div class="achieve-card" id="option1">
-                <i class="fa-solid fa-hospital-user"></i>
-                <h5><span>1500</span><b>+</b></h5>
-                <p>Successful Students</p>
-            </div>
-            <div class="achieve-card" id="option2">
-                <i class="fa-solid fa-user-doctor"></i>
-                <h5><span>20</span><b>+</b></h5>
-                <p>Qualified Teachers</p>
-            </div>
-            <div class="achieve-card" id="option3">
-                <i class="fa-regular fa-calendar-check"></i>
-                <h5><span>9</span><b>+</b></h5>
-                <p>Years Of Experience</p>
-            </div>
-            <div class="achieve-card" id="option4">
-                <i class="fa-solid fa-award"></i>
-                <h5><span>40</span></h5>
-                <p>Total Awards</p>
-                
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
-<article>
-    <div class="section-title">
-        <span>Course Outline</span>
-        <h3>Our Modules</h3>
-        <p>Our Course Outline covers more front-end and back-end technologies than any other full-stack<br> coding bootcamp.</p>
-    </div>
-   
-    <div class="modules">
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-one"></i>
-            <span>Module One</span>
-        </div>
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-two"></i>
-            <span>Module Two</span>
-        </div>
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-three"></i>
-            <span>Module Three</span>
-        </div>
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-four"></i>
-            <span>Module Four</span>
-        </div>
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-five"></i>
-            <span>Module Five</span>
-        </div>
-        <div class="module" tabindex="0">
-            <i class="fa-solid fa-dice-six"></i>
-            <span>Module Six</span>
-        </div>
-    </div>
-    <div class="container1">
-        <div class="text-container">
-            <h4>First Module</h4>
-            <h5><span>Front En</span>d Development</h5>
-            <p>Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you not only the necessary languages and technologies, but how to think like a front-end engineer, too. By the end, you’ll have the portfolio and interview skills you need to start for your new<br> career.</p>
-            <ul>
-                <li><i class="fa-solid fa-check"></i>Basics , HTML/CSS3 (layout, Typography, Responsive Design)</p></li>
-                <li><i class="fa-solid fa-check"></i>Workshop (Loading Animation Notification Bars, CSS3 Tabs, Parallax Section, Motion Typography, Power Point like presentation)</p></li>
-                <li><i class="fa-solid fa-check"></i> HTML5 (Geolocation, Local Storage, Web Storage, Canvas, WebGI)</p></li>
-                <li><i class="fa-solid fa-check"></i>Bootstrap (Car Sales Website, Daraz, Stylo Shoes, Facebook type )</p></li>
-                <li><i class="fa-solid fa-check"></i>JavaScript (Dom, Event, Ajax, Templating)</li>
-                <li><i class="fa-solid fa-check"></i>React/Redux (Quiz App, To-dos App, Twitter App, Facebook Clone)</p></li>
-                <li><i class="fa-solid fa-check"></i>Angular8 MEAN (Mean To-dos, My Weather, Movie Finder etc.)</p></li>
-            </ul>
-        </div>
-        <div class="image-container">
-            <img src="./images/web development.jpg" alt="Front-end Development">
-        </div> 
-    </div>
-</article>   
-<footer>
-
-    <div class="comment">
-        <div class="txt-content">
-            <p>Testimonials</p>
-            <h2>What Our Students Say?</h2>
-            <p class="pa3">Here are some testimonials from our students.</p>
-        </div>
-        <figure>
-            <div class="container4">
-                <div class="slide-cards">
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                   <div class="slide-card">
-                    <div class="header">
-                      <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                      </ul>
-                      <div class="icon1">
-                        <i class="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <p>The Vvork Cloud Technologies has taught me the lastest Tools and Technologies of web Development and enable me to work in any problematic condition</p>
-                    <div class="image-client">
-                      <img src="./images//OIP.jpeg" alt="Client Image">
-                      <div class="client-title">
-                        <h5>Saqib Javed</h5>
-                        <span>Alumni</span>
-                      </div>
-                    </div>
-                  </div>
-                </div></div>
-            </figure></div></footer>   
-            <aside>
-                <div class="txt-part">
-                  <span>Faculty</span>
-                  <h3>Our Qualified Faculty</h3>
-                  <p>We have one of the best Faculty.</p>
+    
+        <div class="questions-container">
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInLeft">
+                    <h4><b>01</b> Are there any scholarships available?</h4>
+                    <span class="toggle-icon">+</span>
                 </div>
-              
-               
-                    
-                <div class="container5">
-                  <div class="slides-cards">
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slides-card">
-                      <div class="content1">
-                        <div class="img2">
-                          <img src="./images/OIP.jpeg" alt="">
-                        </div>
-                        <div class="details">
-                          <div class="name">Talal Rehman</div>
-                          <div class="job">Frontend Developer</div>
-                        </div>
-                        <div class="media-icons">
-                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                          
-                   
-                  </div></div>
-              </aside>
-              <figure>
-                <div class="text-vision">
-                    <span>Our Team Vision</span>
-                    <h3>Team Vision</h3>
-                    <p>Vvork Cloud Technologies showcase a nation's future. They represent the hopes of parents, capitalize upon the aspirations of the very young generation, and respond to the needs and challenges facing society. We initiated the project of certification-based developers to contribute towards the development of new products, and the aim of VCT is to fulfill the gap between fresh degree holders and industry by offering hands-on training of the most advanced technologies to change their entry level from inertness to full stack programmer to gain at least six figures salary after one year.</p>
-                    <p class="mt3">The students of VCT become aware of the purpose of life and they discover their unique strengths and talents for refinement. We are building certified developers to lead the World. Human beings know no limits to excel, and each generation surpasses the previous in all respects. At VCT, we aim at becoming a very reliable partner of the parents and society to make each student a truly great person with extreme motivation, creative ideas, and supreme talents so that they can achieve extraordinary goals and objectives.</p>
-                    <div class="check-circle">
-                        <ul>
-                            <li><i class="fa-regular fa-circle-check"></i>We are born for each other.</li>
-                            <li><i class="fa-regular fa-circle-check"></i>Think like an Engineer.</li>
-                            <li><i class="fa-regular fa-circle-check"></i>Committed to Excellence.</li>
-                            <li><i class="fa-regular fa-circle-check"></i>A Product-Driven bootcamp.</li>
-                        </ul>
-                    </div>
+                <p class="answer">Yes, we offer several scholarships for eligible students based on merit and need.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInRight">
+                    <h4><b>02</b> Are there any Trial Classes?</h4>
+                    <span class="toggle-icon">+</span>
                 </div>
-                <div class="team-vision">
-                    <div class="image-vision">
-                        <h4>Chairman:</h4> 
-                        <span>Ubaidullah Asim</span>
-                        <div class="image1">
-                            <img src="./images/ubaid.png" alt="Ubaidullah Asim">
-                        </div>
-                    </div>
-                    <div class="image-vision">
-                        <h4>Supervision:</h4>
-                        <span>Arham Sarwar</span>
-                        <div class="image1">
-                            <img src="./images/arham.png" alt="Arham Sarwar">
-                        </div>
-                    </div>
-                    <div class="image-vision">
-                        <h4>Supervision:</h4>
-                        <span>Abuzar Zaidi</span>
-                        <div class="image1">
-                            <img src="./images//abuzar.png" alt="Abuzar Zaidi">
-                        </div>
-                    </div>
+                <p class="answer">Yes, we offer trial classes so you can experience our teaching methods before enrolling.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInLeft">
+                    <h4><b>03</b> Is it right for a non-technical person?</h4>
+                    <span class="toggle-icon">+</span>
                 </div>
-            </figure>
-            <section class="template">
-                <div class="appointment">
-                    <div class="appointment-title">
-                        <h3><span>Make</span> An Appointment</h3>
-                        <p>Our Bootcamp deals with career counseling and Latest Tool and Technologies Awareness and makes an expert in these technologies. For detailed information confirm your Appointment.</p>
-                    </div>
-                    <div class="register">
-                        <a href="#">Register Now</a>
-                    </div>
+                <p class="answer">Our program is designed to be accessible to individuals from all backgrounds, including non-technical ones.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInRight">
+                    <h4><b>04</b> I'm over 40 years old, should I apply?</h4>
+                    <span class="toggle-icon">+</span>
                 </div>
-            </section>
-            <summary>
-                    
-                <div class="selection">
-                    <div class="text-selection">
-                        <h1>FAQ Section</h1>
-                        <h5 class="mt1">All you need to know before applying to our Full Stack Program.</h5>
-                    </div>
-                    <div class="questions-container">
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>01</b> Are there any scholarships available?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>02</b> Are there any Trial Classes?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>03</b> Is it right problem for non technical person?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>04</b> I'm over 40 year old,should I apply?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>05</b> Eligibility</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>06</b> Do you offer career support?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>07</b> Is it possible to share our job offer(s) with your Vvork?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="scholarship">
-                                <h4><b>08</b> Do you organize recruitment event?</h4>
-                                <p>+</p>
-                            </div>
-                        </div>
-                
-                   </div>
-                   </summary>
-                   <figcaption>
-                    <div class="certificate">
-                       <h3>Our Certifications</h3> 
-                    </div>
-                    <div class="logos-container">
-                        <div class="logos">
-                            <div class="table">
-                                <img src="./images/amazon.jpeg" alt="amazon">
-                            </div>
-                        </div>
-                        <div class="logos">
-                            <div class="table">
-                                <img src="./images/google.png" alt="microsoft">
-                            </div>
-                        </div>
-                        <div class="logos">
-                            <div class="table">
-                                <img src="./images/github.png" alt="github">
-                            </div>
-                        </div>
-                        <div class="logos">
-                            <div class="table">
-                                <img src="./images/linkin.png" alt="github">
-                            </div>
-                        </div>
-                        <div class="logos">
-                          <div class="table">
-                              <img src="./youtube.png" alt="github">
-                          </div>
-                      </div>
-                    </div>
-                    
-                </figcaption>
-                <div class="footer-content">
-                    <div class="foot">
-                      <div class="infoot">
-                        <img src="./images/logo.png" alt="logo">
-                        <p>We offer the services you need to succeed online. Get in touch today and let us help you transform your online presence.</p>
-                      </div>
-                      <div class="foot1">
-                        <h2>Useful Links</h2>
-                        <ul>
-                          <li><a href="#">Privacy Policy</a></li>
-                          <li><a href="#">Terms & Conditions</a></li>
-                          <li><a href="#">Support</a></li>
-                        </ul>
-                      </div>
-                      <div class="foot2">
-                        <h3>Our Location</h3>
-                        <div class="map-container">
-                          <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093373!2d144.95373531531686!3d-37.81627977975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e72e9f7396b1!2sVictoria%20Harbour!5e0!3m2!1sen!2sau!4v1572560573430!5m2!1sen!2sau"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                          </iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a id="scroll-up" href="#top" style="position: fixed; z-index: 4;">
-                    <i class="fa-solid fa-angles-up"></i>
-                  </a>
-</body>
-<script>
-    // JavaScript to handle the scroll event
-    window.addEventListener('scroll', function() {
-        var button = document.getElementById('scroll-up');
-        if (window.scrollY === 0) {
-            button.style.display = 'none';
-        } else {
-            button.style.display = 'block';
-        }
-    });
+                <p class="answer">Absolutely! We welcome applicants of all ages and believe learning is for everyone.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInLeft">
+                    <h4><b>05</b> Eligibility</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <p class="answer">Eligibility criteria vary by program; please check the specific requirements on our website.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInRight">
+                    <h4><b>06</b> Do you offer career support?</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <p class="answer">Yes, we provide extensive career support including resume reviews, mock interviews, and job placement assistance.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInLeft">
+                    <h4><b>07</b> Is it possible to share our job offer(s) with your Vvork?</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <p class="answer">Yes, employers are welcome to share job offers with us to connect with our talented graduates.</p>
+            </div>
+            <div class="question">
+                <div class="scholarship wow animate__animated animate__backInRight">
+                    <h4><b>08</b> Do you organize recruitment events?</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <p class="answer">Yes, we regularly organize recruitment events where employers can meet our students.</p>
+            </div>
+        </div>
+    </div>
 
-    // Optional: Add a click event to scroll back to the top
-    document.getElementById('scroll-up').addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    <script>
+        document.querySelectorAll('.scholarship').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                const icon = item.querySelector('.toggle-icon');
+
+                // Toggle the 'open' class
+                parent.classList.toggle('open');
+
+                // Change the icon based on whether the question is open or not
+                if (parent.classList.contains('open')) {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
         });
-    });
-</script>
-  </html>                    
+    </script>
+</body>
 </html>
