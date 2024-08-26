@@ -3,21 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle List Example</title>
-    <link rel="stylesheet" href="content.css">
-    
-    <script src="https://kit.fontawesome.com/e44db72931.js" crossorigin="anonymous"></script>
+    <title>Achievement Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .Achievement {
+            position: relative;
+            background: url(./images/employee\ picture.jpg) center/cover no-repeat;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-top: 80px;
+            color: white;
+            padding-bottom: 80px;
+        }
+
+        .Achievement::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(59, 187, 183, 0.9);
+            z-index: 2;
+        }
+
+        .achieve {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .achieve-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 440px;
+            margin-bottom: 50px;
+        }
+
+        .achieve-text span {
+            color: #fff;
+            font-size: 18px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .achieve-text h2 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .achieve-text p {
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        .achieve-cards {
+            display: flex;
+            padding-left: 16px;
+            justify-content: space-evenly;
+        }
+
+        .achieve-card {
+            height: 220px;
+            width: 263px;
+            background-color: #3BBBB7;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 3px solid #ffffff3d;
+            padding: 20px 40px;
+        }
+
+        .achieve-card i {
+            font-size: 30px;
+            color: #fff;
+            width: 70px;
+            height: 70px;
+            line-height: 67px;
+            display: inline-block;
+            border: 2px dashed #ffffff3d;
+            border-radius: 100%;
+            transition: all 0.4s ease;
+        }
+
+        .achieve-card h5 {
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 15px;
+            color: white;
+            padding-bottom: 5px;
+        }
+
+        .achieve-card p {
+            margin: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        #option1:hover {
+            border: 3px solid white;
+        }
+
+        #option2:hover {
+            border: 3px solid white;
+        }
+
+        #option3:hover {
+            border: 3px solid white;
+        }
+
+        #option4:hover {
+            border: 3px solid white;
+        }
+
+        .achieve-card:hover i {
+            background-color: #fff;
+            color: #3BBBB7;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <input type="checkbox" id="toggle-checkbox" class="toggle-checkbox">
-        <label for="toggle-checkbox" class="toggle-button">☰ Toggle List</label>
-        <ul class="item-list">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
+
+    <div class="Achievement">
+        <div class="achieve">
+            <div class="achieve-text">
+                <span>Achievement</span>
+                <h2>Our Achievement</h2>
+                <p>These are the achievements that we are proud of !!!</p>
+            </div>
+            <div class="achieve-cards">
+                <div class="achieve-card" id="option1">
+                    <i class="fa-solid fa-hospital-user"></i>
+                    <h5><span class="count">1500</span><b>+</b></h5>
+                    <p>Successful Students</p>
+                </div>
+                <div class="achieve-card" id="option2">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h5><span class="count">20</span><b>+</b></h5>
+                    <p>Qualified Teachers</p>
+                </div>
+                <div class="achieve-card" id="option3">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <h5><span class="count">9</span><b>+</b></h5>
+                    <p>Years Of Experience</p>
+                </div>
+                <div class="achieve-card" id="option4">
+                    <i class="fa-solid fa-award"></i>
+                    <h5><span class="count">40</span></h5>
+                    <p>Total Awards</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        // Function to animate the count
+        function animateCount(el, start, end, duration) {
+            let range = end - start;
+            let increment = Math.max(Math.floor(range / (duration / 10)), 1); // Calculate increment based on duration
+            let current = start;
+            let stepTime = Math.abs(Math.floor(duration / (range / increment)));
+            let timer = setInterval(function() {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(timer);
+                }
+                el.textContent = current;
+            }, stepTime);
+        }
+
+        // Start the animation when the document is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            let counts = document.querySelectorAll('.count');
+            counts.forEach(function (count) {
+                let endValue = parseInt(count.textContent);
+                count.textContent = '0';
+                animateCount(count, 0, endValue, 200); // 200ms = 0.2 seconds
+            });
+        });
+    </script>
+
 </body>
 </html>

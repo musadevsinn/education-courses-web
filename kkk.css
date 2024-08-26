@@ -14,7 +14,10 @@
     scroll-behavior: smooth;
     scroll-behavior: auto;
   }
-  
+  .btn a{
+text-decoration: none;
+color: #38abf3;
+  }
   .checkbtn {
     display: none;
     color: white;
@@ -35,7 +38,7 @@ input{
   nav {
     background-color: #fff;
     width: 100%;
-    height: 13vh;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,9 +48,10 @@ input{
   }
   
   nav img {
-    height: 10vh;
-    width: 28vh;
-    margin-bottom: 10px;
+    padding-top: 12px;
+    width: 23vh;
+    padding-bottom: 12px;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
   }
   
   nav ul {
@@ -55,11 +59,15 @@ input{
     margin: 0;
     padding: 0;
     list-style: none;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
+
   }
   
   nav ul li {
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff;
+    box-shadow: 0 0 40px 5px rgba(235, 227, 227, 0.2); */
+
   }
   
   nav ul li a {
@@ -69,6 +77,8 @@ input{
     transition: 0.5s ease;
     padding: 5px;
     cursor: pointer;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
+
   }
   
   ul li a:hover {
@@ -78,7 +88,7 @@ input{
   
   
   nav .btn {
-    margin-right: 30px;
+    margin-right: 10px;
     cursor: pointer;
     text-align: center;
     color: #38abf3;
@@ -96,13 +106,17 @@ input{
     background-color: #38abf3;
     color: #fff;
   }
+  nav .btn a:hover{
+    color: white;
+    transition: .1s ease;
+  }
   .hero-section {
     position: relative;
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    padding: 50px;
+   
+    padding: 150px 80px;
     overflow: hidden; 
 }
 
@@ -131,8 +145,8 @@ input{
     position: relative;
     z-index: 3;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+   align-items: center;
+   
     animation: slideIn 1s ease-out;
 }
 
@@ -169,10 +183,10 @@ input{
     font-weight: 700;
     transition: 0.5s;
     width: 180px;
-    margin: 0 auto;
+
     position: relative;
     z-index: 3;
-    animation: bounce 2s infinite;
+    animation: bounce 8s infinite;
 }
 
 @keyframes bounce {
@@ -186,13 +200,13 @@ input{
     background-color: #38abf3;
 }
   
-  .choose-option{
+.choose-option{
     align-items: center; 
    display: flex;
    flex-direction: column;
    color: #38abf3;
    text-align: center;
-   height: 100vh;
+    padding-bottom: 100px;
    background-color: #ECF7FF;
   }
   .choose-option h2{
@@ -212,15 +226,16 @@ input{
   }
   .whyChoose-cards{
    margin-top: 50px;
-   justify-content: space-evenly;
+ 
    display: flex;
-   width: 95%;
+   /* padding: 0 30px; */
   }
   .support-card{
    padding: 0;
    margin: 0;
    border: none;
-   height: 250px;
+  
+   margin: 0 20px;
    width: 263px;
    background-color: white;
    box-sizing: border-box;
@@ -397,9 +412,9 @@ input{
   .all-courses {
     width: 100vw;
     background-color: #ECF7FF;
-    padding: 0 20px;
-    height: 185vh;
-}
+    padding: 0 20px 80px;
+  
+  }
 
 .service-area {
     padding: 0px 0px;
@@ -479,15 +494,16 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     font-weight: 600;
     display: block;
 }
-
 .Achievement{
     position: relative;
     background: url(./images/employee\ picture.jpg) center/cover no-repeat;
     width: 100vw;
-    height: 93vh;
+    align-items: center;
+    justify-content: center;
     display: flex;
     padding-top: 80px;  
     color: white; 
+padding-bottom: 80px;
    
   
   }
@@ -603,134 +619,202 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     background-color: #fff;
     color: #3BBBB7;
   }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(250, 250, 250);
-    margin: 0;
-    padding: 0;
-}
-.section-title {
-    text-align: center;
-    padding: 120px 60px 0;
-}
-.section-title span {
-    font-size: 15px;
-    color: #3BBBB7;
-    margin-bottom: 15px;
-    font-weight: bold;
-    display: inline-block;
-}
-.section-title h3 {
-    font-size: 40px;
-    font-weight: 600;
-    color: #38abf3;
-    margin-bottom: 15px;
-}
-.section-title p {
-    color: #666;
-    font-size: 15px;
-    margin: 0;
-    display: block;
-    margin-bottom: 80px;
-}
-.modules {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-    background-color: rgb(250, 250, 251);
-    justify-content: center;
-    margin-bottom: 70px;
-}
-.module {
+  article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 108px;
-    width: 166px;
+    color: #ffffff;
+    background-color: #f5f5f5;
+}
+.section-title {
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.section-title h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #38abf3;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+#button-container {
+    margin: 20px 0;
+}
+
+#button-container button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+#button-container button.active {
+    background-color: #3BBBB7;
+    color: white;
+}
+
+.modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fffff;
+    width: 100%;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+text-align: center;
+padding: 120px 60px 0;
+}
+.section-title span {
+font-size: 15px;
+color: #3BBBB7;
+margin-bottom: 15px;
+font-weight: bold;
+display: inline-block;
+}
+.section-title h3 {
+font-size: 40px;
+font-weight: 600;
+color: #38abf3;
+margin-bottom: 15px;
+}
+.section-title p {
+color: #666;
+font-size: 15px;
+margin: 0;
+display: block;
+margin-bottom: 80px;
+}
+.modules {
+display: flex;
+flex-wrap: wrap;
+gap: 22px;
+background-color: #f5f5f5;
+justify-content: center;
+margin-bottom: 70px;
+}
+.module {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 108px;
+width: 166px;
+text-align: center;
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease;
 }
 .module i {
-    font-size: 40px;
-    color: #3BBBB7;
-    padding: 10px 0;
+font-size: 40px;
+color: #3BBBB7;
+padding: 10px 0;
 }
 .module span {
-    display: block;
-    color: #38abf3;
+display: block;
+color: #38abf3;
 }
 .module:hover {
-    background-color: #3BBBB7;
+background-color: #3BBBB7;
 }
 .module:hover i {
-    color: white;
+color: white;
 }
 .module:hover span {
-    color: white;
+color: white;
 }
+
 .container1 {
     display: flex;
-    width: 100vw;
-    height: 110vh;
-    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f5f5f5;
 }
+
 .text-container {
-    width: 50vw;
-    margin-left: 55px;
+    width: 50%;
+    padding: 20px;
 }
+
 .text-container h4 {
-    font-size: 30px;
+    font-size: 28px;
     color: #38abf3;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
 .text-container h5 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: #3BBBB7;
+    margin-bottom: 15px;
 }
+
 .text-container span {
-    padding-top: 20px;
-    border-top: 3px solid #3BBBB7;
-    width: 100px;
+    padding-top: 10px;
+    border-top: 2px solid #3BBBB7;
+    display: inline-block;
 }
+
 .text-container p {
-    margin-top: 30px;
+    margin-top: 20px;
     color: #38abf3;
-    line-height: 30px;
     font-size: 14px;
-    margin-bottom: 20px;
+    line-height: 1.6;
 }
+
 .text-container ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
+
 .text-container ul li {
     color: #666;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
+
 .text-container i {
     color: #3BBBB7;
     margin-right: 5px;
 }
+
 .image-container {
     width: 50%;
+    padding: 20px;
 }
+
 .image-container img {
-    width: 90%;
-    margin-right: 40px;
-    height: 400px;
-    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  footer {
+footer {
     position: relative;
     background: url('your-image-url.jpg') center/cover no-repeat;
     width: 100vw;
-    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -755,6 +839,7 @@ footer::after {
     position: relative;
     z-index: 3;
     text-align: center;
+    align-items: center;
     width: 100%;
     color: white;
 }
@@ -784,7 +869,7 @@ footer::after {
     position: relative;
     width: 80%;
     overflow: hidden;
-    margin: auto;
+   margin: 0 auto;
 }
 
 .slide-cards {
@@ -886,11 +971,11 @@ footer::after {
    
 }
 .navbar-buttons .nav-left{
-  margin-left: 50px;
+  margin-left: 10px;
   background-color:#38abf3;
 }
 .navbar-buttons .nav-right{
-  margin-right: 50px;
+  margin-right: 10px;
   background-color: #38abf3;
 }
 .nav-left:hover{
@@ -906,58 +991,45 @@ footer::after {
 @keyframes slide {
    
   0%, 10% { transform: translateX(0); }
- 
- 
- 
- 
- 
 }
-
-@media (max-width: 768px) {
-    .slide-card {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .nav-buttons {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .nav-buttons button {
-        font-size: 18px;
-        width: 35px;
-        height: 35px;
-    }
-}
-  .container5{
+.container5 {
     width: 92%; 
     overflow: hidden; 
-   margin: 0 auto;
-  }
-  .slides-cards{
+    margin: 0 auto;
+}
+
+.slides-cards {
     display: flex;
     gap: 30px;
-    width: calc(25% * 4); 
+    width: calc(4 * 22vw + 3 * 30px); /* Adjust the width to accommodate all cards and gaps */
     animation: slide-card 15s infinite;
-  
-    
-  }
-  .slides-card{
+}
+
+.slides-card {
     height: 400px;
     width: 22vw;
     background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
     border: 3px solid #ffffff3d;
-    flex-shrink: 0; 
-  }  
+    flex-shrink: 0;
+}  
+
+@keyframes slide-card {
+    0% { transform: translateX(0); }
+    20%, 30% { transform: translateX(-25%); }
+    40%, 50% { transform: translateX(-50%); }
+   
+  
+    100% { transform: translateX(0); } /* Loop back to the beginning */
+}
+
   aside {
     
     background-color: #ECF7FF;
     width: 100vw;
-    height: 130vh;
-    padding-top: 110px;
+   padding-bottom: 60px;
+    padding-top: 80px;
   }
   
   aside .txt-part { 
@@ -991,9 +1063,9 @@ footer::after {
     height: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
-    object-fit: cover; 
+  
     margin-bottom: 10px;
-    padding-top: 20px;
+    
   }
   
   .details {
@@ -1040,17 +1112,22 @@ footer::after {
     background: white;
   }
   
+  
+   
+   
   @keyframes slide {
+    20%, 30% { transform: translateX(-25%); }
+    40%, 50% { transform: translateX(-50%); }
+    60%, 70% { transform: translateX(-75%); }
+    80%, 90% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.card {
+    animation: slide 5s infinite;
+}
+figure {
    
-    0%, 10% { transform: translateX(0); }
-   
-   
-   
-   
-   
-  }
-  figure {
-    height: 100vh;
     width: 100vw;
     display: flex;
     padding-top: 100px;
@@ -1249,7 +1326,9 @@ footer::after {
     width: 80%;
     margin: auto;
 }
-
+.selection{
+    margin-bottom: 50px;
+}
 .question {
     position: relative;
     border: 1px solid #ddd;
@@ -1560,567 +1639,558 @@ footer::after {
       color: #3BBBB7;
         cursor: pointer;
       }
-      
-     @media (max-width: 1024px) {
-      nav {
-          padding: 10px 15px;
-          height: auto;
-      }
-  
-      nav img {
-          height: auto;
-          width: 20vh;
-          margin-bottom: 10px;
-      }
-  
-      nav ul {
-          flex: 1;
-          justify-content: center;
-          gap: 20px;
-      }
-  
-      nav ul li {
-          padding: 5px 0;
-      }
-  
-      nav ul li a {
-          font-size: 15px;
-          padding: 3px;
-      }
-  
-      nav .btn {
-          display: none;
-      }
-  
-      .hero-section {
-          height: auto; /* Changed from fixed height to auto */
-          padding: 20px; /* Adjust padding if needed */
-      }
-  
-      .heading {
-          padding: 120px 0;
-      }
-  
-      .heading h1 {
-          font-size: 2em;
-      }
-  
-      .heading h2 {
-          font-size: 3.5em;
-      }
-  
-      .contact {
-          font-size: 1em;
-          padding: 8px 16px;
-      }
-  
-      .choose-option {
-          height: auto; /* Changed from fixed height to auto */
-          padding: 20px; /* Adjust padding if needed */
-      }
-  
-      .support-card {
-          width: 180px;
-      }
-  
-      .video-section {
-          padding: 20px;
-          padding-top: 100px;
-      }
-  
-      .responsive-video {
-          width: 400px;
-          height: 400px;
-      }
-  
-      .Courses {
-          padding-left: 10px;
-      }
-  
-      .containers hr {
-          width: 30px;
-      }
-  
-      .containers h3 {
-          margin-left: 5px;
-          font-size: 14px;
-      }
-  
-      .vvork h1 {
-          font-size: 30px;
-      }
-  
-      .pa {
-          font-size: 13px;
-      }
-  
-      .check-circle li {
-          font-size: 14px;
-      }
-  
-      .call-option {
-          width: 200px;
-          padding: 11px 22px;
-          font-size: 14px;
-      }
-  
-      .roys {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 15px;
-          padding: 0 30px;
-      }
-  
-      .single-service {
-          min-height: 300px;
-          padding: 20px 20px 20px 15px;
-      }
-  
-      .service-content {
-          top: 140px;
-          padding: 8px;
-      }
-  
-      .service-content a {
-          font-size: 16px;
-      }
-  
-      .section-title {
-          padding: 15px 50px;
-          margin-bottom: 40px;
-      }
-  
-      .section-title h3 {
-          font-size: 35px;
-      }
-  
-      .section-title span, .section-title p {
-          font-size: 14px;
-      }
-  
-      .Achievement {
-          height: auto; /* Changed from fixed height to auto */
-          margin-top: 20px; /* Adjust margin-top as needed */
-      }
-  
-      .achieve-text {
-          padding: 0 330px;
-          justify-content: center;
-      }
-  
-      .achieve-cards {
-          flex-wrap: wrap;
-          padding-left: 0;
-          justify-content: center;
-      }
-  
-      .achieve-card {
-          height: 180px;
-          width: 220px;
-          margin: 10px;
-          padding: 15px 30px;
-      }
-  
-      .achieve-card i {
-          font-size: 24px;
-          width: 60px;
-          height: 60px;
-          line-height: 55px;
-      }
-  
-      .achieve-card h5 {
-          font-size: 32px;
-          padding-top: 10px;
-      }
-  
-      .achieve-card p {
-          font-size: 14px;
-      }
-  
-      .modules {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr); /* Adjusted from 4 columns to 2 */
-          gap: 0px;
-          padding: 0 30px; /* Adjusted padding */
-      }
-  
-      .module {
-          height: 100px;
-          width: 150px;
-          margin: 0;
-          padding: 5px;
-      }
-  
-      .module i {
-          font-size: 28px;
-      }
-  
-      .module span {
-          font-size: 13px;
-      }
-  
-      .container1 {
-          height: auto; /* Adjusted height for responsive */
-          padding: 20px;
-      }
-  
-      .text-container {
-          width: 100%;
-          margin-left: 0;
-          margin-bottom: 20px;
-      }
-  
-      .text-container h4 {
-          font-size: 24px;
-      }
-  
-      .text-container h5 {
-          font-size: 14px;
-      }
-  
-      .text-container p {
-          font-size: 13px;
-          line-height: 24px;
-      }
-  
-      .text-container ul li {
-          font-size: 14px;
-          padding-left: 10px;
-      }
-  
-      .image-container {
-          width: 100%;
-          margin: 0;
-      }
-  
-      .image-container img {
-          width: 100%;
-          height: auto;
-          margin: 0;
-      }
-  
-      footer {
-          padding: 50px 20px;
-          height: auto; /* Adjust height */
-      }
-  
-      .txt-content h2 {
-          font-size: 30px;
-      }
-  
-      .txt-content p {
-          font-size: 14px;
-          margin-bottom: 30px;
-      }
-  
-      .container4 {
-          width: 100%;
-          padding-bottom: 10px;
-          margin: 0 auto;
-      }
-  
-      .slide-cards {
-          width: 100%;
-          gap: 15px;
-          animation: slide-card-responsive 15s infinite;
-      }
-  
-      @keyframes slide-card-responsive {
-          0%, 10% { transform: translateX(0); }
-          20%, 30% { transform: translateX(-25%); }
-          40%, 50% { transform: translateX(-50%); }
-          60%, 70% { transform: translateX(-75%); }
-          80%, 90% { transform: translateX(-100%); }
-          100% { transform: translateX(0); }
-      }
-  
-      .slide-card {
-          height: auto;
-          width: 351px;
-          padding: 20px;
-          flex-shrink: 0;
-      }
-  
-      .slide-card .header ul li {
-          font-size: 18px;
-      }
-  
-      .slide-card p {
-          font-size: 14px;
-          line-height: 20px;
-      }
-  
-      .image-client {
-          margin-top: 20px;
-      }
-  
-      .image-client img {
-          width: 60px;
-          height: 60px;
-      }
-  
-      .client-title h5 {
-          font-size: 18px;
-      }
-  
-      .client-title span {
-          font-size: 13px;
-      }
-  
-      footer {
-          height: auto; /* Adjusted height */
-      }
-  
-      aside {
-          height: auto; /* Adjust height for responsive */
-          padding: 50px 20px;
-      }
-  
-      .txt-part h3 {
-          font-size: 30px;
-      }
-  
-      .txt-part p {
-          font-size: 14px;
-          margin-bottom: 30px;
-      }
-  
-      .container5 {
-          width: 92%;
-          padding-bottom: 10px;
-          margin: 0 auto;
-      }
-  
-      .slides-cards {
-          display: flex;
-          gap: 30px;
-          width: calc(25% * 4);
-          animation: slide-card 15s infinite;
-      }
-  
-      .slides-card {
-          height: 300px;
-          width: 22%;
-          padding: 0px;
-          flex-shrink: 0;
-      }
-  
-      .slides-card .content1 {
-          padding: 15px;
-      }
-  
-      .img2 img {
-          height: 150px;
-      }
-  
-      .details .name {
-          font-size: 16px;
-      }
-  
-      .details .job {
-          font-size: 14px;
-      }
-  
-      .media-icons a {
-          height: 30px;
-          width: 30px;
-          font-size: 12px;
-      }
-  
-      @keyframes slide-card-responsive {
-          0%, 10% { transform: translateX(0); }
-          20%, 30% { transform: translateX(-25%); }
-          40%, 50% { transform: translateX(-50%); }
-          60%, 70% { transform: translateX(-75%); }
-          80%, 90% { transform: translateX(-100%); }
-          100% { transform: translateX(0); }
-      }
-  
-      figure {
-          padding-top: 50px;
-          margin-bottom: 100px;
-      }
-  
-      .text-vision {
-          width: 90%;
-          font-size: 14px;
-          margin-left: 80px;
-          margin-bottom: 20px;
-      }
-  
-      .text-vision h3 {
-          font-size: 30px;
-      }
-  
-      .text-vision p, .text-vision .mt3 {
-          font-size: 14px;
-          line-height: 24px;
-      }
-  
-      .team-vision {
-          width: 90%;
-      }
-  
-      .image1 img {
-          width: 120px;
-          height: 120px;
-          margin-bottom: 30px;
-      }
-  
-      .template {
-          height: auto; /* Changed from fixed height to auto */
-          padding: 20px;
-          margin-top: 30rem; /* Adjusted margin-top */
-      }
-  
-      .appointment {
-          width: 60%;
-          height: auto;
-          padding: 15px;
-      }
-  
-      .appointment-title {
-          padding-top: 20px;
-          margin-left: 15px;
-      }
-  
-      .appointment-title h3 {
-          font-size: 24px;
-          margin-bottom: 15px;
-      }
-  
-      .appointment-title span {
-          font-size: 24px;
-      }
-  
-      .appointment-title p {
-          font-size: 16px;
-          padding-top: 5px;
-      }
-  
-      .register {
-          width: 150px;
-          margin-top: 20px;
-          margin-left: 15px;
-          font-size: 16px;
-          padding: 10px 20px;
-      }
-  
-      summary {
-          padding-top: 60px;
-          padding-left: 40px;
-      }
-  
-      .text-selection h1 {
-          font-size: 32px;
-      }
-  
-      .text-selection h5 {
-          font-size: 16px;
-      }
-  
-      .questions-container {
-          grid-template-columns: repeat(2, 1fr);
-          width: 90%;
-          margin-left: 20px;
-      }
-  
-      .scholarship {
-          width: 100%;
-          height: auto; /* Adjusted height */
-          padding: 10px 15px;
-      }
-  
-      .scholarship h4 {
-          font-size: 16px;
-          margin-left: 10px;
-      }
-  
-      .scholarship b {
-          margin-right: 10px;
-      }
-  
-      .scholarship p {
-          font-size: 24px;
-          right: 15px;
-      }
-  
-      figcaption {
-          margin-top: 170px;
-      }
-  
-      .certificate h3 {
-          font-size: 32px; /* Adjust font size */
-      }
-  
-      .logos-container {
-          gap: 60px; /* Adjusted gap */
-          padding-top: 20px; /* Adjusted padding */
-      }
-  
-      .logos {
-          width: 120px; /* Adjust logo size */
-          height: 100px; /* Adjust logo size */
-      }
-  
-      .table img {
-          width: 80px; /* Adjust logo size */
-      }
-  
-      .footer-content {
-          padding: 1em; /* Adjust padding */
-      }
-  
-      .foot {
-          gap: 15px; /* Adjust gap */
-      }
-  
-      .infoot, .foot1, .foot2 {
-          padding: 10px; /* Adjust padding */
-      }
-  
-      .infoot img {
-          width: 150px; /* Adjust image size */
-      }
-  
-      .infoot p {
-          font-size: 16px; /* Adjust font size */
-      }
-  
-      .foot1 h2, .foot2 h3 {
-          font-size: 1.2em; /* Adjust heading size */
-      }
-  
-      .foot1 ul {
-          padding-inline-start: 20px; /* Adjust padding */
-      }
-  
-      .foot1 ul li a {
-          font-size: 16px; /* Adjust font size */
-      }
-  
-      .foot2 {
-          margin-right: 20px;
-      }
-  
-      .map-container {
-          height: 180px; /* Adjust height */
-      }
-  
-      #scroll-up {
-          right: 130px; /* Adjust positioning */
-          bottom: 30px; /* Adjust positioning */
-          width: 45px; /* Adjust size */
-          height: 45px; /* Adjust size */
-          line-height: 43px; /* Adjust line height */
-      }
-  
-      #scroll-up i {
-          font-size: 20px; /* Adjust icon size */
-      }
-  }
-  
+  @media (max-width: 1024px) {
+    nav {
+        padding: 10px 15px;
+        height: auto;
+    }
 
-@media (max-width: 768px) {
+    nav img {
+        height: auto;
+        width: 20vh;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex: 1;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    nav .btn {
+        display: none;
+    }
+    .hero-section {
+         
+        padding: 20px; /* Adjust padding if needed */
+    }
+
+    .heading {
+        padding: 120px 0;
+    }
+
+    .heading h1 {
+        font-size: 2em;
+    }
+
+    .heading h2 {
+        font-size: 3.5em;
+    }
+
+    .contact {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .choose-option {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .support-card {
+        width: 180px;
+    }
+    .video-section {
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .responsive-video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Courses {
+        padding-left: 10px;
+    }
+
+    .containers hr {
+        width: 30px;
+    }
+
+    .containers h3 {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .vvork h1 {
+        font-size: 30px;
+    }
+
+    .pa {
+        font-size: 13px;
+    }
+
+    .check-circle li {
+        font-size: 14px;
+    }
+
+    .call-option {
+        width: 200px;
+        padding: 11px 22px;
+        font-size: 14px;
+    }
+    .roys {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 30px ;
+       
+    }
+
+    .single-service {
+        min-height: 300px;
+        padding: 20px 20px 20px 15px;
+    }
+
+    .service-content {
+        top: 140px;
+        padding: 8px;
+    }
+
+    .service-content a {
+        font-size: 16px;
+    }
+
+    .section-title {
+        padding: 15px 50px;
+        margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+        font-size: 35px;
+    }
+
+    .section-title span, .section-title p {
+        font-size: 14px;
+    }
+    .Achievement {
+      
+        margin-top: 300px; /* Adjust margin-top as needed */
+    }
+
+    .achieve-text {
+        padding: 0 330px;
+        justify-content: center;
+    }
+
+    .achieve-cards {
+        flex-wrap: wrap;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .achieve-card {
+        height: 180px;
+        width: 220px;
+        margin: 10px;
+        padding: 15px 30px;
+    }
+
+    .achieve-card i {
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+    }
+
+    .achieve-card h5 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+
+    .achieve-card p {
+        font-size: 14px;
+    }
+    .modules {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjusted from 4 columns to 2 */
+        gap: 0px;
+        padding: 0 30px; /* Adjusted padding */
+    }
+
+    .module {
+        height: 100px;
+        width: 150px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .module i {
+        font-size: 28px;
+    }
+
+    .module span {
+        font-size: 13px;
+    }
+
+    .container1 {
+        height: auto; /* Adjusted height for responsive */
+        padding: 20px;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-container h4 {
+        font-size: 24px;
+    }
+
+    .text-container h5 {
+        font-size: 14px;
+    }
+
+    .text-container p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .text-container ul li {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    footer {
+        padding: 50px 20px;
+        height: auto; /* Adjust height */
+    }
+
+    .txt-content h2 {
+        font-size: 30px;
+    }
+
+    .txt-content p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .container4 {
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .slide-cards {
+        width: 100%;
+        gap: 15px;
+        animation: slide-card-responsive 15s infinite;
+    }
+
+    @keyframes slide-card-responsive {
+        0%, 10% { transform: translateX(0); }
+        20%, 30% { transform: translateX(-25%); }
+        40%, 50% { transform: translateX(-50%); }
+        60%, 70% { transform: translateX(-75%); }
+        80%, 90% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+
+    .slide-card {
+        height: auto;
+        width: 351px;
+        padding: 20px;
+        flex-shrink: 0;
+    }
+
+    .slide-card .header ul li {
+        font-size: 18px;
+    }
+
+    .slide-card p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .image-client {
+        margin-top: 20px;
+    }
+
+    .image-client img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-title h5 {
+        font-size: 18px;
+    }
+
+    .client-title span {
+        font-size: 13px;
+    }
+
+    footer {
+        height: auto; /* Adjusted height */
+    }
+    aside {
+        height: auto; /* Adjust height for responsive */
+        padding: 50px 20px;
+    }
+
+    .txt-part h3 {
+        font-size: 30px;
+    }
+
+    .txt-part p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .container5 {
+        width: 92%;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .slides-cards {
+        display: flex;
+        gap: 30px;
+        width: calc(25% * 4);
+        animation: slide-card 15s infinite;
+    }
+
+    .slides-card {
+        height: 300px;
+        width: 22%;
+        padding: 0px;
+        flex-shrink: 0;
+    }
+
+    .slides-card .content1 {
+        padding: 15px;
+    }
+
+    .img2 img {
+        height: 150px;
+    }
+
+    .details .name {
+        font-size: 16px;
+    }
+
+    .details .job {
+        font-size: 14px;
+    }
+
+    .media-icons a {
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+
+    @keyframes slide-card-responsive {
+        0%, 10% { transform: translateX(0); }
+        20%, 30% { transform: translateX(-25%); }
+        40%, 50% { transform: translateX(-50%); }
+        60%, 70% { transform: translateX(-75%); }
+        80%, 90% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+    figure {
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .text-vision {
+        width: 90%;
+        font-size: 14px;
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+
+    .text-vision h3 {
+        font-size: 30px;
+    }
+
+    .text-vision p, .text-vision .mt3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .team-vision {
+        width: 90%;
+    }
+
+    .image1 img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+    .template {
+        height: auto; /* Changed from fixed height to auto */
+        padding: 20px;
+        margin-top: 30rem; /* Adjusted margin-top */
+    }
+
+    .appointment {
+        width: 60%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .appointment-title {
+        padding-top: 20px;
+        margin-left: 15px;
+    }
+
+    .appointment-title h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .appointment-title span {
+        font-size: 24px;
+    }
+
+    .appointment-title p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    .register {
+        width: 150px;
+        margin-top: 20px;
+        margin-left: 15px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    summary {
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+
+    .text-selection h1 {
+        font-size: 32px;
+    }
+
+    .text-selection h5 {
+        font-size: 16px;
+    }
+
+    .questions-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .scholarship {
+        width: 100%;
+        height: auto; /* Adjusted height */
+        padding: 10px 15px;
+    }
+
+    .scholarship h4 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .scholarship b {
+        margin-right: 10px;
+    }
+
+    .scholarship p {
+        font-size: 24px;
+        right: 15px;
+    }
+
+    figcaption {
+        margin-top: 170px;
+    }
+
+    .certificate h3 {
+        font-size: 32px; /* Adjust font size */
+    }
+
+    .logos-container {
+        gap: 60px; /* Adjusted gap */
+        padding-top: 20px; /* Adjusted padding */
+    }
+
+    .logos {
+        width: 120px; /* Adjust logo size */
+        height: 100px; /* Adjust logo size */
+    }
+
+    .table img {
+        width: 80px; /* Adjust logo size */
+    }
+
+    .footer-content {
+        padding: 1em; /* Adjust padding */
+    }
+
+    .foot {
+        gap: 15px; /* Adjust gap */
+    }
+
+    .infoot, .foot1, .foot2 {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .infoot img {
+        width: 150px; /* Adjust image size */
+    }
+
+    .infoot p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .foot1 h2, .foot2 h3 {
+        font-size: 1.2em; /* Adjust heading size */
+    }
+
+    .foot1 ul {
+        padding-inline-start: 20px; /* Adjust padding */
+    }
+
+    .foot1 ul li a {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .foot2 {
+        margin-right: 20px;
+    }
+
+    .map-container {
+        height: 180px; /* Adjust height */
+    }
+
+    #scroll-up {
+        right: 130px; /* Adjust positioning */
+        bottom: 30px; /* Adjust positioning */
+        width: 45px; /* Adjust size */
+        height: 45px; /* Adjust size */
+        line-height: 43px; /* Adjust line height */
+    }
+
+    #scroll-up i {
+        font-size: 20px; /* Adjust icon size */
+    }
+  }
+  @media (max-width: 768px) {
+    .nav{
+        width: 100%;
+        height: 65px;
+    }
     .checkbtn {
         display: block;
         color: white;
@@ -2128,11 +2198,11 @@ footer::after {
         cursor: pointer;
         background-color: #3BBBB7;
         position: absolute;
-        top: 6px;
-      
-        padding: 4px;
+        top: 30px;
+       margin: auto;
+        padding: 5px;
         z-index: 2;
-        left: 600px;
+        right: 40px;
     }
 
     nav ul {
@@ -2140,7 +2210,7 @@ footer::after {
         width: 100%;
         flex-direction: column;
         position: absolute;
-        top: 13vh;
+        top: 20vh;
         left: 0;
         background-color: #fff;
         z-index: 101;
@@ -2161,36 +2231,14 @@ nav  ul li a:hover {
     }
 
     nav img {
-        height: auto;
-        width: 120px; /* Adjust to restore the logo size */
+       padding: 10px 0px;
+        width: 30vh; /* Adjust to restore the logo size */
         max-width: 50vh; /* Ensure it stays within bounds */
     }
 
     #checkbtn:checked ~ ul {
         display: flex;
     }
-
-    .hero-section {
-        padding: 20px;
-        height: auto;
-    }
-.heading{
-  padding-top: 100px;
-}
-    .heading h1 {
-        font-size: 20px;
-    }
-
-    .heading h2 {
-        font-size: 30px;
-    }
-
-    .contact {
-        font-size: 14px;
-        padding: 10px;
-        width: auto;
-    }
-
     .choose-option {
         padding: 20px;
         height: auto;
@@ -2208,14 +2256,13 @@ nav  ul li a:hover {
     .whyChoose-cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+      
     }
 
     .support-card {
         width: 45%;
         margin: 10px 5px;
     }
-
     .video-section {
         flex-direction: column;
         height: auto;
@@ -2255,7 +2302,6 @@ nav  ul li a:hover {
     .call-option {
         width: 100%;
     }
-
     .all-courses {
         height: auto;
     }
@@ -2284,7 +2330,6 @@ nav  ul li a:hover {
     .service-main{
         margin-bottom: 10px;
     }
-
     .Achievement {
         height: auto;
     }
@@ -2302,15 +2347,6 @@ nav  ul li a:hover {
         max-width: 300px;
         margin: 10px auto;
     }
-
-    .section-title {
-        padding: 60px 30px 0;
-    }
-
-    .section-title p {
-        margin-bottom: 20px;
-    }
-
     article {
         margin-bottom: 40px;
     }
@@ -2329,16 +2365,19 @@ nav  ul li a:hover {
         flex-direction: column;
         align-items: center;
         height: auto;
+        justify-content: center;
     }
 
     .text-container, .image-container {
         width: 100%;
         margin: 0;
         padding: 0 20px;
+       
     }
 
     .text-container {
         margin-top: 20px;
+       
     }
 
     .image-container img {
@@ -2347,67 +2386,61 @@ nav  ul li a:hover {
         margin: 0;
         border-radius: 15px;
     }
-
-    .team-vision {
+    .slide-card {
         width: 100%;
-        display: flex;
-        flex-direction: row; /* Arrange in a single row */
-        justify-content: space-around; /* Distribute images evenly */
-        align-items: center;
-        margin-top: 30px;
+        margin: 0 auto;
     }
 
-    .image-vision {
-        width: 30%; /* Set width to fit 3 images in a row */
-        margin: 10px 0;
+    .nav-buttons {
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .image-vision h4,
-    .image-vision span {
-        font-size: 14px;
+    .nav-buttons button {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
     }
-
-    .image1 img {
-        width: 120px;
-        height: 120px;
-    }
-
     footer {
-      height: 300px;
-      padding-top: 40px;
-      padding-bottom: 20px;
-  }
-
-  .txt-content h2 {
-      font-size: 30px;
-  }
-
-  .txt-content p {
-      margin-bottom: 20px;
-  }
-
-  .container4 {
-      width: 100%;
-      padding-bottom: 20px;
-      margin: 0px auto;
-      overflow-x: hidden; /* Prevent horizontal scroll on the page */
-  }
-
-  .slide-cards {
-      display: flex;
-      gap: 25px; /* Maintain some gap between cards */
-      width: calc(351px * 6); /* Adjust width based on the number of cards */
-      animation: slide-card-horizontal 20s linear infinite;
-  }
-
-  .slide-card {
-      width: 351px; /* Keep the card width fixed */
-      height: auto;
-  }
-
+        height: 300px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+  
+    .txt-content h2 {
+        font-size: 30px;
+    }
+  
+    .txt-content p {
+        margin-bottom: 20px;
+    }
+   .comment{
+    margin-top: 220px;
+   }
+    .container4 {
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0px auto;
+        overflow-x: hidden; /* Prevent horizontal scroll on the page */
+    }
+  
+    .slide-cards {
+        display: flex;
+        gap: 45px; /* Maintain some gap between cards */
+        width: calc(351px * 6); /* Adjust width based on the number of cards */
+        animation: slide-card-horizontal 20s linear infinite;
+        padding-bottom: 60px;
+        
+    }
+   
+    .slide-card {
+        width: 351px; /* Keep the card width fixed */
+        padding-bottom: 60px;
+    }
     aside {
-        height: auto;
+        
         padding-top: 30px;
+        
     }
 
     .txt-part h3 {
@@ -2436,7 +2469,6 @@ nav  ul li a:hover {
         width: 30px;
         font-size: 12px;
     }
-
     figure {
         flex-direction: column;
         padding-top: 40px;
@@ -2457,7 +2489,29 @@ nav  ul li a:hover {
         font-size: 12px;
         line-height: 20px;
     }
+    .team-vision {
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* Arrange in a single row */
+        justify-content: space-around; /* Distribute images evenly */
+        align-items: center;
+        margin-top: 30px;
+    }
 
+    .image-vision {
+        width: 30%; /* Set width to fit 3 images in a row */
+        margin: 10px 0;
+    }
+
+    .image-vision h4,
+    .image-vision span {
+        font-size: 14px;
+    }
+
+    .image1 img {
+        width: 120px;
+        height: 120px;
+    }
     .template {
         height: auto;
         padding: 20px;
@@ -2489,7 +2543,6 @@ nav  ul li a:hover {
         font-size: 14px;
         padding: 8px 16px;
     }
-
     summary {
         padding-left: 10px;
         padding-top: 20px;
@@ -2601,43 +2654,15 @@ nav  ul li a:hover {
     #scroll-up i {
         font-size: 20px;
     }
-}
-
-    @media  (max-width:697px){
-        .checkbtn {
-            font-size: 25px; /* Smaller font size for smaller screens */
-            padding: 2px; /* Adjust padding for better fit */
-            margin-left: 530px; /* Adjust margin to fit better on small screens */
-            margin-right: 50px; /* Adjust margin-right for better alignment */
-            top: 15px;
-        }
-    
-        nav ul {
-            top: 10vh; /* Adjust top position for smaller screens */
-        }
-    
-        nav ul li {
-            padding: 12px; /* Adjust padding for smaller screens */
-        }
-    
-        nav ul li a {
-            padding: 8px; /* Adjust padding for smaller screens */
-        }
-        nav img{
-            width: 35vh;
-            height: 18vh;
-        }
-    }
-        
-    
-   @media (max-width: 640px) {
+  }
+  @media (max-width: 640px) {
     .checkbtn {
       font-size: 25px;
       padding: 5px;
-      margin: 0 auto;
+     
       position: fixed;
-      left: auto;
-      right: 10px;
+    
+      right: 30px;
       top: 10px;
       z-index: 1000;
       display: block;
@@ -2661,484 +2686,526 @@ nav  ul li a:hover {
 
   nav img {
       width: 30vw;
-      height: auto;
+     
   }
-
   .hero-section {
-      padding: 20px;
-      box-sizing: border-box; /* Include padding in height calculations */
-      height: auto;
-  }
-
-  .heading {
-      padding-top: 100px;
-      margin-top: 0;
-  }
-
-  .heading h1 {
-      font-size: 20px;
-  }
-
-  .heading h2 {
-      font-size: 24px;
-  }
-
-  .contact {
-      font-size: 12px;
-      padding: 8px 16px;
-  }
-
-    .choose-option {
-        padding: 10px;
-        height: auto;
-    }
-
-    .choose-option h2 {
-        font-size: 24px;
-        padding-top: 20px;
-        margin-top: 5px;
-    }
-
-    .choose-option p {
-        font-size: 14px;
-    }
-
-    .whyChoose-cards {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-
-    .support-card {
-        width: 100%;
-        max-width: none;
-        margin-bottom: 20px;
-    }
-
-    .support-card:last-child {
-        margin-bottom: 0;
-    }
-
-    .video-section {
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    .responsive-video {
-        height: auto;
-        max-width: 100%;
+    padding: 60px;
        
-    }
-
-    .Courses {
-        padding-left: 10px;
-    }
-
-    .containers {
-        flex-direction: column;
-    }
-
-    .containers hr {
-        width: 30px;
-    }
-
-    .containers h3 {
-        margin-left: 0;
-    }
-
-    .vwork h1 {
-        font-size: 28px;
-    }
-
-    .pa {
-        font-size: 12px;
-        margin-top: 10px;
-    }
-
-    .pa2 {
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-
-    .check-circle li {
-        font-size: 14px;
-        padding: 0 0 10px 20px;
-    }
-
-    .call-option {
-        width: 100%;
-        max-width: 300px;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .all-courses {
-        height: auto;
-    }
-
-    .roys {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-    }
-.service-content{
-    margin-bottom: 50px;
 }
-    .section-title {
-        padding: 20px 10px;
-        margin-bottom: 30px;
-    }
+.heading{
+align-items: center;
+}
+.heading h1 {
+    font-size: 20px;
+}
 
-    .section-title h3 {
-        font-size: 24px;
-    }
+.heading h2 {
+    font-size: 30px;
+}
 
-    .section-title p {
-        font-size: 14px;
-    }
+.contact {
+    font-size: 14px;
+    padding: 10px;
+    width: auto;
+}
+.hero-section {
+   
+    box-sizing: border-box; 
+  
+}
 
-    .single-service {
-        min-height: 250px;
-        padding: 20px;
-    }
+.heading {
+   
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
-    .service-content {
-        padding: 5px;
-        top: 90px;
-    }
+.heading h1 {
+    font-size: 20px;
+}
 
-    .service-content a {
-        font-size: 16px;
-    }
 
-    .Achievement {
-        height: auto;
-    }
 
-    .achieve-text {
-        padding: 0 10px;
-    }
+.contact {
+    font-size: 12px;
+    padding: 8px 16px;
+}
+.choose-option {
+    /* padding: 10px; */
+  
+}
 
-    .achieve-text h2 {
-        font-size: 20px;
-    }
+.choose-option h2 {
+    font-size: 24px;
+    padding-top: 20px;
+    margin-top: 5px;
+}
 
-    .achieve-text p {
-        font-size: 12px;
-    }
+.choose-option p {
+    font-size: 14px;
+}
 
-    .achieve-card {
-        width: 100%;
-        max-width: none;
-    }
+.whyChoose-cards {
+    margin-top: 20px;
+  
+   
+}
 
-    .achieve-card i {
-        font-size: 40px;
-        width: 50px;
-        height: 50px;
-        line-height: 48px;
-    }
+.support-card {
+    width: 90%;
+    max-width: none;
+    margin: 20px;
+  
+}
 
-    .achieve-card h5 {
-        font-size: 30px;
-    }
+.support-card:last-child {
+    margin-bottom: 0;
+}
+.video-section {
+    padding: 10px;
+    flex-direction: column;
+}
 
-    .achieve-card p {
-        font-size: 18px;
-    }
+.responsive-video {
+    height: auto;
+    max-width: 100%;
+   
+}
 
-    .section-title {
-        padding: 40px 10px 0;
-    }
+.Courses {
+    padding-left: 10px;
+}
 
-    .section-title h3 {
-        font-size: 24px;
-    }
+.containers {
+    flex-direction: column;
+}
 
-    .section-title p {
-        font-size: 12px;
-        margin-bottom: 20px;
-    }
+.containers hr {
+    width: 30px;
+}
 
-    .modules {
-        gap: 12px;
-    }
+.containers h3 {
+    margin-left: 0;
+}
 
-    .module {
-        width: 100%;
-        max-width: 160px;
-    }
+.vwork h1 {
+    font-size: 28px;
+}
 
-    .module i {
-        font-size: 24px;
-    }
+.pa {
+    font-size: 12px;
+    margin-top: 10px;
+}
 
-    .module span {
-        font-size: 12px;
-    }
+.pa2 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
 
-    .text-container {
-        padding: 10px;
-    }
+.check-circle li {
+    font-size: 14px;
+    padding: 0 0 10px 20px;
+}
 
-    .text-container h4 {
-        font-size: 20px;
-    }
+.call-option {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    padding: 10px;
+}
+.all-courses {
+    height: auto;
+}
 
-    .text-container h5 {
-        font-size: 12px;
-    }
+.roys {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+}
+.service-content{
+margin-bottom: 50px;
+}
+.section-title {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
 
-    .text-container span {
-        width: 60px;
-    }
+.section-title h3 {
+    font-size: 24px;
+}
 
-    .text-container p {
-        font-size: 10px;
-        line-height: 20px;
-    }
+.section-title p {
+    font-size: 14px;
+}
 
-    .text-container ul li {
-        font-size: 12px;
-        padding-left: 8px;
-    }
+.single-service {
+    min-height: 250px;
+    padding: 20px;
+}
 
-    .image-container img {
-        width: 100%;
-        height: auto;
-    }
-    footer {
-      height: 600px;
-      padding: 40px 0;
-  }
+.service-content {
+    padding: 5px;
+    top: 90px;
+}
 
-  .txt-content h2 {
-      font-size: 25px;
-  }
+.service-content a {
+    font-size: 16px;
+}
+.Achievement {
+    height: auto;
+}
 
-  .container4 {
-      width: 100%;
-      overflow-x: hidden;
-  }
+.achieve-text {
+    padding: 0 10px;
+}
 
-  .slide-cards {
-      display: flex;
-      gap: 15px;
-      width: calc(300px * 6); /* Adjust based on the number of cards */
-      animation: slide-card-horizontal 20s linear infinite;
-  }
+.achieve-text h2 {
+    font-size: 30px;
+}
 
-  .slide-card {
-      width: 300px; /* Adjust width to fit smaller screens */
-      height: auto;
-  }
+.achieve-text p {
+    font-size: 12px;
+}
+
+.achieve-card {
+    width: 100%;
+    max-width: none;
+}
+
+.achieve-card i {
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+}
+
+.achieve-card h5 {
+    font-size: 30px;
+}
+
+.achieve-card p {
+    font-size: 18px;
+}
+.section-title {
+    padding: 40px 10px 0;
+}
+
+.section-title h3 {
+    font-size: 24px;
+}
+
+.section-title p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.modules {
+    gap: 12px;
+}
+
+.module {
+    width: 100%;
+    max-width: 160px;
+}
+
+.module i {
+    font-size: 24px;
+}
+
+.module span {
+    font-size: 12px;
+}
+
+.text-container {
+    padding: 10px;
+}
+
+.text-container h4 {
+    font-size: 20px;
+}
+
+.text-container h5 {
+    font-size: 12px;
+}
+
+.text-container span {
+    width: 60px;
+}
+
+.text-container p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.text-container ul li {
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    height: 600px;
+    padding: 40px 0;
+}
+
+.txt-content h2 {
+    font-size: 25px;
+}
+
+.container4 {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slide-cards {
+    display: flex;
+    gap: 15px;
+    width: calc(300px * 6); /* Adjust based on the number of cards */
+    animation: slide-card-horizontal 20s linear infinite;
+}
+
+.slide-card {
+    width: 300px; /* Adjust width to fit smaller screens */
+    height: auto;
+}
 
 
 @keyframes slide-card-horizontal {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-70%);
-  }
+0% {
+    transform: translateX(0);
 }
-    .container5 {
-        width: 80%;
-    }
+100% {
+    transform: translateX(-70%);
+}
+}
+.nav-buttons{
+    
+    margin-right: 30;
+}
+.container5 {
+    width: 80%;
+}
 
-    aside {
-        height: auto;
-        padding-top: 50px;
-    }
+aside {
+    height: auto;
+    padding-top: 50px;
+}
 
-    .txt-part h3 {
-        font-size: 28px;
-    }
+.txt-part h3 {
+    font-size: 28px;
+}
 
-    .txt-part p {
-        font-size: 14px;
-        margin-bottom: 60px;
-    }
+.txt-part p {
+    font-size: 14px;
+    margin-bottom: 60px;
+}
 
-    .img2 img {
-        height: 220px;
-       background-size: cover;
-       
-    }
+.img2 img {
+    height: 220px;
+   background-size: cover;
+   
+}
 
-    .details .name {
-        font-size: 16px;
-    }
+.details .name {
+    font-size: 16px;
+}
 
-    .details .job {
-        font-size: 14px;
-    }
+.details .job {
+    font-size: 14px;
+}
 
-    .media-icons a {
-        height: 30px;
-        width: 30px;
-        font-size: 12px;
-    }
-    .slides-cards {
-      display: flex;
-      gap: 15px;
-      width: calc(300px * 6); /* Adjust based on the number of cards */
-      animation: slide-card-horizontal 20s linear infinite;
+.media-icons a {
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+}
+.slides-cards {
+  display: flex;
+  gap: 15px;
+  width: calc(300px * 6); /* Adjust based on the number of cards */
+  animation: slide-card-horizontal 20s linear infinite;
+}
+
+.slides-card {
+  width: 300px; /* Adjust width to fit smaller screens */
+  height: auto;
+}
+figure {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    height: auto;
+}
+
+.text-vision {
+    width: 90vw;
+    font-size: 14px;
+    margin-left: 0;
+    padding: 0 10px;
+}
+
+.text-vision h3 {
+    font-size: 30px;
+}
+
+.text-vision p,
+.text-vision .mt3 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team-vision {
+    width: 90vw;
+    margin-top: 20px;
+}
+
+.image-vision {
+    margin-left: 0;
+}
+
+.image1 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.template {
+    height: auto;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.appointment {
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+    
+}
+
+.appointment-title {
+    padding-top: 15px;
+    margin-left: 0;
+    margin: 0;
+}
+
+.appointment-title h3 {
+    font-size: 24px;
+}
+
+.appointment-title span {
+    font-size: 24px;
+}
+
+.appointment-title p {
+    font-size: 14px;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+.register {
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
+   
+    padding: 8px 16px;
+}
+
+.register a {
+    font-size: 16px;
+}
+summary {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.text-selection h1 {
+    font-size: 28px;
+}
+
+.text-selection h5 {
+    font-size: 14px;
+}
+
+.questions-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 90%;
+}
+
+.scholarship {
+    padding: 10px 15px;
+}
+
+.scholarship h4 {
+    font-size: 14px;
+}
+
+.scholarship p {
+    font-size: 18px;
+}
+
+figcaption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.certificate h3 {
+    font-size: 24px;
+}
+
+.logos-container {
+    gap: 15px;
+    padding: 20px;
+}
+
+.logos-container img {
+    height: 40px;
+    width: auto;
+}
+
+.cards-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.certificate h4 {
+    font-size: 14px;
+}
+
+.certificate p {
+    font-size: 14px;
+}
+#scroll-up{
+  bottom: 50px;
+}
   }
-
-  .slides-card {
-      width: 300px; /* Adjust width to fit smaller screens */
-      height: auto;
-  }
-    figure {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 50px;
-        margin-bottom: 100px;
-        height: auto;
+  @media  (max-width:697px){
+    .checkbtn {
+        font-size: 25px; 
+        padding: 5px; 
+        right: 30px;
+        top: 30px;
     }
 
-    .text-vision {
-        width: 90vw;
-        font-size: 14px;
-        margin-left: 0;
-        padding: 0 10px;
+    nav ul {
+        top: 20vh; 
     }
 
-    .text-vision h3 {
-        font-size: 30px;
+    nav ul li {
+        padding: 12px; 
     }
 
-    .text-vision p,
-    .text-vision .mt3 {
-        font-size: 14px;
-        line-height: 24px;
+    nav ul li a {
+        padding: 8px;
     }
-
-    .team-vision {
-        width: 90vw;
-        margin-top: 20px;
-    }
-
-    .image-vision {
-        margin-left: 0;
-    }
-
-    .image1 img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-    }
-
-    .template {
-        height: auto;
-        padding: 20px;
-        margin-top: auto;
-    }
-
-    .appointment {
-        width: 90vw;
-        height: auto;
-        padding: 15px;
-        
-    }
-
-    .appointment-title {
-        padding-top: 15px;
-        margin-left: 0;
-        margin: 0;
-    }
-
-    .appointment-title h3 {
-        font-size: 24px;
-    }
-
-    .appointment-title span {
-        font-size: 24px;
-    }
-
-    .appointment-title p {
-        font-size: 14px;
-        padding-top: 5px;
-        line-height: 1.5;
-    }
-
-    .register {
-        height: auto;
-        margin-top: 20px;
-        margin-left: 0;
+    nav img{
+        width: 30vh;
        
-        padding: 8px 16px;
-    }
-
-    .register a {
-        font-size: 16px;
-    }
-
-    summary {
-        padding-top: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .text-selection h1 {
-        font-size: 28px;
-    }
-
-    .text-selection h5 {
-        font-size: 14px;
-    }
-
-    .questions-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        width: 90%;
-    }
-
-    .scholarship {
-        padding: 10px 15px;
-    }
-
-    .scholarship h4 {
-        font-size: 14px;
-    }
-
-    .scholarship p {
-        font-size: 18px;
-    }
-
-    figcaption {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .certificate h3 {
-        font-size: 24px;
-    }
-
-    .logos-container {
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .logos-container img {
-        height: 40px;
-        width: auto;
-    }
-
-    .cards-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .certificate h4 {
-        font-size: 14px;
-    }
-
-    .certificate p {
-        font-size: 14px;
-    }
-    #scroll-up{
-      bottom: 50px;
     }
 }

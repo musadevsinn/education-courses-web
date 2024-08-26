@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Network Cursor Effect</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #fff; /* White background to match the image */
+            cursor: none; /* Hide the default cursor */
+        }
+        .network {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="%2300BFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon"><polygon points="12 2 19 7 19 17 12 22 5 17 5 7 12 2"></polygon></svg>') no-repeat center center;
+            background-size: contain;
+        }
+    </style>
 </head>
 <body>
-  
+
+<div class="network"></div>
+
+<script>
+// Reference to the network element
+const network = document.querySelector('.network');
+
+// Event listener for mouse movement
+document.addEventListener('mousemove', function(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    // Update the position of the network layer to follow the cursor
+    network.style.transform = `translate(${x}px, ${y}px)`;
+});
+</script>
+
 </body>
 </html>
