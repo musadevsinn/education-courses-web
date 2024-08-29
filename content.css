@@ -1,58 +1,332 @@
-body {
-  font-family: Arial, sans-serif;
+footer {
+    position: relative;
+    background: url('your-image-url.jpg') center/cover no-repeat;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    padding-top: 50px;
+    overflow: hidden;
 }
 
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 187, 183, 0.9);
+    z-index: 2;
 }
 
-/* Style for the toggle button */
-.toggle-button {
-  display: none;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
+.comment {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    color: white;
 }
 
-/* Style for the unordered list */
-.item-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+.txt-content span {
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    font-size: 18px;
 }
 
-.item-list li {
-  margin: 10px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-input{ 
-  display: none;
+.txt-content h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-/* Show the toggle button and hide the list for screens smaller than 768px */
-@media (max-width: 768px) {
-  .item-list {
-      display: none;
-  }
-  input{
-    display: none;
-  }
+.txt-content p {
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
 
-  .toggle-button {
-      display: block;
-  }
+.container4 {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
-  .toggle-checkbox:checked + .toggle-button + .item-list {
-      display: block;
-  }
+.slide-cards {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.slide-card {
+    height: 300px;
+    width: calc(40% - 10px);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.slide-card ul li {
+    color: #f7bd01;
+    font-size: 18px;
+}
+
+.icon1 i {
+    font-size: 45px;
+    color: #3BBBB7;
+}
+
+.slide-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.image-client {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-client img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #3BBBB7;
+}
+
+.client-title h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.client-title span {
+    font-size: 14px;
+    color: #666;
+}
+
+.navbar-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.navbar-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    transition: background 0.3s ease;
+}
+
+.navbar-buttons .nav-left {
+    margin-left: 10px;
+    background-color: #38abf3;
+}
+
+.navbar-buttons .nav-right {
+    margin-right: 10px;
+    background-color: #38abf3;
+}
+
+.nav-left:hover,
+.nav-right:hover {
+    background-color: white;
+}
+
+.navbar-buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes slide {
+    0%, 10% { transform: translateX(0); }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .txt-content h2 {
+        font-size: 30px;
+    }
+
+    .txt-content p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .container4 {
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .slide-cards {
+        width: 100%;
+        gap: 15px;
+        animation: slide-card-responsive 15s infinite;
+    }
+
+    @keyframes slide-card-responsive {
+        0%, 10% { transform: translateX(0); }
+        20%, 30% { transform: translateX(-25%); }
+        40%, 50% { transform: translateX(-50%); }
+        60%, 70% { transform: translateX(-75%); }
+        80%, 90% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+
+    .slide-card {
+        height: auto;
+        width: 351px;
+        padding: 20px;
+        flex-shrink: 0;
+    }
+
+    .slide-card .header ul li {
+        font-size: 18px;
+    }
+
+    .slide-card p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .image-client {
+        margin-top: 20px;
+    }
+
+    .image-client img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-title h5 {
+        font-size: 18px;
+    }
+
+    .client-title span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 300px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .txt-content h2 {
+        font-size: 30px;
+    }
+
+    .txt-content p {
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        margin-top: 220px;
+    }
+
+    .container4 {
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .slide-cards {
+        display: flex;
+        gap: 45px;
+        width: calc(351px * 6);
+        animation: slide-card-horizontal 20s linear infinite;
+        padding-bottom: 60px;
+    }
+
+    .slide-card {
+        width: 351px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    footer {
+        height: 600px;
+        padding: 40px 0;
+    }
+
+    .txt-content h2 {
+        font-size: 25px;
+    }
+
+    .container4 {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .slide-cards {
+        display: flex;
+        gap: 15px;
+        width: calc(300px * 6);
+        animation: slide-card-horizontal 20s linear infinite;
+    }
+
+    .slide-card {
+        width: 300px;
+        height: auto;
+    }
+
+    @keyframes slide-card-horizontal {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-70%); }
+    }
+
+    .nav-buttons {
+        margin-right: 30px;
+    }
+
+    .container5 {
+        width: 80%;
+    }
 }

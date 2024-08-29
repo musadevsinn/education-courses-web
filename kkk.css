@@ -48,9 +48,10 @@ input{
   }
   
   nav img {
-    padding-top: 12px;
+
     width: 23vh;
-    padding-bottom: 12px;
+    height: 6.5vh;
+   
     box-shadow: 0 0 40px 5px rgb(0 0 0 / 3%);
   }
   
@@ -115,7 +116,7 @@ input{
     display: flex;
     align-items: center;
     width: 100vw;
-   
+   height: 100vh;
     padding: 150px 80px;
     overflow: hidden; 
 }
@@ -673,10 +674,10 @@ padding-bottom: 80px;
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    background-color: #fffff;
+    background-color: #ffffff;
     width: 100%;
    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .section-title {
@@ -701,7 +702,7 @@ color: #666;
 font-size: 15px;
 margin: 0;
 display: block;
-margin-bottom: 80px;
+
 }
 .modules {
 display: flex;
@@ -1301,7 +1302,7 @@ figure {
     cursor: pointer;
   }
   .text-selection {
-    padding-left: 130px;
+    padding-left: 100px;
     padding-top: 50px;
 }
 
@@ -1591,7 +1592,7 @@ figure {
       }
       #scroll-up i{
         font-size: 25px;
-        align-items: center;
+       padding: 10px 12px;
       
       }
      
@@ -1646,7 +1647,7 @@ figure {
     }
 
     nav img {
-        height: auto;
+       
         width: 20vh;
         margin-bottom: 10px;
     }
@@ -2546,17 +2547,17 @@ nav  ul li a:hover {
     summary {
         padding-left: 10px;
         padding-top: 20px;
-        height: auto;
+       
     }
 
     .text-selection h1 {
         font-size: 28px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .text-selection h5 {
         font-size: 14px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .questions-container {
@@ -3209,3 +3210,4 @@ figcaption {
        
     }
 }
+
