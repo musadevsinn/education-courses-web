@@ -2232,9 +2232,10 @@ nav  ul li a:hover {
     }
 
     nav img {
-       padding: 10px 0px;
-        width: 30vh; /* Adjust to restore the logo size */
-        max-width: 50vh; /* Ensure it stays within bounds */
+       /* padding: 10px 0px; */
+        width: 20vh; /* Adjust to restore the logo size */
+        margin-bottom: 10px;
+       
     }
 
     #checkbtn:checked ~ ul {
