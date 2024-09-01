@@ -1812,7 +1812,7 @@ figure {
     }
     .modules {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Adjusted from 4 columns to 2 */
+      
         gap: 0px;
         padding: 0 30px; /* Adjusted padding */
     }
@@ -2211,7 +2211,7 @@ figure {
         width: 100%;
         flex-direction: column;
         position: absolute;
-        top: 20vh;
+        top: 10vh;
         left: 0;
         background-color: #fff;
         z-index: 101;
@@ -3195,10 +3195,7 @@ figcaption {
         top: 30px;
     }
 
-    nav ul {
-        top: 20vh; 
-    }
-
+   
     nav ul li {
         padding: 12px; 
     }
@@ -3207,7 +3204,7 @@ figcaption {
         padding: 8px;
     }
     nav img{
-        width: 30vh;
+        width: 20vh;
        
     }
 }
