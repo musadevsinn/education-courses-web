@@ -546,7 +546,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 .Achievement{
     position: relative;
-    background: url(/images/employee\ picture.jpg) center/cover no-repeat;
+    background: url(./images/employee\ picture.jpg) center/cover no-repeat;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -1678,7 +1678,7 @@ figure {
   }
   .template {
     position: relative;
-    background: url(/images/employee\ picture.jpg) center/cover no-repeat;
+    background: url(./images/employee\ picture.jpg) center/cover no-repeat;
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -1888,7 +1888,7 @@ figure {
       } 
       .footer-content {
         width: 100%;
-        background: url(/background\ image.jpeg);
+        background: url(./background\ image.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
