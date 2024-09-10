@@ -12,72 +12,163 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--  *****   Link To Owl Carousel   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 <body>
     
 
 <div class="zommin">
-    <nav>
-        <input id="checkbtn" type="checkbox">
-        <label for="checkbtn" name="checkbtn" class="checkbtn">
-          <i class="fa-solid fa-bars"></i>
-      </label>  
-        <img src="./images/logo.png" alt="">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#comments">SUCCESSFUL STORIES</a></li>
-          <li><a href="#outline">COURSE OUTLINE</a></li>
-          <li><a href="#courses">ABOUT US</a></li>
-        </ul>
-        <div class="btn">
-          <a href="tel:+923365918295">Contact Us</a>
-        </div>
-      </nav>
-      <div class="hero-section">
-        <video autoplay muted loop class="background-video">
-            <source src="./images/bacgroung pic.mp4" type="video/mp4">
-        </video>
-        <section class="container">
-            <div class="heading">
-                <h1>
-                    TURNING YOUR ONLINE
-                </h1>
-                <h2 style="opacity: 1; transform: translateY(1px) translateZ(0px);">VISION <br>INTO REALITY</h2>
-                <div class="contact" style="opacity: 1; transform: translateY(1px) translateZ(0px);">
-                    <a target="blank" href="https://forms.gle/V4WXRLr6Whd2TvEj7" target="_blank" style="color: inherit; text-decoration: none;">
-                        <span>Register Now</span>
-                    </a>
-                </div> 
+    
+    <div class="website-container">
+	
+        <!--   *** Home Section Starts ***   -->
+        <section class="home" id="home">
+            <!--   === Main Navbar Starts ===   -->
+            <nav class="main-navbar">
+                <input id="checkbtn" type="checkbox">
+                <label for="checkbtn" name="checkbtn" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+              </label> 
+                <a href="#" class="logo">
+                    <img src="./images/logo.png">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+                <a href="#" class="get-started-btn-container">
+                    <button class="get-started-btn btn">Get Started</button>
+                </a>
+                <div class="menu-btn">
+                    <span></span>
+                </div>
+            </nav>
+            <!--   === Main Navbar Ends ===   -->
+            <!--   === Banner Starts ===   -->
+            <div class="banner">
+                
+                <div class="banner-desc">
+                    <h2>Start Learning With Our Experts, Anywhere, Anytime</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <form class="search-bar">
+                        <input type="search" placeholder="Search Your Course">
+                        <i class="fa-solid fa-search"></i>
+                    </form>
+                </div>
+        
+                <div class="banner-img">
+                    <div class="banner-img-container">
+                        <img src="images/home/student.png">
+        
+                        <div class="states">
+                            <div class="total-courses">
+                                <div class="icon">
+                                    <i class="fa-solid fa-book"></i>
+                                </div>
+                                <div class="desc">
+                                    <span>284+</span>
+                                    <span>Total Courses</span>
+                                </div>
+                            </div>
+        
+                            <div class="courses-ratings">
+                                <span>4.7<i class="fa-solid fa-star"></i></span>
+                                <span>Ratings (58k)</span>
+                            </div>
+                        </div>
+        
+                        <div class="pattern">
+                            <img src="images/home/pattern.png">
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+            <!--   === Banner Ends ===   -->
+        </section>
+        <!--   *** Home Section Ends ***   -->
+        
+        <!--   *** Partners Section Starts ***   -->
+        <section class="partners">
+            <h3>Our trusted partners around the world</h3>
+            <div class="owl-carousel owl-theme partners-slider">
+        
+                <div class="item brand-item">
+                    <img src="images/brand-logos/matoontapa.png">
+                </div>
+                <div class="item brand-item">
+                    <img src="images/brand-logos/khostan.png">
+                </div>
+                <div class="item brand-item">
+                    <img src="images/brand-logos/etimadya.png">
+                </div>
+                <div class="item brand-item">
+                    <img src="images/brand-logos/torghar.png">
+                </div>
+                <div class="item brand-item">
+                    <img src="images/brand-logos/nadershakot.png">
+                </div>
+                <div class="item brand-item">
+                    <img src="images/brand-logos/almarah.png">
+                </div>
+        
             </div>
         </section>
-    </div>
-    <div class="choose-option" >
-        <h2 class="wow animate__animated animate__zoomIn">Why Choose Us</h2>
-        <p class="wow animate__animated animate__zoomIn">>Pakistan's 1st bootcamp where students can transform their dreams into reality in the field of information and technology.</p>
-        <div class="whyChoose-cards">
-            <div class="support-card" id="card1">
-                <div class="headset wow animate__animated animate__backInDown"><i class="fa-solid fa-headset fa-2xl"></i></div>
-                <h2 class="wow animate__animated animate__backInLeft">24/7 Support</h2>
-                <p class="wow animate__animated animate__backInLeft">We are just a text away, You<br> can book your appointment<br> whenever you want.</p>
+        <!--   *** Partners Section Ends ***   -->
+        
+        <!--   *** Services Section Starts ***   -->
+        <section class="services" id="services">
+            <!--   *** Services Header Starts ***   -->
+            <header class="section-header">
+                <h1>Why Choose Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </header>
+            <!--   *** Services Header Ends ***   -->
+            <!--   *** Services Contents Starts ***   -->
+            <div class="services-contents">
+        
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>Flexible Timing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+        
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>Expert Teachers</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+        
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>24/7 Live Support</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+        
             </div>
-            <div class="support-card" id="card2">
-                <div class="headset wow animate__animated animate__backInDown"><i class="fa-solid fa-chalkboard-user" id="icon1"></i></div>
-                <h2 class="wow animate__animated animate__backInLeft">Qualified Staff</h2>
-                <p class="wow animate__animated animate__backInLeft">We are a group of highly qualified motivated professionals.</p>
-            </div>
-            <div class="support-card" id="card3">
-                <div class="headset wow animate__animated animate__backInDown"><i class="fa-solid fa-certificate" id="icon2"></i></div>
-                <h2 class="wow animate__animated animate__backInRight">Successfully Certified</h2>
-                <p class="wow animate__animated animate__backInRight">We also provide certifications like Microsoft, AWS, Azure, and Coursera.</p>
-            </div>
-            <div class="support-card" id="card4">
-                <div class="headset wow animate__animated animate__backInDown"><i class="fa-solid fa-handshake-angle" id="icon3"></i></div>
-                <h2 class="wow animate__animated animate__backInRight">Job Placement</h2>
-                <p class="wow animate__animated animate__backInRight">Many of our students have joined tech companies as senior developers.</p>
-            </div>
-        </div>
-      </div>
+            <!--   *** Services Contents Ends ***   -->
+        </section>
       <main  id="courses">
         <section class="video-section">
             <div class="video-container wow animate__animated animate__fadeInTopLeft">
@@ -1064,5 +1155,7 @@
                 });
             });
         </script>     
+        
+       
 </body>
 </html>

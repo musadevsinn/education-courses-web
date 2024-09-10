@@ -660,15 +660,15 @@
                             <ul class="class-time">
                               <li>
                                 <b>Monday to Friday</b>
-                                <span>2:00 pm-10:00 pm</span>
+                                <span class="times">2:00 pm-10:00 pm</span>
                               </li>
                               <li>
                                 <b>Saturday</b>
-                                <span>10:00 am-6:00 pm</span>
+                                <span class="times">10:00 am-6:00 pm</span>
                               </li>
                               <li>
                                 <b>Sunday</b>
-                                <span>10:00 am-6:00 pm</span>
+                                <span class="times">10:00 am-6:00 pm</span>
                               </li>
                             </ul>
                           </div>
@@ -685,7 +685,7 @@
                       </a>
                     </div>
 </body>
-<div class="whatapp-icon" style=" position: fixed; z-index: 4;">
+<div class="whatapp-icon" style=" position: fixed; z-index: 100;">
  <a target="blank" href="https://api.whatsapp.com/send?phone=923365918295&text=%20%20%20%20%20%20Stay%20Connected%20With%20Devsinn%20Technologies" ><i class="fa-brands fa-whatsapp"></i></a>
  <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -872,38 +872,46 @@
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $(document).ready(function() {
-                let slideIndex = 0;
-                const slidesToShow = 2; // Show two cards per view
-                const totalSlides = $('.slide-card').length;
-                const maxIndex = totalSlides - slidesToShow;
-                const slideWidth = $('.slide-card').outerWidth(true);
-        
-                function moveSlides(index) {
-                    $('.slide-cards').css('transform', `translateX(${-index * slideWidth}px)`);
-                }
-        
-                function autoSlide() {
-                    slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
-                    moveSlides(slideIndex);
-                }
-        
-                let autoSlideInterval = setInterval(autoSlide, 5000); // Auto move every 5 seconds
-        
-                $('.nav-left').click(function() {
-                    clearInterval(autoSlideInterval); // Stop auto-slide on manual control
-                    slideIndex = (slideIndex - 1) < 0 ? maxIndex : slideIndex - 1;
-                    moveSlides(slideIndex);
-                    autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
-                });
-        
-                $('.nav-right').click(function() {
-                    clearInterval(autoSlideInterval); // Stop auto-slide on manual control
-                    slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
-                    moveSlides(slideIndex);
-                    autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
-                });
-            });
+          $(document).ready(function() {
+    let slideIndex = 0;
+    const slidesToShow = 2; // Show two cards per view
+    const totalSlides = $('.slide-card').length;
+    const maxIndex = totalSlides - slidesToShow;
+    let slideWidth = $('.slide-card').outerWidth(true);
+
+    function moveSlides(index) {
+        $('.slide-cards').css('transform', `translateX(${-index * slideWidth}px)`);
+    }
+
+    function autoSlide() {
+        slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
+        moveSlides(slideIndex);
+    }
+
+    let autoSlideInterval = setInterval(autoSlide, 5000); // Auto move every 5 seconds
+
+    $('.nav-left').click(function() {
+        clearInterval(autoSlideInterval); // Stop auto-slide on manual control
+        slideIndex = (slideIndex - 1) < 0 ? maxIndex : slideIndex - 1;
+        slideWidth = $('.slide-card').outerWidth(true); // Recalculate slide width
+        moveSlides(slideIndex);
+        autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
+    });
+
+    $('.nav-right').click(function() {
+        clearInterval(autoSlideInterval); // Stop auto-slide on manual control
+        slideIndex = (slideIndex + 1) > maxIndex ? 0 : slideIndex + 1;
+        slideWidth = $('.slide-card').outerWidth(true); // Recalculate slide width
+        moveSlides(slideIndex);
+        autoSlideInterval = setInterval(autoSlide, 5000); // Restart auto-slide
+    });
+
+    $(window).resize(function() {
+        slideWidth = $('.slide-card').outerWidth(true); // Recalculate on window resize
+        moveSlides(slideIndex);
+    });
+});
+
             document.querySelectorAll('.scholarship').forEach(item => {
                 item.addEventListener('click', event => {
                     const parent = item.parentElement;
