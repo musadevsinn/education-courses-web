@@ -51,23 +51,76 @@
 
         <!--   === Main Navbar Ends ===   -->
         <!--   === Banner Starts ===   -->
-        <div class="hero-section">
-            <video autoplay muted loop class="background-video">
-                <source src="./WhatsApp Video 2024-09-10 at 21.41.52_3aef3493.mp4" type="video/mp4">
-            </video>
-            <section class="container">
-                <div class="heading">
-                    <h1>
-                        TURNING YOUR ONLINE
-                    </h1>
-                    <h2 style="opacity: 1; transform: translateY(1px) translateZ(0px);">VISION <br>INTO REALITY</h2>
-                    <div class="contact" style="opacity: 1; transform: translateY(1px) translateZ(0px);">
-                        <a target="blank" href="https://forms.gle/V4WXRLr6Whd2TvEj7" target="_blank" style="color: inherit; text-decoration: none;">
-                            <span>Register Now</span>
-                        </a>
-                    </div> 
+        <div class="slider-container">
+            <!-- Video Slide 1 -->
+            <div class="slide active">
+                <video class="video-slide" autoplay muted loop>
+                    <source src="./images/WhatsApp Video 2024-09-11 at 00.13.32_a2b7e96c.mp4" type="video/mp4">
+                </video>
+                <div class="text-overlay">
+                    <span>Become A Full stack developer</span>
+                    <h1>Pakistan's 1st software enginering bootstamp</h1>
+                    <p>We introduce you pakistan's first bootstamp where student transform their dream into reality</p>
+                    <div class="button">
+                       <a href="#" class="theme-btn">Contact Us!</a>
+                    </div>
                 </div>
-            </section>
+            </div>
+        
+            <!-- Video Slide 2 -->
+            <div class="slide">
+                <video class="video-slide" autoplay muted loop>
+                    <source src="./images/WhatsApp Video 2024-09-10 at 21.41.51_00e3dbaf.mp4" type="video/mp4">
+                </video>
+                <div class="text-overlay">
+                    <span>Become A Full stack developer</span>
+                    <h1 style="width: 100%; letter-spacing: 2px;">Why Choose Us Student</h1>
+                    <p>We will help individual gain verstatile skills in a concise amount of time</p>
+                    <div class="button">
+                       <a href="#" class="theme-btn">Contact Us!</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Video Slide 3 -->
+            <div class="slide">
+                    
+                    <img class="img2" style="width: 100%; height: 100%; " src="./images/WhatsApp Image 2024-09-11 at 00.00.50_6d8084f0.jpg" type="video/mp4">
+                
+                    <div class="text-overlay">
+                        <span>Become A Full stack developer</span>
+                        <h1 style="width: 70%;">Become A Certificate Software & cloud Enginering In One year</h1>
+                        <p style="width: 60%;">Dev'sinn Technologies is dedicated to bringing the tech skills gap between developer and non-technical professions</p>
+                        <div class="button">
+                           <a href="#" class="theme-btn">Contact Us!</a>
+                        </div>
+                    </div>
+            </div>
+        
+            <!-- Video Slide 4 -->
+            <div class="slide">
+                <img style="width: 100%; height: 100%;" src="./images/slider-2.gif" alt="">
+                <div class="text-overlay">
+                    <span>Become A Full stack developer</span>
+                    <h1 style="width: 60%;">Learn Advanced new skills and establish your career</h1>
+                    <p style="width: 60%;">Dev'sinn Technologies is dedicated to bringing the tech skills gap between developer and non-technical professions</p>
+                    <div class="button">
+                       <a href="#" class="theme-btn">Contact Us!</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        
+            <!-- Slide Dots -->
+            <div class="dots">
+                <span class="dot active-dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
         </div>
     <section class="services" id="services">
        
@@ -580,12 +633,8 @@
             </div>
           </div>
           <div class="foot1 wow animate__animated animate__backInDown">
-            <h2>Useful Links</h2>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Support</a></li>
-            </ul>
+            <h2>Open Hours</h2>
+            <p>We have flexible timings for those students who can't manage in our regular routine. You can <a href="contact-us.html">Contact Us!</a> for more details.</p>
             <ul class="class-time">
               <li>
                 <b>Monday to Friday</b>
@@ -1046,5 +1095,45 @@
 <!-- Include Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  </body>
-  </html>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Remove active class from all dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+
+        // Show the current slide and add active class to the corresponding dot
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+    }
+
+    // Optional: Add automatic sliding
+    setInterval(function() {
+        moveSlide(1);
+    }, 5000); // Change slide every 5 seconds
+</script>
+
+</body>
+</html>
