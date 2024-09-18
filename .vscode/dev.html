@@ -17,6 +17,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
+<div id="particles-js">
 <div class="website-container">
 
     <!-- *** Home Section Starts *** -->
@@ -40,7 +41,7 @@
                 <li><a href="#testimonials">Testimonials</a></li>
             </ul>
             <a href="#" class="get-started-btn-container">
-                <button class="get-started-btn btn">Get Started</button>
+                <button class="get-started-btn btn"> <a target="blank" href="https://forms.gle/V4WXRLr6Whd2TvEj7" target="_blank" style=" text-decoration: none;">Register Now</a></button>
             </a>
             <div class="menu-btn">
                 <span></span>
@@ -49,68 +50,122 @@
     </section>
 </div>
 
-        <!--   === Main Navbar Ends ===   -->
-        <!--   === Banner Starts ===   -->
-        <div class="hero-section">
-            <video autoplay muted loop class="background-video">
-                <source src="/images/bacgroung pic.mp4" type="video/mp4">
-            </video>
-            <section class="container">
-                <div class="heading">
-                    <h1>
-                        TURNING YOUR ONLINE
-                    </h1>
-                    <h2 style="opacity: 1; transform: translateY(1px) translateZ(0px);">VISION <br>INTO REALITY</h2>
-                    <div class="contact" style="opacity: 1; transform: translateY(1px) translateZ(0px);">
-                        <a target="blank" href="https://forms.gle/V4WXRLr6Whd2TvEj7" target="_blank" style="color: inherit; text-decoration: none;">
-                            <span>Register Now</span>
-                        </a>
-                    </div> 
-                </div>
-            </section>
+<div class="slider-container">
+    <!-- Video Slide 1 -->
+    <div class="slide active">
+        <video class="video-slide" autoplay muted loop>
+            <source src="/WhatsApp Video 2024-09-11 at 00.13.32_a2b7e96c.mp4" type="video/mp4">
+        </video>
+        <div class="text-overlay">
+            <span>Become A Full stack developer</span>
+            <h1>Pakistan's 1st software enginering bootstamp</h1>
+            <p>We introduce you pakistan's first bootstamp where student transform their dream into reality</p>
+            <div class="button">
+                <a href="tel:+923365918295" class="theme-btn">Contact Us!</a>
+            </div>
+            
         </div>
-    <section class="services" id="services">
-       
-        <header class="section-header">
-            <h1>Why Choose Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </header>
-       
-        <div class="services-contents">
-    
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fa-solid fa-calendar"></i>
-                </div>
-                <div class="service-desc">
-                    <h2>Flexible Timing</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+    </div>
+
+    <!-- Video Slide 2 -->
+    <div class="slide">
+        <video class="video-slide" autoplay muted loop>
+            <source src="/images/WhatsApp Video 2024-09-10 at 21.41.51_00e3dbaf.mp4" type="video/mp4">
+        </video>
+        <div class="text-overlay">
+            <span>Become A Full stack developer</span>
+            <h1 style="width: 100%; letter-spacing: 2px;">Why Choose Us Student</h1>
+            <p>We will help individual gain verstatile skills in a concise amount of time</p>
+            <div class="button">
+               <a href="tel:+923365918295" class="theme-btn">Contact Us!</a>
             </div>
-    
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <div class="service-desc">
-                    <h2>Expert Teachers</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-    
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fa-solid fa-clock"></i>
-                </div>
-                <div class="service-desc">
-                    <h2>24/7 Live Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-    
         </div>
-        <!--   *** Services Contents Ends ***   -->
-    </section>
+    </div>
+
+    <!-- Video Slide 3 -->
+    <div class="slide">
+            
+            <img class="img2" style=" height: 120vh; " src="/images/WhatsApp Image 2024-09-11 at 00.00.50_6d8084f0.jpg" type="video/mp4">
+        
+            <div class="text-overlay">
+                <span>Become A Full stack developer</span>
+                <h1 style="width: 70%;">Become A Certificate Software & cloud Enginering In One year</h1>
+                <p style="width: 60%;">Dev'sinn Technologies is dedicated to bringing the tech skills gap between developer and non-technical professions</p>
+                <div class="button">
+                   <a href="tel:+923365918295" class="theme-btn">Contact Us!</a>
+                </div>
+            </div>
+    </div>
+
+    <!-- Video Slide 4 -->
+    <div class="slide">
+        <img style="height: 120VH;" src="/images/slider-2.gif" alt="">
+        <div class="text-overlay">
+            <span>Become A Full stack developer</span>
+            <h1 style="width: 60%;">Learn Advanced new skills and establish your career</h1>
+            <p style="width: 60%;">Dev'sinn Technologies is dedicated to bringing the tech skills gap between developer and non-technical professions</p>
+            <div class="button">
+               <a href="tel:+923365918295" class="theme-btn">Contact Us!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+    <!-- Slide Dots -->
+    <div class="dots">
+        <span class="dot active-dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+</div>
+
+
+<section class="services" id="services">
+       
+    <header class="section-header">
+        <h1>Why Choose Us</h1>
+        <p>We offer flexible timing to fit your schedule, expert teachers to guide you, and 24/7 live support for continuous assistance. Experience unparalleled learning with us!</p>
+    </header>
+   
+    <div class="services-contents">
+
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="service-desc">
+                <h2>Flexible Timing</h2>
+                <p> Enjoy the freedom to study whenever it suits you. Our courses offer flexible timing to fit your schedule.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="service-desc">
+                <h2>Expert Teachers</h2>
+                <p>Learn from the best with our expert teachers. Gain insights and knowledge from industry leaders and seasoned professionals.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="service-desc">
+                <h2>24/7 Live Support</h2>
+                <p>Get help whenever you need it with our 24/7 live support. We're here to assist you around the clock, ensuring you never face any obstacles alone.</p>
+            </div>
+        </div>
+
+    </div>
+    <!--   *** Services Contents Ends ***   -->
+</section>
     <main  id="courses">
         <section class="video-section">
             <div class="video-container wow animate__animated animate__fadeInTopLeft">
@@ -245,133 +300,133 @@
         </div>
      </section>
     
-<section class="testimonials" id="testimonials">
-    <!--   === Testimonials Section Header Starts ===   -->
-    <header class="section-header">
-        <h1 id="testimonials">Testimonials</h1>
-        <p>Here are some Testimonials from our Student's.</p>
-    </header>
-    <!--   === Testimonials Section Header Ends ===   -->
-    <!--   === Testimonials Contents Starts ===   -->
-    <div class="owl-carousel owl-theme testimonials-slider">
-
-        <div class="item testimonials-item">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="/client images/ahsan_khan-removebg-preview.png">
+     <section class="testimonials" id="testimonials">
+        <!--   === Testimonials Section Header Starts ===   -->
+        <header class="section-header">
+            <h1 id="testimonials">Testimonials</h1>
+            <p>Here are some Testimonials from our Student's.</p>
+        </header>
+        <!--   === Testimonials Section Header Ends ===   -->
+        <!--   === Testimonials Contents Starts ===   -->
+        <div class="owl-carousel owl-theme testimonials-slider">
+    
+            <div class="item testimonials-item">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="/client images/ahsan_khan-removebg-preview.png">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Ahsan Khan</span>
+                        <span>Flutter Developer</span>
+                    </div>
                 </div>
-                <div class="profile-desc">
-                    <span>Ahsan Khan</span>
-                    <span>Flutter Developer</span>
+                <p> The Flutter app development course from DevsInn Technologies gave me the skills to excel, leading to job offers and my dream role. Highly recommend for their excellent program and support.</p>
+                <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-            <div class="quote">
-                <i class="fa fa-quote-left"></i>
+    
+            <div class="item testimonials-item">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="/client images/unknown pic.png">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Mariya Arshad</span>
+                        <span>Flutter developer</span>
+                    </div>
+                </div>
+                <p>The Dev'sinn Technologies has taught me the lastest Tools and Technologies of app Development and enable me to work in any problematic condition. i prefered to join the dev'sinn technologies.</p>
+                <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
-            <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+    
+            <div class="item testimonials-item">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="/client images/unknown pic.png">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Laiba Azam</span>
+                        <span>Flutter Developer</span>
+                    </div>
+                </div>
+                <p>Its a good company. Devsinn technologies has skilled instructors, supportive leaning environment.I highly recommend DevsInn Technologies for their outstanding program and support.
+                </p>
+                <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
+    
+            <div class="item testimonials-item">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="/client images/fazeel.png">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Muhammad Fazeel</span>
+                        <span>Flutter developer</span>
+                    </div>
+                </div>
+                <p>The course covered a wide range of topics, from basics to advanced concepts, and the instructor was knowledgeable and clear in their explanations. i prefered to join it is very useful.</p>
+                <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+    
+            <div class="item testimonials-item">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="/client images/unknown pic.png">
+                    </div>
+                    <div class="profile-desc">
+                        <span>Shahid Khan</span>
+                        <span>Flutter Developer</span>
+                    </div>
+                </div>
+                <p>This course has been one of the best experiences of my life, offering invaluable knowledge and skills. It has significantly enhanced my job performance.</p>
+                <div class="quote">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+    
         </div>
-
-        <div class="item testimonials-item">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="/client images/unknown pic.png">
-                </div>
-                <div class="profile-desc">
-                    <span>Mariya Arshad</span>
-                    <span>Flutter developer</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-            <div class="quote">
-                <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-
-        <div class="item testimonials-item">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="/client images/unknown pic.png">
-                </div>
-                <div class="profile-desc">
-                    <span>Laiba Azam</span>
-                    <span>Flutter Developer</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-            <div class="quote">
-                <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-
-        <div class="item testimonials-item">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="/client images/fazeel.png">
-                </div>
-                <div class="profile-desc">
-                    <span>Muhammad Fazeel</span>
-                    <span>Flutter developer</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-            <div class="quote">
-                <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-
-        <div class="item testimonials-item">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="/client images/unknown pic.png">
-                </div>
-                <div class="profile-desc">
-                    <span>Shahid Khan</span>
-                    <span>Flutter Developer</span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-            <div class="quote">
-                <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="ratings">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-        </div>
-
-    </div>
-    <!--   === Testimonials Contents Ends ===   -->
 </section>
 <section class="faculty-area">
     <h2 class="faculty-heading">Our Qualified Faculty</h2>
@@ -449,18 +504,23 @@
 
     </div>
 </section>
-  <figure>
+<figure>
     <div class="text-vision">
         <span class="wow animate__animated animate__zoomIn">Our Team Vision</span>
         <h3 class="wow animate__animated animate__zoomIn">Team Vision</h3>
-        <p class="wow animate__animated animate__backInLeft">Vvork Cloud Technologies showcase a nation's future. They represent the hopes of parents, capitalize upon the aspirations of the very young generation, and respond to the needs and challenges facing society. We initiated the project of certification-based developers to contribute towards the development of new products, and the aim of VCT is to fulfill the gap between fresh degree holders and industry by offering hands-on training of the most advanced technologies to change their entry level from inertness to full stack programmer to gain at least six figures salary after one year.</p>
-        <p class="mt3 wow animate__animated animate__backInLeft">The students of VCT become aware of the purpose of life and they discover their unique strengths and talents for refinement. We are building certified developers to lead the World. Human beings know no limits to excel, and each generation surpasses the previous in all respects. At VCT, we aim at becoming a very reliable partner of the parents and society to make each student a truly great person with extreme motivation, creative ideas, and supreme talents so that they can achieve extraordinary goals and objectives.</p>
+        <p class="wow animate__animated animate__backInLeft">At Dev's Inn Technologies, our vision is to shape the future by delivering a full spectrum of IT services and educational courses. We aim to bridge the gap between fresh graduates and the evolving needs of the tech industry by offering hands-on training in the latest technologies. Our mission is to transform entry-level talent into skilled professionals, equipping them with the expertise required to thrive in the modern workforce.
+        </p>
+        <p class="mt3 wow animate__animated animate__backInLeft">We believe in nurturing individuals to discover their unique strengths and capabilities, empowering them to pursue their goals with confidence. Dev's Inn is committed to fostering innovation, creativity, and excellence in every student and client we serve. Whether you're seeking IT solutions for your business or looking to advance your tech skills, we are dedicated to helping you achieve extraordinary results.
+        </p>
         <div class="check-circle">
             <ul class="wow animate__animated animate__backInLeft">
-                <li><i class="fa-regular fa-circle-check"></i>We are born for each other.</li>
-                <li><i class="fa-regular fa-circle-check"></i>Think like an Engineer.</li>
-                <li><i class="fa-regular fa-circle-check"></i>Committed to Excellence.</li>
-                <li><i class="fa-regular fa-circle-check"></i>A Product-Driven bootcamp.</li>
+                <li><i class="fa-regular fa-circle-check"></i>Comprehensive IT Services: Offering tailored IT solutions to meet the unique needs of businesses.
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i>Empowering Through Education: Providing industry-relevant courses to prepare individuals for success.
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i>Innovation and Excellence: Striving to exceed expectations with every project and training program.
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i>At Dev's Inn Technologies, we are committed to becoming a trusted partner in your journey toward technological advancement and career success.</li>
             </ul>
         </div>
     </div>
@@ -469,21 +529,27 @@
             <h4 class="wow animate__animated animate__backInDown">Chairman:</h4> 
             <span class="wow animate__animated animate__backInDown">Ubaidullah Asim</span>
             <div class="image1 wow animate__animated animate__backInRight">
+                <a href="https://www.linkedin.com/in/ubaid-ullah-asim-495b20210/" target="_blank">
                 <img src="/images/ubaid.png" alt="Ubaidullah Asim">
+                </a>
             </div>
         </div>
         <div class="image-vision">
             <h4 class="wow animate__animated animate__backInDown">Supervision:</h4>
             <span class="wow animate__animated animate__backInDown">Arham Sarwar</span>
             <div class="image1 wow animate__animated animate__backInRight">
-                <img src="/images/arham.png" alt="Arham Sarwar">
+                <a href="https://www.linkedin.com/in/arham-sarwar-a1b56b176/" target="_blank">
+                <img src="/images/arham1.jpeg" alt="Arham Sarwar">
+                </a>
             </div>
         </div>
         <div class="image-vision">
             <h4 class="wow animate__animated animate__backInDown">Supervision:</h4>
             <span class="wow animate__animated animate__backInDown">Abuzar Zaidi</span>
             <div class="image1 wow animate__animated animate__backInRight">
+                <a href="https://www.linkedin.com/in/abuzar-zaidi-developer/" target="_blank">
                 <img src="/images//abuzar.png" alt="Abuzar Zaidi">
+                </a>
             </div>
         </div>
     </div>
@@ -565,50 +631,46 @@
         </div>
     </div>
 </div>
-    <div class="footer-content">
-        <div class="foot">
-          <div class="infoot wow animate__animated animate__backInLeft">
-            <img src="/images/logo.png" alt="logo">
-            <p>We offer the services you need to succeed online. Get in touch today and let us help you transform your online presence.</p>
-            <div class="medias-icons">
-              <a target="blank" href="https://www.facebook.com/devsinntechnology?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-              <a target="blank" href="https://twitter.com/DevsInnTechnol1"><i class="fa-brands fa-x-twitter"></i></a>
-              <a target="blank" href="https://www.youtube.com/@devsinntechnologies509"><i class="fa-brands fa-youtube"></i></a>
-             <a  target="blank"href="https://www.linkedin.com/company/devsinn-technologies/?original_referer=https%3A%2F%2Fdevsinntechnologies.com%2F"><i class="fa-brands fa-linkedin"></i></a>
-             <a target="blank" href="https://www.instagram.com/devsinntechnologies/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa-brands fa-instagram"></i></a>
-             <a target="blank" href="https://api.whatsapp.com/send?phone=923365918295&text=%20%20%20%20%20%20Stay%20Connected%20With%20Devsinn%20Technologies"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-          </div>
-          <div class="foot1 wow animate__animated animate__backInDown">
-            <h2>Useful Links</h2>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Support</a></li>
-            </ul>
-            <ul class="class-time">
-              <li>
-                <b>Monday to Friday</b>
-                <span>2:00 pm-10:00 pm</span>
-              </li>
-              <li>
-                <b>Saturday</b>
-                <span>10:00 am-6:00 pm</span>
-              </li>
-              <li>
-                <b>Sunday</b>
-                <span>10:00 am-6:00 pm</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="foot2 wow animate__animated animate__backInRight">
-            <h3>Our Location</h3>
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6800.586220359754!2d74.289684645293!3d31.543569591178287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1723281114894!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-          </div>
+<div class="footer-content">
+    <div class="foot">
+      <div class="infoot wow animate__animated animate__backInLeft">
+        <img src="/images/logo.png" alt="logo">
+        <p>We offer the services you need to succeed online. Get in touch today and let us help you transform your online presence.</p>
+        <div class="medias-icons">
+          <a target="blank" href="https://www.facebook.com/devsinntechnology?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+          <a target="blank" href="https://twitter.com/DevsInnTechnol1"><i class="fa-brands fa-x-twitter"></i></a>
+          <a target="blank" href="https://www.youtube.com/@devsinntechnologies509"><i class="fa-brands fa-youtube"></i></a>
+         <a  target="blank"href="https://www.linkedin.com/company/devsinn-technologies/?original_referer=https%3A%2F%2Fdevsinntechnologies.com%2F"><i class="fa-brands fa-linkedin"></i></a>
+         <a target="blank" href="https://www.instagram.com/devsinntechnologies/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+         <a target="blank" href="https://api.whatsapp.com/send?phone=923365918295&text=%20%20%20%20%20%20Stay%20Connected%20With%20Devsinn%20Technologies"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
+      <div class="foot1 wow animate__animated animate__backInDown">
+        <h2>Open Hours</h2>
+        <p>We have flexible timings for those students who can't manage in our regular routine. You can <a href="tel:+923365918295">Contact Us!</a> for more details.</p>
+        <ul class="class-time">
+          <li>
+            <b>Monday to Friday</b>
+            <span>2:00 pm-10:00 pm</span>
+          </li>
+          <li>
+            <b>Saturday</b>
+            <span>10:00 am-6:00 pm</span>
+          </li>
+          <li>
+            <b>Sunday</b>
+            <span>10:00 am-6:00 pm</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="foot2 wow animate__animated animate__backInRight">
+        <h3>Our Location</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6800.586220359754!2d74.289684645293!3d31.543569591178287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1723281114894!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
       <a id="scroll-up" href="#top" style="position: fixed; z-index: 200;">
         <i class="fa-solid fa-angles-up"></i>
       </a>
@@ -616,7 +678,7 @@
 
 <div class="whatapp-icon" style=" position: fixed; z-index: 200;">
 <a target="blank" href="https://api.whatsapp.com/send?phone=923365918295&text=%20%20%20%20%20%20Stay%20Connected%20With%20Devsinn%20Technologies" ><i class="fa-brands fa-whatsapp"></i></a>
-
+</div>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
         const webBtn = document.getElementById('web-btn');
@@ -1045,6 +1107,152 @@
            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!-- Include Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-  </body>
-  </html>
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // Remove active class from all dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+
+        // Show the current slide and add active class to the corresponding dot
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+    }
+
+    // Optional: Add automatic sliding
+    setInterval(function() {
+        moveSlide(1);
+    }, 5000); // Change slide every 5 seconds
+</script>
+<script>
+    /* Load particles.js and set configurations */
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100,  /* Number of particles */
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
