@@ -188,10 +188,14 @@
         // JavaScript to handle the scroll event
         window.addEventListener('scroll', function() {
             var button = document.getElementById('scroll-up');
+            var whatappicon = document.querySelector('.whatapp-icon');
             if (window.scrollY === 0) {
                 button.style.display = 'none';
+                whatappicon.style.bottom = '10px';
+
             } else {
                 button.style.display = 'block';
+                whatappicon.style.bottom = '110px';
             }
         });
     

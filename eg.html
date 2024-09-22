@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Faculty</title>
+
+    <!-- Owl Carousel Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css">
+
+    <!-- Font Awesome (for social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Section Styling */
+        .faculty-section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .faculty-section h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .faculty-section p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        /* Faculty Card Styling */
+        .faculty-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding-bottom: 15px;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .faculty-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .faculty-details {
+            padding: 15px;
+        }
+
+        .faculty-details h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .faculty-details p {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 8px;
+            font-size: 18px;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        /* Owl Carousel Styling */
+        .owl-carousel .owl-nav {
+            position: absolute;
+            top: -60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .owl-carousel .owl-nav [class*="owl-"] {
+            background-color: #ddd;
+            border-radius: 50%;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .owl-carousel .owl-nav [class*="owl-"]:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .owl-carousel .owl-item {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="faculty-section">
+    <h2>Meet Our Expert Faculty</h2>
+    <p>We have some of the most experienced and skilled professionals.</p>
+
+    <div class="owl-carousel owl-theme">
+        <!-- Faculty Card 1 -->
+        <div class="faculty-card">
+            <img src="https://via.placeholder.com/300x300?text=Ahsan+Khan" alt="Ahsan Khan">
+            <div class="faculty-details">
+                <h3>Ahsan Khan</h3>
+                <p>Mobile App Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 2 -->
+        <div class="faculty-card">
+            <img src="https://via.placeholder.com/300x300?text=Muhammad+Fazeel" alt="Muhammad Fazeel">
+            <div class="faculty-details">
+                <h3>Muhammad Fazeel</h3>
+                <p>Frontend Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 3 -->
+        <div class="faculty-card">
+            <img src="https://via.placeholder.com/300x300?text=Laiba+Azam" alt="Laiba Azam">
+            <div class="faculty-details">
+                <h3>Laiba Azam</h3>
+                <p>Flutter Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 4 -->
+        <div class="faculty-card">
+            <img src="https://via.placeholder.com/300x300?text=Mariya+Arshad" alt="Mariya Arshad">
+            <div class="faculty-details">
+                <h3>Mariya Arshad</h3>
+                <p>Flutter Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 5 -->
+        <div class="faculty-card">
+            <img src="https://via.placeholder.com/300x300?text=Shahid+Khan" alt="Shahid Khan">
+            <div class="faculty-details">
+                <h3>Shahid Khan</h3>
+                <p>Flutter Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<!-- Custom Carousel Initialization -->
+<script>
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4  // Show 4 items on screens 1000px and above
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
