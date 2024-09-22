@@ -181,6 +181,52 @@ section.home{
 .main-navbar .menu-btn span::after{
 	transform: translateY(9px);
 }
+.nav-list li.dropdown {
+    position: relative;
+}
+
+.nav-list li.dropdown .dropdown-content {
+    display: none;
+    
+    position: absolute;
+    background-color: #fff;
+   width: 15vw;
+
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 8px;
+}
+
+.nav-list li.dropdown .dropdown-content li {
+    display: block;
+    
+}
+
+.nav-list li.dropdown .dropdown-content li a {
+    color: #38abf3;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   /* padding-left: ; */
+    text-decoration: none;
+    display: block;
+    color: #38abf3;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+   
+    justify-content: center;
+   
+}
+
+.nav-list li.dropdown .dropdown-content li a:hover {
+    background-color: #38abf3;
+    color: white;
+}
+
+/* Show dropdown when hovering over Courses */
+.nav-list li.dropdown:hover .dropdown-content {
+    display: block;
+}
 .slider-container {
     position: relative;
     max-width: 100%;
@@ -2197,58 +2243,59 @@ figure {
 
     
     .footer-content {
-        padding: 1em; /* Adjust padding */
-    }
-
-    .foot {
-        gap: 15px; /* Adjust gap */
-    }
-
-    .infoot, .foot1, .foot2 {
+        padding: 1em; /* Adjust padding for smaller screens */
+      }
+    
+      .foot {
+        /* Ensure that items can wrap and adapt to smaller screens without stacking */
+        gap: 15px; /* Adjust gap for smaller screens */
+      }
+    
+      .infoot, .foot1, .foot2 {
         padding: 10px; /* Adjust padding */
-    }
-
-    .infoot img {
+      }
+    
+      .infoot img {
         width: 150px; /* Adjust image size */
-    }
-
-    .infoot p {
+      }
+    
+      .infoot p {
         font-size: 16px; /* Adjust font size */
-    }
-
-    .foot1 h2, .foot2 h3 {
+      }
+    
+      .foot1 h2, .foot2 h3 {
         font-size: 1.2em; /* Adjust heading size */
-    }
-
-    .foot1 ul {
+      }
+    
+      .foot1 ul {
         padding-inline-start: 20px; /* Adjust padding */
-    }
-
-    .foot1 ul li a {
+      }
+    
+      .foot1 ul li a {
         font-size: 16px; /* Adjust font size */
-    }
-
-    .foot2 {
+      }
+    .foot2{
         margin-right: 20px;
     }
-
-    .map-container {
+      .map-container {
         height: 180px; /* Adjust height */
-    }
-
-    #scroll-up {
+      }
+      #scroll-up {
         right: 130px; /* Adjust positioning */
         bottom: 30px; /* Adjust positioning */
         width: 45px; /* Adjust size */
         height: 45px; /* Adjust size */
         line-height: 43px; /* Adjust line height */
-    }
-
-    #scroll-up i {
+      }
+    
+      #scroll-up i {
         font-size: 20px; /* Adjust icon size */
-    }
+      }
   }
   @media (max-width: 768px) {
+    .main-navbar .nav-list li  {
+    width: fit-content;
+    }
     .checkbtn {
         display: block;
     }
@@ -3009,9 +3056,14 @@ summary {
         #checkbtn:checked ~ .nav-list {
             right: 0; /* Bring the nav list into view */
         }
+        .nav-list li.dropdown:hover .dropdown-content{
+            display: block;
+            width: fit-content;
+        }
     
         .main-navbar .nav-list li {
             display: block;
+            width: fit-content;
         }
     
         .main-navbar .nav-list li a {
