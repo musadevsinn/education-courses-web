@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Section</title>
+
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Styling for the faculty section */
+        .faculty-area {
+            background-color: #f3f5f7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .faculty-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faculty-heading {
+            color: #6b2787;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .faculty-subheading {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .faculty-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            text-align: center;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            max-width: 300px; /* Adjust the width to be uniform */
+            margin: auto;
+            position: relative;
+            height: 420px; /* Fixed height to maintain card size */
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .faculty-card img {
+            width: 100%;
+            height: 250px; /* Fixed height for uniform image size */
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .faculty-info {
+            padding: 15px;
+        }
+
+        .faculty-name {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+        }
+
+        .faculty-position {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #e0007d;
+            font-size: 16px;
+            margin: 0 5px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Faculty Area -->
+<section class="faculty-area">
+    <h2 class="faculty-heading">Our Qualified Faculty</h2>
+    <p class="faculty-subheading">We have one of the best Faculty.</p>
+
+    <!-- Faculty Container with Owl Carousel -->
+    <div class="faculty-container owl-carousel owl-theme">
+        <!-- Faculty Card 1 -->
+        <div class="faculty-card">
+            <img src="faculty1.jpg" alt="Tasadduq Bandesha">
+            <div class="faculty-info">
+                <h3 class="faculty-name">Tasadduq Bandesha</h3>
+                <p class="faculty-position">Mobile App Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 2 -->
+        <div class="faculty-card">
+            <img src="faculty2.jpg" alt="Talal Rehman">
+            <div class="faculty-info">
+                <h3 class="faculty-name">Talal Rehman</h3>
+                <p class="faculty-position">Front Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 3 -->
+        <div class="faculty-card">
+            <img src="faculty3.jpg" alt="Joshua Lazar">
+            <div class="faculty-info">
+                <h3 class="faculty-name">Joshua Lazar</h3>
+                <p class="faculty-position">MERN Stack Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculty Card 4 -->
+        <div class="faculty-card">
+            <img src="faculty4.jpg" alt="Dr Amir Yaqoob">
+            <div class="faculty-info">
+                <h3 class="faculty-name">Dr Amir Yaqoob</h3>
+                <p class="faculty-position">MD & DevOps Engineer at Vvork</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

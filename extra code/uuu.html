@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Demo</title>
+    <style>
+        /* Define CSS Variables */
+        :root {
+            --primary-color: #ff5722; /* Example primary color */
+            --secondary-color: #4caf50; /* Example secondary color */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background: #fff;
+            position: relative;
+        }
+
+        .top-logo img {
+            width: 128px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .nav-menu {
+            padding-left: 0;
+        }
+
+        .navigation {
+            list-style: none;
+            display: flex;
+        }
+
+        .navigation li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .navigation li a {
+            color: var(--secondary-color);
+            font-size: 17px;
+            font-weight: 600;
+            padding: 15px 20px;
+            display: block;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .navigation li a::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 4px;
+            background: var(--primary-color);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .navigation li a:hover::before {
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+        }
+
+        .navigation li a:hover {
+            color: var(--primary-color);
+        }
+
+        .header .nav-menu li .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 220px;
+            background: #fff;
+            z-index: 5000;
+            padding: 15px 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            transform: translateY(-20px);
+            border-radius: 10px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.32);
+        }
+
+        .header .nav-menu li:hover .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .header .nav-menu li .sub-menu li {
+            display: block;
+            margin: 0;
+            text-align: left;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #0003;
+            padding-bottom: 10px;
+        }
+
+        .header .nav-menu li .sub-menu li a {
+            color: var(--secondary-color);
+            display: block;
+            font-size: 15px;
+            padding: 0;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .header .nav-menu li .sub-menu li a:hover {
+            color: var(--primary-color);
+            margin-left: 5px;
+        }
+
+        .header.sticky {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: all 0.6s ease;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.17);
+            background: #fff;
+            z-index: 666;
+            animation: fadeInDown 1s both 0.2s;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="top-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar">
+            <nav class="nav-menu">
+                <ul class="navigation">
+                    <li class="nav-item"><a href="#" class="active-cstm">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="h-menu-right">
+                <button class="contact-btn">Contact Us</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
